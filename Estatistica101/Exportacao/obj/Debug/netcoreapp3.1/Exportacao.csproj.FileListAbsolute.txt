@@ -1,0 +1,4 @@
+C:\Users\User\Source\Repos\Estatistica101\Estatistica101\Exportacao\bin\Debug\netcoreapp3.1\Dominio.dll
+C:\Users\User\Source\Repos\Estatistica101\Estatistica101\Exportacao\obj\Debug\netcoreapp3.1\Exportacao.csprojAssemblyReference.cache
+C:\Users\User\Source\Repos\Estatistica101\Estatistica101\Exportacao\obj\Debug\netcoreapp3.1\Exportacao.AssemblyInfoInputs.cache
+C:\Users\User\Source\Repos\Estatistica101\Estatistica101\Exportacao\obj\Debug\netcoreapp3.1\Exportacao.AssemblyInfo.cs

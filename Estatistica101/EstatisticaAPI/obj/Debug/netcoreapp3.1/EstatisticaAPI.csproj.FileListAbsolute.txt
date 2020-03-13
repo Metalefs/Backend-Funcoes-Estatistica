@@ -1,0 +1,10 @@
+C:\Users\User\Source\Repos\Estatistica101\Estatistica101\EstatisticaAPI\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\User\Source\Repos\Estatistica101\Estatistica101\EstatisticaAPI\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\User\Source\Repos\Estatistica101\Estatistica101\EstatisticaAPI\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\User\Source\Repos\Estatistica101\Estatistica101\EstatisticaAPI\bin\Debug\netcoreapp3.1\EstatisticaAPI.exe
+C:\Users\User\Source\Repos\Estatistica101\Estatistica101\EstatisticaAPI\obj\Debug\netcoreapp3.1\EstatisticaAPI.csprojAssemblyReference.cache
+C:\Users\User\Source\Repos\Estatistica101\Estatistica101\EstatisticaAPI\obj\Debug\netcoreapp3.1\staticwebassets\EstatisticaAPI.StaticWebAssets.Manifest.cache
+C:\Users\User\Source\Repos\Estatistica101\Estatistica101\EstatisticaAPI\obj\Debug\netcoreapp3.1\staticwebassets\EstatisticaAPI.StaticWebAssets.xml
+C:\Users\User\Source\Repos\Estatistica101\Estatistica101\EstatisticaAPI\obj\Debug\netcoreapp3.1\EstatisticaAPI.AssemblyInfoInputs.cache
+C:\Users\User\Source\Repos\Estatistica101\Estatistica101\EstatisticaAPI\obj\Debug\netcoreapp3.1\EstatisticaAPI.AssemblyInfo.cs
+C:\Users\User\Source\Repos\Estatistica101\Estatistica101\EstatisticaAPI\obj\Debug\netcoreapp3.1\EstatisticaAPI.RazorTargetAssemblyInfo.cache
