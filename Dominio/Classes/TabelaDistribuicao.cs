@@ -37,6 +37,9 @@ namespace Estatistica101.Classes
         public Moda Moda { get; private set; }
         public Mediana Mediana { get; private set; }
         public float Media { get; private set; }
+        public DesvioPadrao DesvioPadrao { get; set; }
+        public Variancia Variancia { get; set; }
+
         public TabelaDistribuicao(List<float> Valores)
         {
             this.Valores = Valores;
@@ -55,6 +58,8 @@ namespace Estatistica101.Classes
             CalcularTodosOsIntervalos();
             Moda = new Moda(Valores);
             Mediana = new Mediana(Valores);
+            DesvioPadrao = new DesvioPadrao(Valores);
+            Variancia = new Variancia(Valores);
             Media = Valores.Average();
         }
 
