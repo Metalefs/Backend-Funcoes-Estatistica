@@ -6,25 +6,25 @@ namespace Estatistica101.Classes
 {
     public class Moda : ModaBase
     {
-        public Moda(IList<int> Valores)
+        public Moda(IList<int> Valores):base()
         {
             foreach(int valor in Valores)
             {
                 this.Valores.Add((float)valor);
             }
         }
-        public Moda(int[] Valores)
+        public Moda(int[] Valores):base()
         {
             foreach (int valor in Valores)
             {
                 this.Valores.Add((float)valor);
             }
         }
-        public Moda(IList<float> Valores)
+        public Moda(IList<float> Valores):base()
         {
             this.Valores = Valores;
         }
-        public Moda(float[] Valores)
+        public Moda(float[] Valores) : base()
         {
             this.Valores = Valores;
         }
@@ -33,7 +33,10 @@ namespace Estatistica101.Classes
             Resultado = Valores.GroupBy(i => i).OrderByDescending(grp => grp.Count())
             .Select(grp => grp.Key).First();
 
-            if(Resultado >= 0 && Resultado <= 4)
+            Repeticoes = Valores.GroupBy(i => i).OrderByDescending(grp => grp.Count())
+            .First().Count();
+
+            if (Repeticoes >= 0 && Repeticoes <= 4)
             {
                 switch (Resultado)
                 {
@@ -58,6 +61,7 @@ namespace Estatistica101.Classes
             {
                 Classificacao = ClassificacaoModa.Polimodal;
             }
+            Passos.AppendLine($"Moda: Valor mais frequente = {Resultado}. Repetiu {Repeticoes} vezes");
             return Resultado;
         }
     }

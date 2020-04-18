@@ -1,45 +1,50 @@
-﻿using Estatistica101.Enums;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 
 namespace Estatistica101.Classes
 {
-    public class DesvioPadrao
+    public class DesvioPadrao : EstatisticaBase<double>
     {
-        public IList<float> Valores { get; protected set; }
-        public float Resultado { get; protected set; }
-        public DesvioPadrao(IList<int> Valores)
+        public DesvioPadrao(IList<int> Valores) : base()
         {
             foreach(int valor in Valores)
             {
                 this.Valores.Add((float)valor);
             }
         }
-        public DesvioPadrao(int[] Valores)
+        public DesvioPadrao(int[] Valores):base()
         {
             foreach (int valor in Valores)
             {
                 this.Valores.Add((float)valor);
             }
         }
-        public DesvioPadrao(IList<float> Valores)
+        public DesvioPadrao(IList<float> Valores):base()
         {
             this.Valores = Valores;
         }
-        public DesvioPadrao(float[] Valores)
+        public DesvioPadrao(float[] Valores):base()
         {
             this.Valores = Valores;
         }
-        public double Calcular()
+        public override double Calcular()
         {
-            float Resultado = 0;
             float Media = Valores.Average();
+            Passos.AppendLine($"Variância: medida de dispersão = E Raiz(Xi - Ma)² /n");
+            Passos.AppendLine($"Ma = {Media}");
+            Passos.AppendLine($"N = {Valores.Count}");
+
             foreach (var Elemento in Valores)
             {
-               Resultado += (Elemento - Media) * (Elemento - Media);
+                Passos.AppendLine($"Xi = {Elemento}");
+
+                Resultado += (Elemento - Media) * (Elemento - Media);
+                Passos.Append($" ({Elemento - Media}²) = {Resultado} +");
             }
-            return Math.Sqrt(Resultado / Valores.Count());
+
+            Passos.AppendLine($"\n {Resultado} / {Valores.Count()} = {Resultado /= Valores.Count()}");
+            return Math.Sqrt(Resultado);
         }
     }
 }

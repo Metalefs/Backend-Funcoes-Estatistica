@@ -1,41 +1,50 @@
-﻿using Estatistica101.Enums;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 
 namespace Estatistica101.Classes
 {
-    public class Variancia : ModaBase
+    public class Variancia : EstatisticaBase<float>
     {
-        public Variancia(IList<int> Valores)
+        public Variancia(IList<int> Valores):base()
         {
             foreach(int valor in Valores)
             {
                 this.Valores.Add((float)valor);
             }
         }
-        public Variancia(int[] Valores)
+        public Variancia(int[] Valores):base()
         {
             foreach (int valor in Valores)
             {
                 this.Valores.Add((float)valor);
             }
         }
-        public Variancia(IList<float> Valores)
+        public Variancia(IList<float> Valores):base()
         {
             this.Valores = Valores;
         }
-        public Variancia(float[] Valores)
+        public Variancia(float[] Valores):base()
         {
             this.Valores = Valores;
         }
         public override float Calcular()
         {
             float Media = Valores.Average();
+            Passos.AppendLine($"Variância: medida de dispersão = E(Xi - Ma²)/n");
+            Passos.AppendLine($"Ma = {Media}");
+            Passos.AppendLine($"N = {Valores.Count}");
+
             foreach (var Elemento in Valores)
             {
-               Resultado += (Elemento - Media) * (Elemento - Media);
+                Passos.AppendLine($"Xi = {Elemento}");
+
+                Resultado += (Elemento - Media) * (Elemento - Media);
+                Passos.Append($" ({Elemento - Media}²) = {Resultado} +");
             }
-            return Resultado / Valores.Count();
+
+            Passos.AppendLine($"\n {Resultado} / {Valores.Count()} = {Resultado /= Valores.Count()}");
+
+            return Resultado;
         }
     }
 }
