@@ -38,7 +38,7 @@ namespace Estatistica101.Classes
 
         public Moda Moda { get; private set; }
         public Mediana Mediana { get; private set; }
-        public float Media { get; private set; }
+        public Media Media { get; private set; }
         public DesvioPadrao DesvioPadrao { get; set; }
         public Variancia Variancia { get; set; }
 
@@ -72,8 +72,8 @@ namespace Estatistica101.Classes
             Variancia = new Variancia(Valores);
             Passos.Append(Variancia.Passos.ToString());
 
-            Media = Valores.Average();
-            Passos.AppendLine($"Média Aritimética: (E Xi)/n = {Valores.Sum()} / {NumeroDeElementos} = {Media}");
+            Media = new Media(Valores);
+            Passos.Append(Media.Passos.ToString());
         }
 
         private float CalcularValorMinimo(List<float> Valores)
