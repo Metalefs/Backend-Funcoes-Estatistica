@@ -22,5 +22,35 @@ namespace EstatisticaAPI.Controllers
             string retorno = JsonConvert.SerializeObject(Estatistica.ObterTabelaDistribuicao(Valores));
             return Json(retorno);
         }
+        [HttpGet]
+        public string TextoTabelaDistribuicao(string Valores)
+        { 
+            return Estatistica.ObterTextoTabelaDistribuicao(Valores);
+        }
+        [HttpGet]
+        public string ObterDesvioPadrao(string Valores)
+        { 
+            return Estatistica.ObterDesvioPadrao(Valores);
+        }
+        [HttpGet]
+        public string ObterVariancia(string Valores)
+        {
+            return Estatistica.ObterVariancia(Valores);
+        }
+        [HttpGet]
+        public string ObterMedia(string Valores)
+        {
+            return Estatistica.ObterMedia(Valores);
+        }
+        [HttpGet]
+        public string ObterModa(string Valores)
+        { 
+            return Estatistica.ObterModa(Valores);
+        }
+        [HttpGet]
+        public string ObterMediana(string Valores)
+        {
+            return Estatistica.ObterMediana(Valores);
+        }
     }
 }
