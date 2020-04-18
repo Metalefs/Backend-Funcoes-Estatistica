@@ -140,17 +140,12 @@ namespace Estatistica101.Classes
                 Passos.AppendLine($"Calcular intervalo: Abertura ({Abertura}) | Fim = ({FimIntervalo}) (Abertura + Intervalo ({Intervalo})) = {Intervalo}");
 
                 xi[i] = CalcularMediaXI(Abertura, FimIntervalo);
-                Passos.AppendLine($"Calcular Média do intervalo: ({Abertura} + {FimIntervalo}) / 2 = {xi[i]}");
 
                 fi[i] = CalcularFrequenciaSimples(Abertura, FimIntervalo);
                 Fi[i] = CalcularFrequenciaSimplesAcumulada(i);
-                Passos.AppendLine($"Calcular Frequencia Simples: Contagem de valores entre {Abertura} e {FimIntervalo} = {fi[i]}");
-                Passos.AppendLine($"Calcular Frequencia Simples Acumulada: Soma da Frequencia Simples na posição i = {i+1} = {Fi[i]}");
-
+                
                 fr[i] = CalcularFrequenciaRelativa(i);
                 Fr[i] = CalcularFrequenciaRelativaAcumulada(i);
-                Passos.AppendLine($"Calcular Frequencia Relativa Simples: Porcentagem da Frequencia Simples na posição i = {i+1} = {fr[i]}");
-                Passos.AppendLine($"Calcular Frequencia Relativa Acumulada: Soma da Frequencia Relativa Simples na posição i = {i + 1} = {Fr[i]}");
 
                 Abertura = FimIntervalo;
             }
@@ -158,34 +153,47 @@ namespace Estatistica101.Classes
 
         private float CalcularMediaXI(float Abertura, float Fim)
         {
-            return (Abertura + Fim) / 2;
+            float resultado = (Abertura + Fim) / 2;
+            Passos.AppendLine($"Calcular Média do intervalo: ({Abertura} + {Fim}) / 2 = {resultado}");
+            return resultado;
         }
 
         private float CalcularFrequenciaSimples(float Abertura, float Fim)
         {
-            return Valores.Where(x => x >= Abertura && x < Fim).Count();
+            float resultado = Valores.Where(x => x >= Abertura && x < Fim).Count();
+            Passos.AppendLine($"Calcular Frequencia Simples: Contagem de valores entre {Abertura} e {Fim} = {resultado}");
+            return resultado;
         }
 
         private float CalcularFrequenciaSimplesAcumulada(int pos)
         {
+            float resultado;
             if (pos > 0)
-                return fi.Sum();
+                resultado = fi.Sum();
             else
-                return fi[pos];
+                resultado = fi[pos];
+
+            Passos.AppendLine($"Calcular Frequencia Simples Acumulada: Soma da Frequencia Simples na posição i = {pos + 1} = {resultado}");
+            return resultado;
         }
 
         private float CalcularFrequenciaRelativa(int pos)
         {
             float Fr = fi[pos] / NumeroDeElementos * 100;
+            Passos.AppendLine($"Calcular Frequencia Relativa Simples: Porcentagem da Frequencia Simples na posição i = {pos + 1} = {Fr}");
             return Fr;
         }
 
         private float CalcularFrequenciaRelativaAcumulada(int pos)
         {
+            float resultado;
             if (pos > 0)
-                return fr.Sum();
+                resultado = fr.Sum();
             else
-                return fr[pos];
+                resultado = fr[pos];
+
+            Passos.AppendLine($"Calcular Frequencia Relativa Acumulada: Soma da Frequencia Relativa Simples na posição i = {pos + 1} = {resultado}");
+            return resultado;
         }
 
     }
