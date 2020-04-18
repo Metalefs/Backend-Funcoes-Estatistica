@@ -1,0 +1,13 @@
+C:\Users\User\Source\Repos\Estatistica101\Estatistica101\obj\Debug\netcoreapp3.1\Estatistica101.csprojAssemblyReference.cache
+C:\Users\User\Source\Repos\Estatistica101\Estatistica101\obj\Debug\netcoreapp3.1\Estatistica101.AssemblyInfoInputs.cache
+C:\Users\User\Source\Repos\Estatistica101\Estatistica101\obj\Debug\netcoreapp3.1\Estatistica101.AssemblyInfo.cs
+C:\Users\User\Source\Repos\Estatistica101\Estatistica101\bin\Debug\netcoreapp3.1\Estatistica101.deps.json
+C:\Users\User\Source\Repos\Estatistica101\Estatistica101\bin\Debug\netcoreapp3.1\Estatistica101.dll
+C:\Users\User\Source\Repos\Estatistica101\Estatistica101\bin\Debug\netcoreapp3.1\Estatistica101.pdb
+C:\Users\User\Source\Repos\Estatistica101\Estatistica101\bin\Debug\netcoreapp3.1\Dominio.dll
+C:\Users\User\Source\Repos\Estatistica101\Estatistica101\bin\Debug\netcoreapp3.1\Exportacao.dll
+C:\Users\User\Source\Repos\Estatistica101\Estatistica101\bin\Debug\netcoreapp3.1\Dominio.pdb
+C:\Users\User\Source\Repos\Estatistica101\Estatistica101\bin\Debug\netcoreapp3.1\Exportacao.pdb
+C:\Users\User\Source\Repos\Estatistica101\Estatistica101\obj\Debug\netcoreapp3.1\Estatistica101.csproj.CopyComplete
+C:\Users\User\Source\Repos\Estatistica101\Estatistica101\obj\Debug\netcoreapp3.1\Estatistica101.dll
+C:\Users\User\Source\Repos\Estatistica101\Estatistica101\obj\Debug\netcoreapp3.1\Estatistica101.pdb

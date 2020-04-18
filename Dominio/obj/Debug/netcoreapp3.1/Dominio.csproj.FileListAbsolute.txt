@@ -1,0 +1,8 @@
+C:\Users\User\Source\Repos\Estatistica101\Dominio\obj\Debug\netcoreapp3.1\Dominio.csprojAssemblyReference.cache
+C:\Users\User\Source\Repos\Estatistica101\Dominio\obj\Debug\netcoreapp3.1\Dominio.AssemblyInfoInputs.cache
+C:\Users\User\Source\Repos\Estatistica101\Dominio\obj\Debug\netcoreapp3.1\Dominio.AssemblyInfo.cs
+C:\Users\User\Source\Repos\Estatistica101\Dominio\bin\Debug\netcoreapp3.1\Dominio.deps.json
+C:\Users\User\Source\Repos\Estatistica101\Dominio\bin\Debug\netcoreapp3.1\Dominio.dll
+C:\Users\User\Source\Repos\Estatistica101\Dominio\bin\Debug\netcoreapp3.1\Dominio.pdb
+C:\Users\User\Source\Repos\Estatistica101\Dominio\obj\Debug\netcoreapp3.1\Dominio.dll
+C:\Users\User\Source\Repos\Estatistica101\Dominio\obj\Debug\netcoreapp3.1\Dominio.pdb

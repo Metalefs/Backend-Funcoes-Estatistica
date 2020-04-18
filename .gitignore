@@ -3,3 +3,6 @@
 ################################################################################
 
 /Estatistica101/.vs/Estatistica101/v16/Server/sqlite3
+/.vs
+/Dominio/bin/Debug/netcoreapp3.1
+/Estatistica101/bin/Debug/netcoreapp3.1
