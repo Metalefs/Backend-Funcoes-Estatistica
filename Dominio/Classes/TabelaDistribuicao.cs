@@ -61,10 +61,19 @@ namespace Estatistica101.Classes
             CalcularTodosOsIntervalos();
 
             Moda = new Moda(Valores);
+            Passos.Append(Moda.Passos.ToString());
+
             Mediana = new Mediana(Valores);
+            Passos.Append(Mediana.Passos.ToString());
+
             DesvioPadrao = new DesvioPadrao(Valores);
+            Passos.Append(DesvioPadrao.Passos.ToString());
+
             Variancia = new Variancia(Valores);
+            Passos.Append(Variancia.Passos.ToString());
+
             Media = Valores.Average();
+            Passos.AppendLine($"Média Aritimética: (E Xi)/n = {Valores.Sum()} / {NumeroDeElementos} = {Media}");
         }
 
         private float CalcularValorMinimo(List<float> Valores)
