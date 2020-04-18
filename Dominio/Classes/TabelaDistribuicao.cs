@@ -137,7 +137,7 @@ namespace Estatistica101.Classes
             {
                 float FimIntervalo = Abertura + Intervalo;
                 intervalo[i] = $"{Abertura.ToString("0.00")}|--{FimIntervalo.ToString("0.00")}";
-                Passos.AppendLine($"Calcular intervalo: Abertura ({Abertura}) | Fim = ({FimIntervalo}) (Abertura + Intervalo ({Intervalo})) = {Intervalo}");
+                Passos.AppendLine($"Calcular intervalo: Abertura ({Abertura}) | Fim = ({FimIntervalo}) (Abertura + Intervalo ({Intervalo})) = {intervalo[i]}");
 
                 xi[i] = CalcularMediaXI(Abertura, FimIntervalo);
 
