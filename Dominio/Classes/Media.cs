@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace Estatistica101.Classes
 {
-    public class Media : EstatisticaBase<float>
+    public class Media : EstatisticaBase
     {
         public Media(IList<int> Valores) : base()
         {

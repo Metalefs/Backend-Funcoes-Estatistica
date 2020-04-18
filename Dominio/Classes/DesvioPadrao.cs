@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace Estatistica101.Classes
 {
-    public class DesvioPadrao : EstatisticaBase<double>
+    public class DesvioPadrao : EstatisticaBase
     {
         public DesvioPadrao(IList<int> Valores) : base()
         {
@@ -28,7 +28,7 @@ namespace Estatistica101.Classes
         {
             this.Valores = Valores;
         }
-        public override double Calcular()
+        public override float Calcular()
         {
             float Media = Valores.Average();
             Passos.AppendLine($"Variância: medida de dispersão = E Raiz(Xi - Ma)² /n");
@@ -44,7 +44,7 @@ namespace Estatistica101.Classes
             }
 
             Passos.AppendLine($"\n {Resultado} / {Valores.Count()} = {Resultado /= Valores.Count()}");
-            return Math.Sqrt(Resultado);
+            return (float)Math.Sqrt(Resultado);
         }
     }
 }

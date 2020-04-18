@@ -3,13 +3,13 @@ using System.Text;
 
 namespace Estatistica101.Classes
 {
-    public abstract class EstatisticaBase<T>
+    public abstract class EstatisticaBase
     {
         public IList<float> Valores { get; protected set; }
         public float Resultado { get; protected set; }
         public StringBuilder Passos { get; protected set; }
 
-        public abstract T Calcular();
+        public abstract float Calcular();
 
         public EstatisticaBase()
         {

@@ -28,6 +28,7 @@ namespace Estatistica101.Classes
             Linhas.Add($" Intervalo: {Tabela.Amplitude} / {Tabela.QuantidadeIntervalos} = {Tabela.Intervalo}");
             Linhas.Add($" Média: {Tabela.Valores.Sum()} / {Tabela.NumeroDeElementos} = {Tabela.Valores.Average()}");
             Linhas.Add($" Mediana = {Tabela.Valores[(int)Tabela.Valores.Count / 2]}");
+            Linhas.Add($"{Tabela.Passos.ToString()}");
             SalvarResultado(Linhas, "Resultado.txt");
             return Linhas.ToString();
         }

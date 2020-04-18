@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace Estatistica101.Classes
 {
-    public class Variancia : EstatisticaBase<float>
+    public class Variancia : EstatisticaBase
     {
         public Variancia(IList<int> Valores):base()
         {
