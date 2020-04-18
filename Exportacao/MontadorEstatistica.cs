@@ -1,35 +1,34 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Text;
 
 namespace Estatistica101.Classes
 {
     public class MontadorEstatistica<T> where T: EstatisticaBase
     {
         T Tabela { get; set; }
-        List<string> Linhas { get; }
+        StringBuilder Linhas { get; }
         public MontadorEstatistica(T Tabela)
         {
+            Linhas = new StringBuilder();
             this.Tabela = Tabela;
         }
 
         public string GerarTexto()
         {
-            Linhas.Add($"{Tabela.Passos.ToString()}");
-            Linhas.Add($"{Tabela.Resultado}");
+            Linhas.Append($"{Tabela.Passos.ToString()}");
+            Linhas.Append($"{Tabela.Resultado}");
             SalvarResultado(Linhas, "Resultado.txt");
             return Linhas.ToString();
         }
 
-        private void SalvarResultado(List<string> Linhas, string Caminho)
+        private void SalvarResultado(StringBuilder Linhas, string Caminho)
         {
             using (TextWriter tw = new StreamWriter(Caminho, true))
             {
-                foreach (string linha in Linhas)
-                {
-                    tw.Write(linha);
-                    Console.Write(linha);
-                }
+                tw.Write(Linhas.ToString());
+                Console.Write(Linhas.ToString());
             }
         }
 

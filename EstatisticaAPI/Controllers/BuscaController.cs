@@ -16,17 +16,16 @@ namespace EstatisticaAPI.Controllers
             _logger = logger;
         }
 
-        [HttpGet]
-        public IActionResult TabelaDistribuicao()
+        [HttpGet("{id}")]
+        public IActionResult TabelaDistribuicao(string Valores)
         {
-            string retorno = JsonConvert.SerializeObject(Estatistica.ObterTabelaDistribuicao("1,2,3,4"));
+            string retorno = JsonConvert.SerializeObject(Estatistica.ObterTabelaDistribuicao(Valores));
             return Json(retorno);
         }
         [HttpGet]
-        [Route("TextoTabelaDistribuicao/{id}")]
-        public string TextoTabelaDistribuicao(string Valores)
+        public string TextoTabelaDistribuicao()
         { 
-            return Estatistica.ObterTextoTabelaDistribuicao(Valores);
+            return Estatistica.ObterTextoTabelaDistribuicao("1,2,3,4,1,1,1,0,2,2,2");
         }
         [HttpGet]
         [Route("ObterDesvioPadrao/{id}")]

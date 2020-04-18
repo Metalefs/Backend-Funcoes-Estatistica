@@ -9,12 +9,12 @@ namespace Estatistica101.Interfaces
         float Amplitude { get; }
         float QuantidadeIntervalos { get; }
         float Intervalo { get; }
-        string[] intervalo { get; }
-        float[] xi { get; }
-        float[] fi { get; }
-        float[] Fi { get; }
-        float[] fr { get; }
-        float[] Fr { get; }
+        List<string> intervalos { get; }
+        List<float> xi { get; }
+        List<float> fi { get; }
+        List<float> Fi { get; }
+        List<float> fr { get; }
+        List<float> Fr { get; }
 
         public void Calcular();
     }

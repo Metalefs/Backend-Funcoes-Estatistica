@@ -1,0 +1,78 @@
+        Classes     P.Médio(xi)       F.Abs(fi)       F.Rel(Fi)  F.Abs.Acum(Fi)  F.Rel.Acum(Fr)          0,00|--1,21           0,60           5,00           5,00          45,45          45,45 
+         1,21|--2,41           1,81           4,00           9,00          36,36          81,82 
+         2,41|--3,62           3,02           1,00          10,00           9,09          90,91 
+         3,62|--4,82           4,22           1,00          11,00           9,09         100,00 
+                               0,00          11,00           0,00         100,00           0,00 
+
+ Amplitude: 4 - 0 = 4 Quantidade Intervalos: sqr.root 11 = 3,3166249 Intervalo: 4 / 3,3166249 = 1,2060454 Média: 19 / 11 = 1,7272727 Mediana = 1Calcular amplitude: ValorMaximo (4) - ValorMinimo (0) = 4
+Calcular quantidade de intervalos: Se 5 elementos = 2, 
+10 elementos = 4, 
+25 elementos = 6, 
+50 elementos = 8, 
+100 elementos = 10 
+ Se não, Raiz quadrada da quantidade de elementos = Raiz 11 -- (3,3166249)
+Calcular tamanho do intervalo: Amplitude (4) / Quantidade de intervalos (3,3166249) = 1,2060454
+Calcular abertura intervalo: Valor minimo = 0
+Calcular intervalo: Abertura (0) | Fim = (1,2060454) (Abertura + Intervalo (1,2060454)) = 0,00|--1,21
+Calcular Média do intervalo: (0 + 1,2060454) / 2 = 0,6030227
+Calcular Frequencia Simples: Contagem de valores entre 0 e 1,2060454 = 5
+Calcular Frequencia Simples Acumulada: Soma da Frequencia Simples na posição i = 1 = 5
+Calcular Frequencia Relativa Simples: Porcentagem da Frequencia Simples na posição i = 1 = 45,454548
+Calcular Frequencia Relativa Acumulada: Soma da Frequencia Relativa Simples na posição i = 1 = 45,454548
+Calcular intervalo: Abertura (1,2060454) | Fim = (2,4120908) (Abertura + Intervalo (1,2060454)) = 1,21|--2,41
+Calcular Média do intervalo: (1,2060454 + 2,4120908) / 2 = 1,8090681
+Calcular Frequencia Simples: Contagem de valores entre 1,2060454 e 2,4120908 = 4
+Calcular Frequencia Simples Acumulada: Soma da Frequencia Simples na posição i = 2 = 9
+Calcular Frequencia Relativa Simples: Porcentagem da Frequencia Simples na posição i = 2 = 36,363636
+Calcular Frequencia Relativa Acumulada: Soma da Frequencia Relativa Simples na posição i = 2 = 81,818184
+Calcular intervalo: Abertura (2,4120908) | Fim = (3,6181362) (Abertura + Intervalo (1,2060454)) = 2,41|--3,62
+Calcular Média do intervalo: (2,4120908 + 3,6181362) / 2 = 3,0151134
+Calcular Frequencia Simples: Contagem de valores entre 2,4120908 e 3,6181362 = 1
+Calcular Frequencia Simples Acumulada: Soma da Frequencia Simples na posição i = 3 = 10
+Calcular Frequencia Relativa Simples: Porcentagem da Frequencia Simples na posição i = 3 = 9,090909
+Calcular Frequencia Relativa Acumulada: Soma da Frequencia Relativa Simples na posição i = 3 = 90,909096
+Calcular intervalo: Abertura (3,6181362) | Fim = (4,8241816) (Abertura + Intervalo (1,2060454)) = 3,62|--4,82
+Calcular Média do intervalo: (3,6181362 + 4,8241816) / 2 = 4,221159
+Calcular Frequencia Simples: Contagem de valores entre 3,6181362 e 4,8241816 = 1
+Calcular Frequencia Simples Acumulada: Soma da Frequencia Simples na posição i = 4 = 11
+Calcular Frequencia Relativa Simples: Porcentagem da Frequencia Simples na posição i = 4 = 9,090909
+Calcular Frequencia Relativa Acumulada: Soma da Frequencia Relativa Simples na posição i = 4 = 100
+        Classes     P.Médio(xi)       F.Abs(fi)       F.Rel(Fi)  F.Abs.Acum(Fi)  F.Rel.Acum(Fr)          0,00|--1,21           0,60           5,00           5,00          45,45          45,45 
+         1,21|--2,41           1,81           4,00           9,00          36,36          81,82 
+         2,41|--3,62           3,02           1,00          10,00           9,09          90,91 
+         3,62|--4,82           4,22           1,00          11,00           9,09         100,00 
+                               0,00          11,00           0,00         100,00           0,00 
+
+ Amplitude: 4 - 0 = 4 Quantidade Intervalos: sqr.root 11 = 3,3166249 Intervalo: 4 / 3,3166249 = 1,2060454 Média: 19 / 11 = 1,7272727 Mediana = 1Calcular amplitude: ValorMaximo (4) - ValorMinimo (0) = 4
+Calcular quantidade de intervalos: Se 5 elementos = 2, 
+10 elementos = 4, 
+25 elementos = 6, 
+50 elementos = 8, 
+100 elementos = 10 
+ Se não, Raiz quadrada da quantidade de elementos = Raiz 11 -- (3,3166249)
+Calcular tamanho do intervalo: Amplitude (4) / Quantidade de intervalos (3,3166249) = 1,2060454
+Calcular abertura intervalo: Valor minimo = 0
+Calcular intervalo: Abertura (0) | Fim = (1,2060454) (Abertura + Intervalo (1,2060454)) = 0,00|--1,21
+Calcular Média do intervalo: (0 + 1,2060454) / 2 = 0,6030227
+Calcular Frequencia Simples: Contagem de valores entre 0 e 1,2060454 = 5
+Calcular Frequencia Simples Acumulada: Soma da Frequencia Simples na posição i = 1 = 5
+Calcular Frequencia Relativa Simples: Porcentagem da Frequencia Simples na posição i = 1 = 45,454548
+Calcular Frequencia Relativa Acumulada: Soma da Frequencia Relativa Simples na posição i = 1 = 45,454548
+Calcular intervalo: Abertura (1,2060454) | Fim = (2,4120908) (Abertura + Intervalo (1,2060454)) = 1,21|--2,41
+Calcular Média do intervalo: (1,2060454 + 2,4120908) / 2 = 1,8090681
+Calcular Frequencia Simples: Contagem de valores entre 1,2060454 e 2,4120908 = 4
+Calcular Frequencia Simples Acumulada: Soma da Frequencia Simples na posição i = 2 = 9
+Calcular Frequencia Relativa Simples: Porcentagem da Frequencia Simples na posição i = 2 = 36,363636
+Calcular Frequencia Relativa Acumulada: Soma da Frequencia Relativa Simples na posição i = 2 = 81,818184
+Calcular intervalo: Abertura (2,4120908) | Fim = (3,6181362) (Abertura + Intervalo (1,2060454)) = 2,41|--3,62
+Calcular Média do intervalo: (2,4120908 + 3,6181362) / 2 = 3,0151134
+Calcular Frequencia Simples: Contagem de valores entre 2,4120908 e 3,6181362 = 1
+Calcular Frequencia Simples Acumulada: Soma da Frequencia Simples na posição i = 3 = 10
+Calcular Frequencia Relativa Simples: Porcentagem da Frequencia Simples na posição i = 3 = 9,090909
+Calcular Frequencia Relativa Acumulada: Soma da Frequencia Relativa Simples na posição i = 3 = 90,909096
+Calcular intervalo: Abertura (3,6181362) | Fim = (4,8241816) (Abertura + Intervalo (1,2060454)) = 3,62|--4,82
+Calcular Média do intervalo: (3,6181362 + 4,8241816) / 2 = 4,221159
+Calcular Frequencia Simples: Contagem de valores entre 3,6181362 e 4,8241816 = 1
+Calcular Frequencia Simples Acumulada: Soma da Frequencia Simples na posição i = 4 = 11
+Calcular Frequencia Relativa Simples: Porcentagem da Frequencia Simples na posição i = 4 = 9,090909
+Calcular Frequencia Relativa Acumulada: Soma da Frequencia Relativa Simples na posição i = 4 = 100

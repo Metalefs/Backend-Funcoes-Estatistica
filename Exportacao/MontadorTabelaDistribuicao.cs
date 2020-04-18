@@ -9,40 +9,38 @@ namespace Estatistica101.Classes
     public class MontadorTabelaDistribuicao
     {
         TabelaDistribuicao Tabela { get; set; }
-        List<string> Linhas { get; }
+        StringBuilder Linhas { get; }
         public MontadorTabelaDistribuicao(TabelaDistribuicao Tabela)
         {
+            Linhas = new StringBuilder();
             this.Tabela = Tabela;
         }
 
         public string GerarTexto()
         {
-            Linhas.Add(GerarCabecalho());
+            Linhas.Append(GerarCabecalho());
             for (int i = 0; i < Tabela.QuantidadeIntervalos; i++)
             {
-                Linhas.Add(GerarLinhaTabela(Tabela.intervalo[i], Tabela.xi[i], Tabela.fi[i], Tabela.Fi[i], Tabela.fr[i], Tabela.Fr[i]));
+                Linhas.Append(GerarLinhaTabela(Tabela.intervalos[i], Tabela.xi[i], Tabela.fi[i], Tabela.Fi[i], Tabela.fr[i], Tabela.Fr[i]));
             }
-            Linhas.Add(GerarLinhaTabela("", 0f, Tabela.fi.Sum(), 0f, Tabela.fr.Sum(), 0f));
-            Linhas.Add($"\n Amplitude: {Tabela.ValorMaximo} - {Tabela.ValorMinimo} = {Tabela.Amplitude}");
-            Linhas.Add($" Quantidade Intervalos: sqr.root {Tabela.NumeroDeElementos} = {Tabela.QuantidadeIntervalos}");
-            Linhas.Add($" Intervalo: {Tabela.Amplitude} / {Tabela.QuantidadeIntervalos} = {Tabela.Intervalo}");
-            Linhas.Add($" Média: {Tabela.Valores.Sum()} / {Tabela.NumeroDeElementos} = {Tabela.Valores.Average()}");
-            Linhas.Add($" Mediana = {Tabela.Valores[(int)Tabela.Valores.Count / 2]}");
-            Linhas.Add($"{Tabela.Passos.ToString()}");
+            Linhas.Append(GerarLinhaTabela("", 0f, Tabela.fi.Sum(), 0f, Tabela.fr.Sum(), 0f));
+            Linhas.Append($"\n Amplitude: {Tabela.ValorMaximo} - {Tabela.ValorMinimo} = {Tabela.Amplitude}");
+            Linhas.Append($" Quantidade Intervalos: sqr.root {Tabela.NumeroDeElementos} = {Tabela.QuantidadeIntervalos}");
+            Linhas.Append($" Intervalo: {Tabela.Amplitude} / {Tabela.QuantidadeIntervalos} = {Tabela.Intervalo}");
+            Linhas.Append($" Média: {Tabela.Valores.Sum()} / {Tabela.NumeroDeElementos} = {Tabela.Valores.Average()}");
+            Linhas.Append($" Mediana = {Tabela.Valores[(int)Tabela.Valores.Count / 2]}");
+            Linhas.Append($"{Tabela.Passos.ToString()}");
             SalvarResultado(Linhas, "Resultado.txt");
             return Linhas.ToString();
         }
 
 
-        private void SalvarResultado(List<string> Linhas, string Caminho)
+        private void SalvarResultado(StringBuilder Linhas, string Caminho)
         {
             using (TextWriter tw = new StreamWriter(Caminho, true))
             {
-                foreach (string linha in Linhas)
-                {
-                    tw.Write(linha);
-                    Console.Write(linha);
-                }
+                tw.Write(Linhas.ToString());
+                Console.Write(Linhas.ToString());
             }
         }
 

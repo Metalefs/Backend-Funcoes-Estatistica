@@ -29,12 +29,12 @@ namespace Estatistica101.Classes
 
         public StringBuilder Passos { get; set; }
 
-        public string[] intervalo { get; private set;}
-        public float[] xi { get; private set; }
-        public float[] fi { get; private set;}
-        public float[] Fi { get; private set;}
-        public float[] fr { get; private set;}
-        public float[] Fr { get; private set;}
+        public List<string> intervalos { get; private set;}
+        public List<float> xi { get; private set; }
+        public List<float> fi { get; private set;}
+        public List<float> Fi { get; private set;}
+        public List<float> fr { get; private set;}
+        public List<float> Fr { get; private set;}
 
         public Moda Moda { get; private set; }
         public Mediana Mediana { get; private set; }
@@ -45,6 +45,12 @@ namespace Estatistica101.Classes
         public TabelaDistribuicao(List<float> Valores)
         {
             Passos = new StringBuilder();
+            intervalos = new List<string>();
+            xi = new List<float>();
+            fi = new List<float>();
+            Fi = new List<float>();
+            fr = new List<float>();
+            Fr = new List<float>();
             this.Valores = Valores;
         }
 
@@ -136,16 +142,16 @@ namespace Estatistica101.Classes
             for (int i = 0; i <= QuantidadeIntervalos; i++)
             {
                 float FimIntervalo = Abertura + Intervalo;
-                intervalo[i] = $"{Abertura.ToString("0.00")}|--{FimIntervalo.ToString("0.00")}";
-                Passos.AppendLine($"Calcular intervalo: Abertura ({Abertura}) | Fim = ({FimIntervalo}) (Abertura + Intervalo ({Intervalo})) = {intervalo[i]}");
+                intervalos.Add($"{Abertura.ToString("0.00")}|--{FimIntervalo.ToString("0.00")}");
+                Passos.AppendLine($"Calcular intervalo: Abertura ({Abertura}) | Fim = ({FimIntervalo}) (Abertura + Intervalo ({Intervalo})) = {intervalos[i]}");
 
-                xi[i] = CalcularMediaXI(Abertura, FimIntervalo);
+                xi.Add(CalcularMediaXI(Abertura, FimIntervalo));
 
-                fi[i] = CalcularFrequenciaSimples(Abertura, FimIntervalo);
-                Fi[i] = CalcularFrequenciaSimplesAcumulada(i);
+                fi.Add(CalcularFrequenciaSimples(Abertura, FimIntervalo));
+                Fi.Add(CalcularFrequenciaSimplesAcumulada(i));
                 
-                fr[i] = CalcularFrequenciaRelativa(i);
-                Fr[i] = CalcularFrequenciaRelativaAcumulada(i);
+                fr.Add(CalcularFrequenciaRelativa(i));
+                Fr.Add(CalcularFrequenciaRelativaAcumulada(i));
 
                 Abertura = FimIntervalo;
             }
