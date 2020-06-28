@@ -51,25 +51,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\User\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\jackson.ramalho\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Source\\Repos\\Estatistica101\\Exportacao\\Exportacao.csproj",
+      "projectUniqueName": "C:\\Users\\jackson.ramalho\\Source\\Repos\\Estatistica101\\Exportacao\\Exportacao.csproj",
       "projectName": "Exportacao",
-      "projectPath": "C:\\Users\\User\\Source\\Repos\\Estatistica101\\Exportacao\\Exportacao.csproj",
-      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Source\\Repos\\Estatistica101\\Exportacao\\obj\\",
+      "projectPath": "C:\\Users\\jackson.ramalho\\Source\\Repos\\Estatistica101\\Exportacao\\Exportacao.csproj",
+      "packagesPath": "C:\\Users\\jackson.ramalho\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jackson.ramalho\\Source\\Repos\\Estatistica101\\Exportacao\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\jackson.ramalho\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -83,8 +81,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\User\\Source\\Repos\\Estatistica101\\Dominio\\Dominio.csproj": {
-              "projectPath": "C:\\Users\\User\\Source\\Repos\\Estatistica101\\Dominio\\Dominio.csproj"
+            "C:\\Users\\jackson.ramalho\\Source\\Repos\\Estatistica101\\Dominio\\Dominio.csproj": {
+              "projectPath": "C:\\Users\\jackson.ramalho\\Source\\Repos\\Estatistica101\\Dominio\\Dominio.csproj"
             }
           }
         }
@@ -118,7 +116,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
       }
     }
   }

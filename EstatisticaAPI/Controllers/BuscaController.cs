@@ -1,13 +1,15 @@
 ﻿using Newtonsoft.Json;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using Estatistica101;
+using Exportacao.Montador;
+using Estatistica101.Classes;
+using System.Collections.Generic;
 
 namespace EstatisticaAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class BuscaController : Controller
+    public class BuscaController
     {
         private readonly ILogger<BuscaController> _logger;
 
@@ -16,46 +18,72 @@ namespace EstatisticaAPI.Controllers
             _logger = logger;
         }
 
-        [HttpGet("{id}")]
-        public IActionResult TabelaDistribuicao(string Valores)
+        [HttpGet("TabelaDistribuicao/{id}")]
+        public IActionResult TabelaDistribuicao(string id)
         {
-            string retorno = JsonConvert.SerializeObject(Estatistica.ObterTabelaDistribuicao(Valores));
-            return Json(retorno);
+            string retorno = JsonConvert.SerializeObject(ObterTabelaDistribuicao(id));
+            return new JsonResult(retorno);
         }
-        [HttpGet]
-        public string TextoTabelaDistribuicao()
-        { 
-            return Estatistica.ObterTextoTabelaDistribuicao("1,2,3,4,1,1,1,0,2,2,2");
-        }
-        [HttpGet]
-        [Route("ObterDesvioPadrao/{id}")]
-        public string ObterDesvioPadrao(string Valores)
-        { 
-            return Estatistica.ObterDesvioPadrao(Valores);
-        }
-        [HttpGet]
-        [Route("ObterVariancia/{id}")]
-        public string ObterVariancia(string Valores)
+        public static string ObterTextoTabelaDistribuicao(string texto)
         {
-            return Estatistica.ObterVariancia(Valores);
+            TabelaDistribuicao Elemento = new TabelaDistribuicao(ObterValores(texto));
+            Elemento.Calcular();
+            MontadorTabelaDistribuicao montador = new MontadorTabelaDistribuicao(Elemento);
+            return montador.GerarTexto();
         }
-        [HttpGet]
-        [Route("ObterMedia/{id}")]
-        public string ObterMedia(string Valores)
+
+        public static TabelaDistribuicao ObterTabelaDistribuicao(string texto)
         {
-            return Estatistica.ObterMedia(Valores);
+            TabelaDistribuicao Elemento = new TabelaDistribuicao(ObterValores(texto));
+            Elemento.Calcular();
+            return Elemento;
         }
-        [HttpGet]
-        [Route("ObterModa/{id}")]
-        public string ObterModa(string Valores)
-        { 
-            return Estatistica.ObterModa(Valores);
-        }
-        [HttpGet]
-        [Route("ObterMediana/{id}")]
-        public string ObterMediana(string Valores)
+
+        public static string ObterDesvioPadrao(string texto)
         {
-            return Estatistica.ObterMediana(Valores);
+            DesvioPadrao Elemento = new DesvioPadrao(ObterValores(texto));
+            Elemento.Calcular();
+            MontadorEstatistica<DesvioPadrao> montador = new MontadorEstatistica<DesvioPadrao>(Elemento);
+            return montador.GerarTexto();
+        }
+        public static string ObterVariancia(string texto)
+        {
+            Variancia Elemento = new Variancia(ObterValores(texto));
+            Elemento.Calcular();
+            MontadorEstatistica<Variancia> montador = new MontadorEstatistica<Variancia>(Elemento);
+            return montador.GerarTexto();
+        }
+        public static string ObterMedia(string texto)
+        {
+            Media Elemento = new Media(ObterValores(texto));
+            Elemento.Calcular();
+            MontadorEstatistica<Media> montador = new MontadorEstatistica<Media>(Elemento);
+            return montador.GerarTexto();
+        }
+        public static string ObterModa(string texto)
+        {
+            Moda Elemento = new Moda(ObterValores(texto));
+            Elemento.Calcular();
+            MontadorEstatistica<Moda> montador = new MontadorEstatistica<Moda>(Elemento);
+            return montador.GerarTexto();
+        }
+        public static string ObterMediana(string texto)
+        {
+            Mediana Elemento = new Mediana(ObterValores(texto));
+            Elemento.Calcular();
+            MontadorEstatistica<Mediana> montador = new MontadorEstatistica<Mediana>(Elemento);
+            return montador.GerarTexto();
+        }
+
+        private static List<float> ObterValores(string texto)
+        {
+            List<float> Valores = new List<float>();
+            foreach (string valor in texto.Split(','))
+            {
+                if (float.TryParse(valor, out float result))
+                    Valores.Add(float.Parse(valor));
+            }
+            return Valores;
         }
     }
 }

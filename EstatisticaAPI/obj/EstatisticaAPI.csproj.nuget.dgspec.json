@@ -1,24 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Source\\Repos\\Estatistica101\\EstatisticaAPI\\EstatisticaAPI.csproj": {}
+    "C:\\Users\\jackson.ramalho\\Source\\Repos\\Estatistica101\\EstatisticaAPI\\EstatisticaAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Source\\Repos\\Estatistica101\\Dominio\\Dominio.csproj": {
+    "C:\\Users\\jackson.ramalho\\Source\\Repos\\Estatistica101\\Dominio\\Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Source\\Repos\\Estatistica101\\Dominio\\Dominio.csproj",
+        "projectUniqueName": "C:\\Users\\jackson.ramalho\\Source\\Repos\\Estatistica101\\Dominio\\Dominio.csproj",
         "projectName": "Dominio",
-        "projectPath": "C:\\Users\\User\\Source\\Repos\\Estatistica101\\Dominio\\Dominio.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Source\\Repos\\Estatistica101\\Dominio\\obj\\",
+        "projectPath": "C:\\Users\\jackson.ramalho\\Source\\Repos\\Estatistica101\\Dominio\\Dominio.csproj",
+        "packagesPath": "C:\\Users\\jackson.ramalho\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jackson.ramalho\\Source\\Repos\\Estatistica101\\Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\jackson.ramalho\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -57,89 +56,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\User\\Source\\Repos\\Estatistica101\\Estatistica101\\Estatistica101.csproj": {
+    "C:\\Users\\jackson.ramalho\\Source\\Repos\\Estatistica101\\EstatisticaAPI\\EstatisticaAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Source\\Repos\\Estatistica101\\Estatistica101\\Estatistica101.csproj",
-        "projectName": "Estatistica101",
-        "projectPath": "C:\\Users\\User\\Source\\Repos\\Estatistica101\\Estatistica101\\Estatistica101.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Source\\Repos\\Estatistica101\\Estatistica101\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "netcoreapp3.1"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "netcoreapp3.1": {
-            "projectReferences": {
-              "C:\\Users\\User\\Source\\Repos\\Estatistica101\\Dominio\\Dominio.csproj": {
-                "projectPath": "C:\\Users\\User\\Source\\Repos\\Estatistica101\\Dominio\\Dominio.csproj"
-              },
-              "C:\\Users\\User\\Source\\Repos\\Estatistica101\\Exportacao\\Exportacao.csproj": {
-                "projectPath": "C:\\Users\\User\\Source\\Repos\\Estatistica101\\Exportacao\\Exportacao.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "netcoreapp3.1": {
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "C:\\Users\\User\\Source\\Repos\\Estatistica101\\EstatisticaAPI\\EstatisticaAPI.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Source\\Repos\\Estatistica101\\EstatisticaAPI\\EstatisticaAPI.csproj",
+        "projectUniqueName": "C:\\Users\\jackson.ramalho\\Source\\Repos\\Estatistica101\\EstatisticaAPI\\EstatisticaAPI.csproj",
         "projectName": "EstatisticaAPI",
-        "projectPath": "C:\\Users\\User\\Source\\Repos\\Estatistica101\\EstatisticaAPI\\EstatisticaAPI.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Source\\Repos\\Estatistica101\\EstatisticaAPI\\obj\\",
+        "projectPath": "C:\\Users\\jackson.ramalho\\Source\\Repos\\Estatistica101\\EstatisticaAPI\\EstatisticaAPI.csproj",
+        "packagesPath": "C:\\Users\\jackson.ramalho\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jackson.ramalho\\Source\\Repos\\Estatistica101\\EstatisticaAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\jackson.ramalho\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -153,8 +87,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\User\\Source\\Repos\\Estatistica101\\Estatistica101\\Estatistica101.csproj": {
-                "projectPath": "C:\\Users\\User\\Source\\Repos\\Estatistica101\\Estatistica101\\Estatistica101.csproj"
+              "C:\\Users\\jackson.ramalho\\Source\\Repos\\Estatistica101\\Exportacao\\Exportacao.csproj": {
+                "projectPath": "C:\\Users\\jackson.ramalho\\Source\\Repos\\Estatistica101\\Exportacao\\Exportacao.csproj"
               }
             }
           }
@@ -191,25 +125,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\User\\Source\\Repos\\Estatistica101\\Exportacao\\Exportacao.csproj": {
+    "C:\\Users\\jackson.ramalho\\Source\\Repos\\Estatistica101\\Exportacao\\Exportacao.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Source\\Repos\\Estatistica101\\Exportacao\\Exportacao.csproj",
+        "projectUniqueName": "C:\\Users\\jackson.ramalho\\Source\\Repos\\Estatistica101\\Exportacao\\Exportacao.csproj",
         "projectName": "Exportacao",
-        "projectPath": "C:\\Users\\User\\Source\\Repos\\Estatistica101\\Exportacao\\Exportacao.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Source\\Repos\\Estatistica101\\Exportacao\\obj\\",
+        "projectPath": "C:\\Users\\jackson.ramalho\\Source\\Repos\\Estatistica101\\Exportacao\\Exportacao.csproj",
+        "packagesPath": "C:\\Users\\jackson.ramalho\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jackson.ramalho\\Source\\Repos\\Estatistica101\\Exportacao\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\jackson.ramalho\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -223,8 +156,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\User\\Source\\Repos\\Estatistica101\\Dominio\\Dominio.csproj": {
-                "projectPath": "C:\\Users\\User\\Source\\Repos\\Estatistica101\\Dominio\\Dominio.csproj"
+              "C:\\Users\\jackson.ramalho\\Source\\Repos\\Estatistica101\\Dominio\\Dominio.csproj": {
+                "projectPath": "C:\\Users\\jackson.ramalho\\Source\\Repos\\Estatistica101\\Dominio\\Dominio.csproj"
               }
             }
           }
@@ -258,7 +191,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
         }
       }
     }

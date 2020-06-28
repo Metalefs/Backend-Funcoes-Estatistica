@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "tzbr+B8YVztxKBgxaHoizMBBc9vopiwxmoGrcKB1iT4UyugtCLyHXs/cxFEoQJqw4COjbQAGJ37f3neK4fJwZQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\jackson.ramalho\\Source\\Repos\\Estatistica101\\Exportacao\\Exportacao.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jackson.ramalho\\.nuget\\packages\\swiftexcel\\1.0.6\\swiftexcel.1.0.6.nupkg.sha512"
+  ],
+  "logs": []
+}

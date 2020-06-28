@@ -1,9 +1,10 @@
-﻿using System;
+﻿using Estatistica101.Classes;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
 
-namespace Estatistica101.Classes
+namespace Exportacao.Montador
 {
     public class MontadorEstatistica<T> where T: EstatisticaBase
     {

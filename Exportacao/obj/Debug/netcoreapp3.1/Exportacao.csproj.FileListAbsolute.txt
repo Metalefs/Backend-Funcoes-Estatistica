@@ -13,3 +13,15 @@ C:\Users\User\Source\Repos\Estatistica101\Exportacao\bin\Debug\netcoreapp3.1\Dom
 C:\Users\User\Source\Repos\Estatistica101\Exportacao\obj\Debug\netcoreapp3.1\Exportacao.csproj.CopyComplete
 C:\Users\User\Source\Repos\Estatistica101\Exportacao\obj\Debug\netcoreapp3.1\Exportacao.dll
 C:\Users\User\Source\Repos\Estatistica101\Exportacao\obj\Debug\netcoreapp3.1\Exportacao.pdb
+C:\Users\jackson.ramalho\Source\Repos\Estatistica101\Exportacao\bin\Debug\netcoreapp3.1\Exportacao.deps.json
+C:\Users\jackson.ramalho\Source\Repos\Estatistica101\Exportacao\bin\Debug\netcoreapp3.1\Exportacao.dll
+C:\Users\jackson.ramalho\Source\Repos\Estatistica101\Exportacao\bin\Debug\netcoreapp3.1\Exportacao.pdb
+C:\Users\jackson.ramalho\Source\Repos\Estatistica101\Exportacao\bin\Debug\netcoreapp3.1\Dominio.dll
+C:\Users\jackson.ramalho\Source\Repos\Estatistica101\Exportacao\bin\Debug\netcoreapp3.1\Dominio.pdb
+C:\Users\jackson.ramalho\Source\Repos\Estatistica101\Exportacao\obj\Debug\netcoreapp3.1\Exportacao.csprojAssemblyReference.cache
+C:\Users\jackson.ramalho\Source\Repos\Estatistica101\Exportacao\obj\Debug\netcoreapp3.1\Exportacao.AssemblyInfoInputs.cache
+C:\Users\jackson.ramalho\Source\Repos\Estatistica101\Exportacao\obj\Debug\netcoreapp3.1\Exportacao.AssemblyInfo.cs
+C:\Users\jackson.ramalho\Source\Repos\Estatistica101\Exportacao\obj\Debug\netcoreapp3.1\Exportacao.csproj.CoreCompileInputs.cache
+C:\Users\jackson.ramalho\Source\Repos\Estatistica101\Exportacao\obj\Debug\netcoreapp3.1\Exportacao.csproj.CopyComplete
+C:\Users\jackson.ramalho\Source\Repos\Estatistica101\Exportacao\obj\Debug\netcoreapp3.1\Exportacao.dll
+C:\Users\jackson.ramalho\Source\Repos\Estatistica101\Exportacao\obj\Debug\netcoreapp3.1\Exportacao.pdb

@@ -31,7 +31,15 @@ namespace EstatisticaAPI
                 var factory = x.GetRequiredService<IUrlHelperFactory>();
                 return factory.GetUrlHelper(actionContext);
             });
-
+            services.AddCors(options =>
+            {
+                options.AddDefaultPolicy(
+                    builder =>
+                    {
+                        builder.WithOrigins("http://localhost:4200",
+                                            "http://www.contoso.com");
+                    });
+            });
             services.AddControllers();
 
         }
@@ -54,7 +62,7 @@ namespace EstatisticaAPI
 
             app.UseHttpsRedirection();
             app.UseRouting();
-            app.UseCors("AllowAllOrigins");
+            app.UseCors();
 
             app.UseEndpoints(endpoints =>
             {

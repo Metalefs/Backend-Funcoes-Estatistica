@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "qm1ZLQPxeBpoh1X1XbElZSd8+iWkci3NNljEuvOcxppS272+P2KlhynrBOHwXr1Bxhiw6knbixlClIdMEM85NA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\jackson.ramalho\\Source\\Repos\\Estatistica101\\EstatisticaAPI\\EstatisticaAPI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jackson.ramalho\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\jackson.ramalho\\.nuget\\packages\\swiftexcel\\1.0.6\\swiftexcel.1.0.6.nupkg.sha512"
+  ],
+  "logs": []
+}

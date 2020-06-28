@@ -1,10 +1,12 @@
-﻿using System;
+﻿using Estatistica101;
+using Estatistica101.Classes;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
 
-namespace Estatistica101.Classes
+namespace Exportacao.Montador
 {
     public class MontadorTabelaDistribuicao
     {
