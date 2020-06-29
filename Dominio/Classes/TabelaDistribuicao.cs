@@ -67,18 +67,23 @@ namespace Estatistica101.Classes
             CalcularTodosOsIntervalos();
 
             Moda = new Moda(Valores);
+            Moda.Calcular();
             Passos.Append(Moda.Passos.ToString());
 
             Mediana = new Mediana(Valores);
+            Mediana.Calcular();
             Passos.Append(Mediana.Passos.ToString());
 
             DesvioPadrao = new DesvioPadrao(Valores);
+            DesvioPadrao.Calcular();
             Passos.Append(DesvioPadrao.Passos.ToString());
 
             Variancia = new Variancia(Valores);
+            Variancia.Calcular();
             Passos.Append(Variancia.Passos.ToString());
 
             Media = new Media(Valores);
+            Media.Calcular();
             Passos.Append(Media.Passos.ToString());
         }
 

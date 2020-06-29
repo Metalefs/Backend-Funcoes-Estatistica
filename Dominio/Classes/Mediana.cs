@@ -31,7 +31,11 @@ namespace Estatistica101.Classes
         public override float Calcular()
         {
             int pos = Math.Abs(Valores.Count / 2);
-            if (Valores.Count % 2 == 0)
+            if(Valores.Count == 1)
+            {
+                Resultado = Valores[0];
+            }
+            else if (Valores.Count % 2 == 0)
             {
                 Resultado = Valores[Valores.Count / 2];
             }

@@ -31,7 +31,7 @@ namespace Estatistica101.Classes
         public override float Calcular()
         {
             float Media = Valores.Average();
-            Passos.AppendLine($"Variância: medida de dispersão = E Raiz(Xi - Ma)² /n");
+            Passos.AppendLine($"Desvio Padrão: medida de dispersão = E Raiz(Xi - Ma)² /n");
             Passos.AppendLine($"Ma = {Media}");
             Passos.AppendLine($"N = {Valores.Count}");
 
