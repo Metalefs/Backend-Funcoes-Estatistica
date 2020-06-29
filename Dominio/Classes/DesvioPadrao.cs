@@ -31,20 +31,21 @@ namespace Estatistica101.Classes
         public override float Calcular()
         {
             float Media = Valores.Average();
-            Passos.AppendLine($"Desvio Padrão: medida de dispersão = E Raiz(Xi - Ma)² /n");
-            Passos.AppendLine($"Ma = {Media}");
-            Passos.AppendLine($"N = {Valores.Count}");
+            Passos.AppendLine($"Cálculo base: <img src='https://localhost:5001/Imagens/desvio-padrao-1.png'>");
+            Passos.AppendLine($"<br> Ma (Média Aritimética)= {Media}");
+            Passos.AppendLine($"<br> N (Quantidade de dados do conjunto)= {Valores.Count}");
 
             foreach (var Elemento in Valores)
             {
-                Passos.AppendLine($"Xi = {Elemento}");
+                Passos.AppendLine($"<br> Xi = {Elemento}");
 
                 Resultado += (Elemento - Media) * (Elemento - Media);
-                Passos.Append($" ({Elemento - Media}²) = {Resultado} +");
+                Passos.Append($"<br>  ({Elemento - Media}²) = {Resultado} +");
             }
 
-            Passos.AppendLine($"\n {Resultado} / {Valores.Count()} = {Resultado /= Valores.Count()}");
-            return (float)Math.Sqrt(Resultado);
+            Passos.AppendLine($"\n Raiz[{Resultado} / {Valores.Count()}] = {(float)Math.Sqrt(Resultado)}");
+            Resultado = (float)Math.Sqrt(Resultado);
+            return Resultado;
         }
     }
 }

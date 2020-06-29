@@ -42,6 +42,8 @@ namespace Estatistica101.Classes
         public DesvioPadrao DesvioPadrao { get; set; }
         public Variancia Variancia { get; set; }
 
+        public bool Simples { get; set; }
+
         public TabelaDistribuicao(List<float> Valores)
         {
             Passos = new StringBuilder();

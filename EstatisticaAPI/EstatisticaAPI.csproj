@@ -12,5 +12,9 @@
     <ProjectReference Include="..\Exportacao\Exportacao.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
 
 </Project>

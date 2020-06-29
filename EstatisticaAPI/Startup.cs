@@ -61,6 +61,7 @@ namespace EstatisticaAPI
             }
 
             app.UseHttpsRedirection();
+            app.UseStaticFiles();
             app.UseRouting();
             app.UseCors();
 
