@@ -81,7 +81,7 @@ namespace EstatisticaAPI.Controllers
             foreach (string valor in texto.Split(','))
             {
                 if (float.TryParse(valor, out float result))
-                    Valores.Add(float.Parse(valor));
+                    Valores.Add(float.Parse(valor, System.Globalization.CultureInfo.InvariantCulture));
             }
             return Valores;
         }
