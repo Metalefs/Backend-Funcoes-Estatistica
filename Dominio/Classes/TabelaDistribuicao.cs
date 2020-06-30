@@ -20,6 +20,7 @@ namespace Estatistica101.Classes
         };
 
         public List<float> Valores { get; private set; }
+        public List<KeyValuePair<float, int>> ValoresDistintos { get; set; }
         public float Amplitude { get; private set; }
         public int NumeroDeElementos { get; private set; }
         public float QuantidadeIntervalos { get; private set; }
@@ -53,7 +54,23 @@ namespace Estatistica101.Classes
             Fi = new List<float>();
             fr = new List<float>();
             Fr = new List<float>();
+            ValoresDistintos = new List<KeyValuePair<float, int>>();
             this.Valores = Valores;
+            var ValoresAgrupados = from s in Valores
+                                   group s by s into grp
+                                   select new
+                                   {
+                                       valor = grp.Key,
+                                       contagem = grp.Count()
+                                   };
+            foreach (var k in ValoresAgrupados.OrderBy(x=>x.valor))
+            {
+                ValoresDistintos.Add(new KeyValuePair<float, int>(k.valor, k.contagem));
+            }
+            if (ValoresDistintos.Count <= 10)
+                Simples = true;
+            else
+                Simples = false;
         }
 
         public void Calcular()
@@ -63,7 +80,10 @@ namespace Estatistica101.Classes
             ValorMaximo = CalcularValorMaximo(Valores);
 
             Amplitude = CalcularAmplitude(ValorMinimo, ValorMaximo);
-            QuantidadeIntervalos = CalcularQuantidadeIntervalos(NumeroDeElementos);
+            if (Simples)
+                QuantidadeIntervalos = ValoresDistintos.Count();
+            else
+                QuantidadeIntervalos = CalcularQuantidadeIntervalos(NumeroDeElementos);
             Intervalo = CalcularTamanhoIntervalo(Amplitude, QuantidadeIntervalos);
 
             CalcularTodosOsIntervalos();
@@ -146,21 +166,32 @@ namespace Estatistica101.Classes
         {
             float Abertura = ValorMinimo;
             Passos.AppendLine($"Calcular abertura intervalo: Valor minimo = {ValorMinimo}");
-            for (int i = 0; i <= QuantidadeIntervalos; i++)
+            for (int i = 0; i < QuantidadeIntervalos; i++)
             {
-                float FimIntervalo = Abertura + Intervalo;
-                intervalos.Add($"{Abertura.ToString("0.00")}|--{FimIntervalo.ToString("0.00")}");
-                Passos.AppendLine($"Calcular intervalo: Abertura ({Abertura}) | Fim = ({FimIntervalo}) (Abertura + Intervalo ({Intervalo})) = {intervalos[i]}");
+                try
+                {
+                    float FimIntervalo = Abertura + Intervalo;
+                    intervalos.Add($"{Abertura.ToString("0.00")}|--{FimIntervalo.ToString("0.00")}");
+                    Passos.AppendLine($"Calcular intervalo: Abertura ({Abertura}) | Fim = ({FimIntervalo}) (Abertura + Intervalo ({Intervalo})) = {intervalos[i]}");
 
-                xi.Add(CalcularMediaXI(Abertura, FimIntervalo));
+                    xi.Add(CalcularMediaXI(Abertura, FimIntervalo));
+                    if (i == QuantidadeIntervalos-1)
+                        fi.Add(ValoresDistintos.Last().Value);
+                    else
+                        fi.Add(CalcularFrequenciaSimples(Abertura, FimIntervalo));
 
-                fi.Add(CalcularFrequenciaSimples(Abertura, FimIntervalo));
-                Fi.Add(CalcularFrequenciaSimplesAcumulada(i));
+                    Fi.Add(CalcularFrequenciaSimplesAcumulada(i));
                 
-                fr.Add(CalcularFrequenciaRelativa(i));
-                Fr.Add(CalcularFrequenciaRelativaAcumulada(i));
+                    fr.Add(CalcularFrequenciaRelativa(i));
+                    Fr.Add(CalcularFrequenciaRelativaAcumulada(i));
 
                 Abertura = FimIntervalo;
+                }
+                catch (Exception ex)
+                {
+                    continue;
+                }
+                
             }
         }
 
@@ -173,7 +204,11 @@ namespace Estatistica101.Classes
 
         private float CalcularFrequenciaSimples(float Abertura, float Fim)
         {
-            float resultado = Valores.Where(x => x >= Abertura && x < Fim).Count();
+            float resultado;
+            if (!Simples)
+                resultado = Valores.Where(x => x >= Abertura && x <= Fim).Count();
+            else
+                resultado = ValoresDistintos.Where(x => x.Key >= Abertura && x.Key <= Math.Abs(Fim)).Single().Value;
             Passos.AppendLine($"Calcular Frequencia Simples: Contagem de valores entre {Abertura} e {Fim} = {resultado}");
             return resultado;
         }
