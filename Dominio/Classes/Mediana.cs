@@ -43,9 +43,8 @@ namespace Estatistica101.Classes
             else
             {
                 Resultado = Math.Abs((Valores[pos] + Valores[pos + 1])/ 2);
-                Passos.AppendLine($"Lista de contagem par = ({Valores[pos]} + {Valores[pos + 1]}) / 2");
+                Passos.AppendLine($"Lista de contagem par =$$ \\dfrac{{ {{ {Valores[pos]} + {Valores[pos + 1]} }}  }} {{2}} = \\dfrac{{ {{ {Valores[pos] + Valores[pos + 1]} }}  }} {{2}} = {Resultado} $$");
             }
-            Passos.AppendLine($" = {Resultado}");
             return Resultado;
         }
     }

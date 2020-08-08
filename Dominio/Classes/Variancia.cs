@@ -30,19 +30,19 @@ namespace Estatistica101.Classes
         public override float Calcular()
         {
             float Media = Valores.Average();
-            Passos.AppendLine($"Variância: medida de dispersão = E(Xi - Ma²)/n");
-            Passos.AppendLine($"Ma = {Media}");
-            Passos.AppendLine($"N = {Valores.Count}");
+            Passos.AppendLine($"Variância: medida de dispersão =  $$ \\sum_ {{Xi - Ma²}} \\over n $$ <br>");
+            Passos.AppendLine($"$$ Ma = {Media} $$ <br>");
+            Passos.AppendLine($"$$ N = {Valores.Count} $$ <hr>");
 
             foreach (var Elemento in Valores)
             {
-                Passos.AppendLine($"Xi = {Elemento}");
+                Passos.AppendLine($"$$ Xi = {Elemento} $$ ");
 
                 Resultado += (Elemento - Media) * (Elemento - Media);
-                Passos.Append($" ({Elemento - Media}²) = {Resultado} +");
+                Passos.Append(" $$ " + Elemento +" - "+ Media.ToString("F2") + "^ 2 = " + Resultado+ " + $$  <hr>");
             }
 
-            Passos.AppendLine($"\n {Resultado} / {Valores.Count()} = {Resultado /= Valores.Count()}");
+            Passos.AppendLine($"\n $$ Resultado = \\dfrac{{ {{{Resultado}}} }} {{{Valores.Count()}}} = {{{Resultado /= Valores.Count()}}} $$");
 
             return Resultado;
         }

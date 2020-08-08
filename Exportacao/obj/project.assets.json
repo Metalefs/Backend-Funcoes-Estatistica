@@ -51,23 +51,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\jackson.ramalho\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\Home\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jackson.ramalho\\Source\\Repos\\Estatistica101\\Exportacao\\Exportacao.csproj",
+      "projectUniqueName": "C:\\Users\\Home\\Estatistica101\\Exportacao\\Exportacao.csproj",
       "projectName": "Exportacao",
-      "projectPath": "C:\\Users\\jackson.ramalho\\Source\\Repos\\Estatistica101\\Exportacao\\Exportacao.csproj",
-      "packagesPath": "C:\\Users\\jackson.ramalho\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jackson.ramalho\\Source\\Repos\\Estatistica101\\Exportacao\\obj\\",
+      "projectPath": "C:\\Users\\Home\\Estatistica101\\Exportacao\\Exportacao.csproj",
+      "packagesPath": "C:\\Users\\Home\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Home\\Estatistica101\\Exportacao\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
+        "C:\\Microsoft\\Xamarin\\NuGet\\",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\jackson.ramalho\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Home\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -81,8 +83,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\jackson.ramalho\\Source\\Repos\\Estatistica101\\Dominio\\Dominio.csproj": {
-              "projectPath": "C:\\Users\\jackson.ramalho\\Source\\Repos\\Estatistica101\\Dominio\\Dominio.csproj"
+            "C:\\Users\\Home\\Estatistica101\\Dominio\\Dominio.csproj": {
+              "projectPath": "C:\\Users\\Home\\Estatistica101\\Dominio\\Dominio.csproj"
             }
           }
         }
