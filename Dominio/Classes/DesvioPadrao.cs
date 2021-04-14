@@ -31,17 +31,22 @@ namespace Estatistica101.Classes
         public override float Calcular()
         {
             float Media = Valores.Average();
-            Passos.AppendLine($"Cálculo base: <img src='https://localhost:5001/Imagens/desvio-padrao-1.png'>");
-            Passos.AppendLine($"$$ Ma = {Media} $$ <br>");
-            Passos.AppendLine($"$$ N = {Valores.Count} $$ <hr>");
-
+            Passos.AppendLine($"O desvio padrão é uma medida que expressa o grau de dispersão de um conjunto de dados:");
+            Passos.AppendLine($"<br><img src='https://dados-agrupados-api.herokuapp.com/Imagens/desvio-padrao-1.png'>");
+            Passos.AppendLine($"<br>Obter a média aritimética dos dados (Ma) = {Media}");
+            Passos.AppendLine($"<br>Obter o número de termos (N) = {Valores.Count}");
+            Passos.AppendLine($"<hr>(Somátorio de Xi = 1 até a posição N ({Valores.Count}) vezes a média ({Media})) elevado ao quadrado<hr>");
+            int xi = 1;
             foreach (var Elemento in Valores)
             {
-                Passos.AppendLine($"$$ Xi = {Elemento} $$ ");
-
-                Resultado += (Elemento - Media) * (Elemento - Media);
-                Passos.Append(" $$ (" + Elemento + " - " + Media.ToString("F2") + ")^ 2 = " + Resultado + " + $$  <hr>");
+                Passos.AppendLine($"termo (X{xi}) = {Elemento} <br>");
+                var operacao = (Elemento - Media) * (Elemento - Media);
+                Resultado += operacao;
+                Passos.Append($" $$ {(xi > 1 ? '+' : ' ')}(" + Elemento + " - " + Media.ToString("F2") + $")^ 2 [{operacao}]= " + Resultado + "  $$  <hr>");
+                xi++;
             }
+
+            Passos.AppendLine($"Obter a raíz quadrada da divisão do somatório ({Resultado}) pelo numero de termos ({Valores.Count}) <hr>");
 
             Passos.AppendLine($"\n $$ Resultado = \\sqrt {{ \\dfrac{{ {{{Resultado}}} }} {{{Valores.Count()}}}  }} = {{{(float)Math.Sqrt(Resultado)}}}$$");
             Resultado = (float)Math.Sqrt(Resultado);

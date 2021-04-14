@@ -31,7 +31,8 @@ namespace Estatistica101.Classes
         public override float Calcular()
         {
             int pos = Math.Abs((Valores.Count / 2)-1);
-            Passos.AppendLine($"Mediana: Valores no centro da lista <br>");
+            string ValoresCSV = String.Join(",", Valores);
+            Passos.AppendLine($"Elementos: {ValoresCSV} <hr>");
             if (Valores.Count == 1)
             {
                 Resultado = Valores[0];
@@ -43,8 +44,9 @@ namespace Estatistica101.Classes
             else
             {
                 Resultado = Math.Abs((Valores[pos] + Valores[pos + 1])/ 2);
-                Passos.AppendLine($"Lista de contagem par =$$ \\dfrac{{ {{ {Valores[pos]} + {Valores[pos + 1]} }}  }} {{2}} = \\dfrac{{ {{ {Valores[pos] + Valores[pos + 1]} }}  }} {{2}} = {Resultado} $$");
+                Passos.AppendLine($"Lista de contagem par: $$ \\dfrac{{ {{ {Valores[pos]} + {Valores[pos + 1]} }}  }} {{2}} = \\dfrac{{ {{ {Valores[pos] + Valores[pos + 1]} }}  }} {{2}} = {Resultado} $$");
             }
+            Passos.AppendLine($"Mediana: Valores no centro da lista : {Resultado}<br>");
             return Resultado;
         }
     }

@@ -30,19 +30,21 @@ namespace Estatistica101.Classes
         public override float Calcular()
         {
             float Media = Valores.Average();
-            Passos.AppendLine($"Variância: medida de dispersão =  $$ \\sum_ {{Xi - Ma²}} \\over n $$ <br>");
-            Passos.AppendLine($"$$ Ma = {Media} $$ <br>");
-            Passos.AppendLine($"$$ N = {Valores.Count} $$ <hr>");
-
+            Passos.AppendLine($"Variância: A variância mede quão dispersos estão os dados na amostra. =  $$ \\sum_ {{Xi - Ma²}} \\over n $$ <br>");
+            Passos.AppendLine($"Calcule a média (Ma) = {Media}<br>");
+            Passos.AppendLine($"Calcule o número de termos (N) = {Valores.Count}<hr>");
+            int xi = 1;
             foreach (var Elemento in Valores)
             {
-                Passos.AppendLine($"$$ Xi = {Elemento} $$ ");
+                Passos.AppendLine($"( elemento na posição (X{xi}): {Elemento} - Média aritimética: {Media} ) elevado ao quadrado ");
 
-                Resultado += (Elemento - Media) * (Elemento - Media);
-                Passos.Append(" $$ " + Elemento +" - "+ Media.ToString("F2") + "^ 2 = " + Resultado+ " + $$  <hr>");
+                var operacao = (Elemento - Media) * (Elemento - Media);
+                Resultado += operacao;
+                Passos.Append(" $$ (" + Elemento +" - "+ Media.ToString("F2") + $")^ 2 [{operacao}]= " + Resultado+ " + $$  <hr>");
+                xi++;
             }
 
-            Passos.AppendLine($"\n $$ Resultado = \\dfrac{{ {{{Resultado}}} }} {{{Valores.Count()}}} = {{{Resultado /= Valores.Count()}}} $$");
+            Passos.AppendLine($"\n $$ Resultado: \\dfrac{{ {{{Resultado}}} }} {{{Valores.Count()}}} = {{{Resultado /= Valores.Count()}}} $$");
 
             return Resultado;
         }

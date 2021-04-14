@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace Estatistica101.Classes
@@ -33,13 +34,11 @@ namespace Estatistica101.Classes
             Resultado = Valores.Average();
             Passos.AppendLine($"Média Aritimética: $$ \\sum {{ Xi }} \\over n $$ <br>");
             Passos.AppendLine($"Elementos:");
-            for (int i = 0; i < Valores.Count; i++)
-            {
-                Passos.AppendLine(Valores[i].ToString());
-                if (i < Valores.Count - 1)
-                    Passos.AppendLine(", ");
-            }
-            Passos.AppendLine("$$ Soma elementos: ");
+
+            string ValoresCSV = String.Join(",", Valores);
+            Passos.AppendLine($"{ValoresCSV} ");
+
+            Passos.AppendLine("<br>Some todos os termos: ");
             for (int i = 0; i< Valores.Count; i++)
             {
                 Passos.AppendLine(Valores[i].ToString());
@@ -47,8 +46,9 @@ namespace Estatistica101.Classes
                     Passos.AppendLine(" +");
             }
             Passos.AppendLine(" = "+Valores.Sum().ToString());
-            Passos.AppendLine("$$");
-            Passos.AppendLine($"$$ Resultado : \\dfrac{{ {{{Valores.Sum()}}} }} {{{Valores.Count()}}} = {Resultado} $$");
+            Passos.AppendLine($"<br>Divida o resultado ({Valores.Sum()}) pelo numero de termos ({Valores.Count()}) ");
+            Passos.AppendLine($"<br>Resultado :");
+            Passos.AppendLine($"$$ \\dfrac{{ {{{Valores.Sum()}}} }} {{{Valores.Count()}}} = {Resultado} $$");
             return Resultado;
         }
     }

@@ -21,7 +21,7 @@ namespace EstatisticaAPI.Controllers
         [HttpGet("TabelaDistribuicao/{id}")]
         public IActionResult TabelaDistribuicao(string id)
         {
-            string retorno = JsonConvert.SerializeObject(ObterTabelaDistribuicao(id));
+            string retorno = JsonConvert.SerializeObject(ObterTabelaDistribuicao(id), new Newtonsoft.Json.Converters.StringEnumConverter());
             return new JsonResult(retorno);
         }
         public static string ObterTextoTabelaDistribuicao(string texto)
