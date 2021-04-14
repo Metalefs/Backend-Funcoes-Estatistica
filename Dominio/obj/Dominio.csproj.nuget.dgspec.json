@@ -1,26 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Home\\Estatistica101\\Dominio\\Dominio.csproj": {}
+    "C:\\Users\\Hermes\\source\\repos\\Estatistica101\\Dominio\\Dominio.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Home\\Estatistica101\\Dominio\\Dominio.csproj": {
+    "C:\\Users\\Hermes\\source\\repos\\Estatistica101\\Dominio\\Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Home\\Estatistica101\\Dominio\\Dominio.csproj",
+        "projectUniqueName": "C:\\Users\\Hermes\\source\\repos\\Estatistica101\\Dominio\\Dominio.csproj",
         "projectName": "Dominio",
-        "projectPath": "C:\\Users\\Home\\Estatistica101\\Dominio\\Dominio.csproj",
-        "packagesPath": "C:\\Users\\Home\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Home\\Estatistica101\\Dominio\\obj\\",
+        "projectPath": "C:\\Users\\Hermes\\source\\repos\\Estatistica101\\Dominio\\Dominio.csproj",
+        "packagesPath": "C:\\Users\\Hermes\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Hermes\\source\\repos\\Estatistica101\\Dominio\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Home\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\Hermes\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -31,6 +26,7 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -42,6 +38,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "imports": [
             "net461",
             "net462",
@@ -57,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

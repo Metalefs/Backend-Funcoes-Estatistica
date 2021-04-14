@@ -1,0 +1,52 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Exportacao/1.0.0": {
+        "dependencies": {
+          "Dominio": "1.0.0",
+          "SwiftExcel": "1.0.6"
+        },
+        "runtime": {
+          "Exportacao.dll": {}
+        }
+      },
+      "SwiftExcel/1.0.6": {
+        "runtime": {
+          "lib/netstandard2.0/SwiftExcel.dll": {
+            "assemblyVersion": "1.0.6.0",
+            "fileVersion": "1.0.6.0"
+          }
+        }
+      },
+      "Dominio/1.0.0": {
+        "runtime": {
+          "Dominio.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Exportacao/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SwiftExcel/1.0.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rIJcYMfD/0lgcRv52KQAfdO4EQmpSHQr61D5ZN458FdaJLj4zEMhEZFAJ33olyDyEtEBLS2ADCWi8XUPHGHLKg==",
+      "path": "swiftexcel/1.0.6",
+      "hashPath": "swiftexcel.1.0.6.nupkg.sha512"
+    },
+    "Dominio/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "evxFewslkTzc5hp6fkGdiUsjBsQJTet4ALGoDQInsQshsTM+dKBhLBwqccvQHIQoZPFx6hKB2YtdJPThXJhySQ==",
+  "dgSpecHash": "J2OQF1WqQ7szWC+Tm5CeMFIX1wFEQH5EnklLTTHqg0eQVp32HEx/WuuNgpqTFmU7V/pdeNzQ1gbDHyv14qhtmA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Home\\Estatistica101\\EstatisticaAPI\\EstatisticaAPI.csproj",
+  "projectFilePath": "C:\\Users\\Hermes\\source\\repos\\Estatistica101\\EstatisticaAPI\\EstatisticaAPI.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Home\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
-    "C:\\Users\\Home\\.nuget\\packages\\swiftexcel\\1.0.6\\swiftexcel.1.0.6.nupkg.sha512"
+    "C:\\Users\\Hermes\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.13\\microsoft.visualstudio.azure.containers.tools.targets.1.10.13.nupkg.sha512",
+    "C:\\Users\\Hermes\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\Hermes\\.nuget\\packages\\swiftexcel\\1.0.6\\swiftexcel.1.0.6.nupkg.sha512"
   ],
   "logs": []
 }

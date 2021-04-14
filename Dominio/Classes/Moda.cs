@@ -59,7 +59,7 @@ namespace Estatistica101.Classes
                     case 3:
                         Classificacao = ClassificacaoModa.Trimodal;
                         break;
-                    case 4:
+                    default:
                         Classificacao = ClassificacaoModa.Polimodal;
                         break;
                 }

@@ -1,0 +1,12 @@
+C:\Users\Hermes\Source\Repos\Estatistica101\Exportacao\bin\Release\netcoreapp3.1\Exportacao.deps.json
+C:\Users\Hermes\Source\Repos\Estatistica101\Exportacao\bin\Release\netcoreapp3.1\Exportacao.dll
+C:\Users\Hermes\Source\Repos\Estatistica101\Exportacao\bin\Release\netcoreapp3.1\Exportacao.pdb
+C:\Users\Hermes\Source\Repos\Estatistica101\Exportacao\bin\Release\netcoreapp3.1\Dominio.dll
+C:\Users\Hermes\Source\Repos\Estatistica101\Exportacao\bin\Release\netcoreapp3.1\Dominio.pdb
+C:\Users\Hermes\Source\Repos\Estatistica101\Exportacao\obj\Release\netcoreapp3.1\Exportacao.csprojAssemblyReference.cache
+C:\Users\Hermes\Source\Repos\Estatistica101\Exportacao\obj\Release\netcoreapp3.1\Exportacao.AssemblyInfoInputs.cache
+C:\Users\Hermes\Source\Repos\Estatistica101\Exportacao\obj\Release\netcoreapp3.1\Exportacao.AssemblyInfo.cs
+C:\Users\Hermes\Source\Repos\Estatistica101\Exportacao\obj\Release\netcoreapp3.1\Exportacao.csproj.CoreCompileInputs.cache
+C:\Users\Hermes\Source\Repos\Estatistica101\Exportacao\obj\Release\netcoreapp3.1\Exportacao.csproj.CopyComplete
+C:\Users\Hermes\Source\Repos\Estatistica101\Exportacao\obj\Release\netcoreapp3.1\Exportacao.dll
+C:\Users\Hermes\Source\Repos\Estatistica101\Exportacao\obj\Release\netcoreapp3.1\Exportacao.pdb

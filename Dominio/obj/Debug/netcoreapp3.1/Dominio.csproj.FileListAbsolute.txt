@@ -24,3 +24,12 @@ C:\Users\Home\Estatistica101\Dominio\obj\Debug\netcoreapp3.1\Dominio.AssemblyInf
 C:\Users\Home\Estatistica101\Dominio\obj\Debug\netcoreapp3.1\Dominio.csproj.CoreCompileInputs.cache
 C:\Users\Home\Estatistica101\Dominio\obj\Debug\netcoreapp3.1\Dominio.dll
 C:\Users\Home\Estatistica101\Dominio\obj\Debug\netcoreapp3.1\Dominio.pdb
+C:\Users\Hermes\Source\Repos\Estatistica101\Dominio\bin\Debug\netcoreapp3.1\Dominio.deps.json
+C:\Users\Hermes\Source\Repos\Estatistica101\Dominio\bin\Debug\netcoreapp3.1\Dominio.dll
+C:\Users\Hermes\Source\Repos\Estatistica101\Dominio\bin\Debug\netcoreapp3.1\Dominio.pdb
+C:\Users\Hermes\Source\Repos\Estatistica101\Dominio\obj\Debug\netcoreapp3.1\Dominio.AssemblyInfoInputs.cache
+C:\Users\Hermes\Source\Repos\Estatistica101\Dominio\obj\Debug\netcoreapp3.1\Dominio.AssemblyInfo.cs
+C:\Users\Hermes\Source\Repos\Estatistica101\Dominio\obj\Debug\netcoreapp3.1\Dominio.csproj.CoreCompileInputs.cache
+C:\Users\Hermes\Source\Repos\Estatistica101\Dominio\obj\Debug\netcoreapp3.1\Dominio.dll
+C:\Users\Hermes\Source\Repos\Estatistica101\Dominio\obj\Debug\netcoreapp3.1\Dominio.pdb
+C:\Users\Hermes\source\repos\Estatistica101\Dominio\obj\Debug\netcoreapp3.1\Dominio.csprojAssemblyReference.cache

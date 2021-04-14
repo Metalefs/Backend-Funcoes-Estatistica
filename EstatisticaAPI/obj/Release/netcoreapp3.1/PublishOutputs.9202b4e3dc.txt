@@ -1,0 +1,14 @@
+C:\Users\Hermes\source\repos\Estatistica101\EstatisticaAPI\out\EstatisticaAPI.exe
+C:\Users\Hermes\source\repos\Estatistica101\EstatisticaAPI\out\wwwroot\Imagens\desvio-padrao-1.png
+C:\Users\Hermes\source\repos\Estatistica101\EstatisticaAPI\out\appsettings.Development.json
+C:\Users\Hermes\source\repos\Estatistica101\EstatisticaAPI\out\appsettings.json
+C:\Users\Hermes\source\repos\Estatistica101\EstatisticaAPI\out\EstatisticaAPI.dll
+C:\Users\Hermes\source\repos\Estatistica101\EstatisticaAPI\out\EstatisticaAPI.deps.json
+C:\Users\Hermes\source\repos\Estatistica101\EstatisticaAPI\out\EstatisticaAPI.runtimeconfig.json
+C:\Users\Hermes\source\repos\Estatistica101\EstatisticaAPI\out\EstatisticaAPI.pdb
+C:\Users\Hermes\source\repos\Estatistica101\EstatisticaAPI\out\Newtonsoft.Json.dll
+C:\Users\Hermes\source\repos\Estatistica101\EstatisticaAPI\out\SwiftExcel.dll
+C:\Users\Hermes\source\repos\Estatistica101\EstatisticaAPI\out\Dominio.dll
+C:\Users\Hermes\source\repos\Estatistica101\EstatisticaAPI\out\Exportacao.dll
+C:\Users\Hermes\source\repos\Estatistica101\EstatisticaAPI\out\Exportacao.pdb
+C:\Users\Hermes\source\repos\Estatistica101\EstatisticaAPI\out\Dominio.pdb
