@@ -76,7 +76,7 @@ namespace Estatistica101.Classes
         public void Calcular()
         {
             string ValoresCSV = String.Join(",", Valores.OrderBy(x=>x));
-            Passos.AppendLine($"<strong>Elementos: </strong> {ValoresCSV} <br>");
+            Passos.AppendLine($"<strong>Elementos (N): </strong> {ValoresCSV} <br>");
 
             NumeroDeElementos = Valores.Count;
             ValorMinimo = CalcularValorMinimo(Valores);
@@ -127,7 +127,7 @@ namespace Estatistica101.Classes
         private float CalcularAmplitude(float ValorMinimo, float ValorMaximo)
         {
             Amplitude = ValorMaximo - ValorMinimo;
-            Passos.AppendLine($"<strong>Calcular Amplitude</strong>: [ValorMaximo] {ValorMaximo} - [ValorMinimo] {ValorMinimo} = {Amplitude} <br>");
+            Passos.AppendLine($"<strong>Calcular Amplitude (A)</strong>: [ValorMaximo] {ValorMaximo} - [ValorMinimo] {ValorMinimo} = {Amplitude} <br>");
             return Amplitude;
         }
 
@@ -154,21 +154,21 @@ namespace Estatistica101.Classes
                     QuantidadeIntervalos = (float)Math.Sqrt(NumeroDeElementos);
                     break;
             }
-            Passos.AppendLine($"<strong>Calcular quantidade de intervalos</strong>: Se 5 elementos = 2, \n10 elementos = 4, \n25 elementos = 6, \n50 elementos = 8, \n100 elementos = 10 \n Se não, Raiz quadrada da quantidade de elementos = Raiz {NumeroDeElementos} -- ({QuantidadeIntervalos}) <br>");
+            Passos.AppendLine($"<strong>Calcular Quantidade de Intervalos</strong>: Se 5 elementos = 2, \n10 elementos = 4, \n25 elementos = 6, \n50 elementos = 8, \n100 elementos = 10 \n Se não, Raiz quadrada da quantidade de elementos = Raiz {NumeroDeElementos} -- ({QuantidadeIntervalos}) <br>");
             return QuantidadeIntervalos;
         }
 
         private float CalcularTamanhoIntervalo(float Amplitude, float QuantidadeIntervalos)
         {
             Intervalo = Amplitude / QuantidadeIntervalos;
-            Passos.AppendLine($"<strong>Calcular tamanho do intervalo</strong>: [Amplitude] {Amplitude} / [Elementos distintos] {QuantidadeIntervalos} = {Intervalo} <br>");
+            Passos.AppendLine($"<strong>Calcular Tamanho do Intervalo</strong>: [Amplitude] {Amplitude} / [Elementos distintos] {QuantidadeIntervalos} = {Intervalo} <br>");
             return Intervalo;
         }
 
         private void  CalcularTodosOsIntervalos()
         {
             float Abertura = ValorMinimo;
-            Passos.AppendLine($"<strong>Calcular abertura do intervalo</strong>: Começa pelo Valor Minimo = [{ValorMinimo}] <hr>");
+            Passos.AppendLine($"<strong>Calcular Abertura do Intervalo</strong>: Começa pelo Valor Minimo = [{ValorMinimo}] <hr>");
             for (int i = 0; i < QuantidadeIntervalos; i++)
             {
                 try
@@ -191,7 +191,7 @@ namespace Estatistica101.Classes
                     }
                     else
                     {
-                        Passos.AppendLine($"<strong>Freq. Simples de <em>(x{i+1})[{ValoresDistintos[i].Key}]</em> </strong>: {ValoresDistintos[i].Value}<br>");
+                        Passos.AppendLine($"<strong>Freq. Simples de <em>[x{i + 1}] {ValoresDistintos[i].Key} </em> </strong>: {ValoresDistintos[i].Value}<br>");
                         xi.Add(ValoresDistintos[i].Key);
                         fi.Add(ValoresDistintos[i].Value);
 
@@ -230,14 +230,14 @@ namespace Estatistica101.Classes
             else
                 resultado = fi[pos];
 
-            Passos.AppendLine($"<strong>Freq. Simples Acum. de (x{pos + 1})[{ValoresDistintos[pos].Key}] </strong>: {resultado} <hr>");
+            Passos.AppendLine($"<strong>Freq. Simples Acum. de <em>[x{pos + 1}]  {ValoresDistintos[pos].Key} </em> </strong>: {resultado} <hr>");
             return resultado;
         }
 
         private float CalcularFrequenciaRelativa(int pos)
         {
             float Fr = fi[pos] / NumeroDeElementos * 100;
-            Passos.AppendLine($"<strong><em>Freq. Relativa de (x{pos + 1})[{ValoresDistintos[pos].Key}] </em></strong>: {Fr}% <br>");
+            Passos.AppendLine($"<strong><em>Freq. Relativa de [x{pos + 1}] {ValoresDistintos[pos].Key} </em></strong>: [Fi de {ValoresDistintos[pos].Value}] {fi[pos]} / [N] {NumeroDeElementos} * 100 = {Fr} <br>");
             return Fr;
         }
 
@@ -249,7 +249,7 @@ namespace Estatistica101.Classes
             else
                 resultado = fr[pos];
 
-            Passos.AppendLine($"<strong><em>Freq. Relativa Acumu. de (x{pos + 1})[{ValoresDistintos[pos].Key}] </em></strong>: {resultado} <hr>");
+            Passos.AppendLine($"<strong><em>Freq. Relativa Acumu. de {ValoresDistintos[pos].Key} [x{pos + 1}] </em></strong>: {resultado}% <hr>");
             return resultado;
         }
 
