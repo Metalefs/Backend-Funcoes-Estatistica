@@ -39,17 +39,17 @@ namespace Estatistica101.Classes
             int xi = 1;
             foreach (var Elemento in Valores)
             {
-                Passos.AppendLine($"Termo (X{xi}) = {Elemento} <br>");
+                Passos.AppendLine($"Termo (x{xi}) = {Elemento} <br>");
                 var operacao = (Elemento - Media) * (Elemento - Media);
                 Resultado += operacao;
-                Passos.Append($" $$ {(xi > 1 ? '+' : ' ')}(" + Elemento + " - " + Media.ToString("F2") + $")^ 2 [{operacao}]= " + Resultado + "  $$  <hr>");
+                Passos.Append($"$$ {(xi > 1 ? '+' : ' ')}(" + Elemento + " - " + Media.ToString("F2") + $")^ 2 = {operacao} ..." + Resultado + "  $$  <hr>");
                 xi++;
             }
 
             Passos.AppendLine($"Obter a raíz quadrada da divisão do somatório ({Resultado}) pelo numero de termos ({Valores.Count}) <hr>");
-
-            Passos.AppendLine($"\n $$ Resultado = \\sqrt {{ \\dfrac{{ {{{Resultado}}} }} {{{Valores.Count()}}}  }} = {{{(float)Math.Sqrt(Resultado)}}}$$");
-            Resultado = (float)Math.Sqrt(Resultado);
+            var operacaoFinal = (float)Math.Sqrt(Resultado / Valores.Count());
+            Passos.AppendLine($"\n $$ Resultado = \\sqrt {{ \\dfrac{{ {{{Resultado}}} }} {{{Valores.Count()}}}  }} = {{{operacaoFinal}}}$$");
+            Resultado = operacaoFinal;
             return Resultado;
         }
     }

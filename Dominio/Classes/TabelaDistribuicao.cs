@@ -93,23 +93,23 @@ namespace Estatistica101.Classes
 
             Moda = new Moda(Valores);
             Moda.Calcular();
-            Passos.Append(Moda.Passos.ToString());
+            //Passos.Append(Moda.Passos.ToString());
 
             Mediana = new Mediana(Valores);
             Mediana.Calcular();
-            Passos.Append(Mediana.Passos.ToString());
+            //Passos.Append(Mediana.Passos.ToString());
 
             DesvioPadrao = new DesvioPadrao(Valores);
             DesvioPadrao.Calcular();
-            Passos.Append(DesvioPadrao.Passos.ToString());
+            //Passos.Append(DesvioPadrao.Passos.ToString());
 
             Variancia = new Variancia(Valores);
             Variancia.Calcular();
-            Passos.Append(Variancia.Passos.ToString());
+            //Passos.Append(Variancia.Passos.ToString());
 
             Media = new Media(Valores);
             Media.Calcular();
-            Passos.Append(Media.Passos.ToString());
+            //Passos.Append(Media.Passos.ToString());
         }
 
         private float CalcularValorMinimo(List<float> Valores)
@@ -161,7 +161,7 @@ namespace Estatistica101.Classes
         private float CalcularTamanhoIntervalo(float Amplitude, float QuantidadeIntervalos)
         {
             Intervalo = Amplitude / QuantidadeIntervalos;
-            Passos.AppendLine($"<strong>Calcular tamanho do intervalo</strong>: [Amplitude] {Amplitude} / [Quantidade de intervalos] {QuantidadeIntervalos} = {Intervalo} <br>");
+            Passos.AppendLine($"<strong>Calcular tamanho do intervalo</strong>: [Amplitude] {Amplitude} / [Elementos distintos] {QuantidadeIntervalos} = {Intervalo} <br>");
             return Intervalo;
         }
 

@@ -36,11 +36,11 @@ namespace Estatistica101.Classes
             int xi = 1;
             foreach (var Elemento in Valores)
             {
-                Passos.AppendLine($"( elemento na posição (X{xi}): {Elemento} - Média aritimética: {Media} ) elevado ao quadrado ");
+                Passos.AppendLine($"( [elemento na posição (x{xi})] <strong>{Elemento} - </strong> [Ma] <strong>{Media}</strong> ) elevado ao quadrado ");
 
                 var operacao = (Elemento - Media) * (Elemento - Media);
                 Resultado += operacao;
-                Passos.Append(" $$ (" + Elemento +" - "+ Media.ToString("F2") + $")^ 2 [{operacao}]= " + Resultado+ " + $$  <hr>");
+                Passos.Append(" $$ (" + Elemento +" - "+ Media.ToString("F2") + $")^ 2 = {operacao} ..." + Resultado+ " + $$  <hr>");
                 xi++;
             }
 
