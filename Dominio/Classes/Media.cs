@@ -36,9 +36,9 @@ namespace Estatistica101.Classes
             Passos.AppendLine($"Elementos:");
 
             string ValoresCSV = String.Join(",", Valores);
-            Passos.AppendLine($"{ValoresCSV} ");
+            Passos.AppendLine($"{ValoresCSV} <br>");
 
-            Passos.AppendLine("<br>Some todos os termos: ");
+            Passos.AppendLine("Some todos os termos: ");
             for (int i = 0; i< Valores.Count; i++)
             {
                 Passos.AppendLine(Valores[i].ToString());

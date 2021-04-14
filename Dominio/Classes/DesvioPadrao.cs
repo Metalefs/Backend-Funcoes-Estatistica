@@ -39,7 +39,7 @@ namespace Estatistica101.Classes
             int xi = 1;
             foreach (var Elemento in Valores)
             {
-                Passos.AppendLine($"termo (X{xi}) = {Elemento} <br>");
+                Passos.AppendLine($"Termo (X{xi}) = {Elemento} <br>");
                 var operacao = (Elemento - Media) * (Elemento - Media);
                 Resultado += operacao;
                 Passos.Append($" $$ {(xi > 1 ? '+' : ' ')}(" + Elemento + " - " + Media.ToString("F2") + $")^ 2 [{operacao}]= " + Resultado + "  $$  <hr>");

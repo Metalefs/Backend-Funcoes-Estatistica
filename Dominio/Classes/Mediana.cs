@@ -43,10 +43,12 @@ namespace Estatistica101.Classes
             }
             else
             {
+                Passos.AppendLine($"Lista de contagem par: <hr>");
+                Passos.AppendLine($"Some os dois elementos do centro ({Valores[pos]} e {Valores[pos + 1]}) e divida por 2(dois): <br>");
                 Resultado = Math.Abs((Valores[pos] + Valores[pos + 1])/ 2);
-                Passos.AppendLine($"Lista de contagem par: $$ \\dfrac{{ {{ {Valores[pos]} + {Valores[pos + 1]} }}  }} {{2}} = \\dfrac{{ {{ {Valores[pos] + Valores[pos + 1]} }}  }} {{2}} = {Resultado} $$");
+                Passos.AppendLine($"$$ \\dfrac{{ {{ {Valores[pos]} + {Valores[pos + 1]} }}  }} {{2}} = \\dfrac{{ {{ {Valores[pos] + Valores[pos + 1]} }}  }} {{2}} = {Resultado} $$");
             }
-            Passos.AppendLine($"Mediana: Valores no centro da lista : {Resultado}<br>");
+            Passos.AppendLine($"Mediana: Valores no centro da lista : {Resultado} <br>");
             return Resultado;
         }
     }
