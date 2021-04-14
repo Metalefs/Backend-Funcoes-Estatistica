@@ -48,7 +48,7 @@ namespace Estatistica101.Classes
                 Resultado = Math.Abs((Valores[pos] + Valores[pos + 1])/ 2);
                 Passos.AppendLine($"$$ \\dfrac{{ {{ {Valores[pos]} + {Valores[pos + 1]} }}  }} {{2}} = \\dfrac{{ {{ {Valores[pos] + Valores[pos + 1]} }}  }} {{2}} = {Resultado} $$");
             }
-            Passos.AppendLine($"Mediana: Valores no centro da lista : {Resultado} <br>");
+            Passos.AppendLine($"<strong>Mediana</strong>: Valores no centro da lista : {Resultado} <br>");
             return Resultado;
         }
     }

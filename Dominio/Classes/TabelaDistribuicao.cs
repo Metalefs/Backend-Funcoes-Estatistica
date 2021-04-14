@@ -75,6 +75,9 @@ namespace Estatistica101.Classes
 
         public void Calcular()
         {
+            string ValoresCSV = String.Join(",", Valores.OrderBy(x=>x));
+            Passos.AppendLine($"<strong>Elementos: </strong> {ValoresCSV} <br>");
+
             NumeroDeElementos = Valores.Count;
             ValorMinimo = CalcularValorMinimo(Valores);
             ValorMaximo = CalcularValorMaximo(Valores);
@@ -124,7 +127,7 @@ namespace Estatistica101.Classes
         private float CalcularAmplitude(float ValorMinimo, float ValorMaximo)
         {
             Amplitude = ValorMaximo - ValorMinimo;
-            Passos.AppendLine($"Calcular amplitude: ValorMaximo ({ValorMaximo}) - ValorMinimo ({ValorMinimo}) = {Amplitude} <br>");
+            Passos.AppendLine($"<strong>Calcular Amplitude</strong>: [ValorMaximo] {ValorMaximo} - [ValorMinimo] {ValorMinimo} = {Amplitude} <br>");
             return Amplitude;
         }
 
@@ -151,21 +154,21 @@ namespace Estatistica101.Classes
                     QuantidadeIntervalos = (float)Math.Sqrt(NumeroDeElementos);
                     break;
             }
-            Passos.AppendLine($"Calcular quantidade de intervalos: Se 5 elementos = 2, \n10 elementos = 4, \n25 elementos = 6, \n50 elementos = 8, \n100 elementos = 10 \n Se não, Raiz quadrada da quantidade de elementos = Raiz {NumeroDeElementos} -- ({QuantidadeIntervalos}) <br>");
+            Passos.AppendLine($"<strong>Calcular quantidade de intervalos</strong>: Se 5 elementos = 2, \n10 elementos = 4, \n25 elementos = 6, \n50 elementos = 8, \n100 elementos = 10 \n Se não, Raiz quadrada da quantidade de elementos = Raiz {NumeroDeElementos} -- ({QuantidadeIntervalos}) <br>");
             return QuantidadeIntervalos;
         }
 
         private float CalcularTamanhoIntervalo(float Amplitude, float QuantidadeIntervalos)
         {
             Intervalo = Amplitude / QuantidadeIntervalos;
-            Passos.AppendLine($"Calcular tamanho do intervalo: Amplitude ({Amplitude}) / Quantidade de intervalos ({QuantidadeIntervalos}) = {Intervalo} <br>");
+            Passos.AppendLine($"<strong>Calcular tamanho do intervalo</strong>: [Amplitude] {Amplitude} / [Quantidade de intervalos] {QuantidadeIntervalos} = {Intervalo} <br>");
             return Intervalo;
         }
 
         private void  CalcularTodosOsIntervalos()
         {
             float Abertura = ValorMinimo;
-            Passos.AppendLine($"Calcular abertura intervalo: Valor minimo = {ValorMinimo} <br>");
+            Passos.AppendLine($"<strong>Calcular abertura do intervalo</strong>: Começa pelo Valor Minimo = [{ValorMinimo}] <hr>");
             for (int i = 0; i < QuantidadeIntervalos; i++)
             {
                 try
@@ -174,7 +177,7 @@ namespace Estatistica101.Classes
                     {
                         float FimIntervalo = Abertura + Intervalo;
                         intervalos.Add($"{Abertura.ToString("0.00")}|--{FimIntervalo.ToString("0.00")}");
-                        Passos.AppendLine($"Calcular intervalo: Abertura ({Abertura}) | Fim = ({FimIntervalo}) (Abertura + Intervalo ({Intervalo})) = {intervalos[i]} <br>");
+                        Passos.AppendLine($"<strong>Calcular intervalo</strong>: Abertura ({Abertura}) | Fim = ({FimIntervalo}) (Abertura + Intervalo ({Intervalo})) = {intervalos[i]} <br>");
 
                         xi.Add(CalcularMediaXI(Abertura, FimIntervalo));
                         fi.Add(CalcularFrequenciaSimples(Abertura, FimIntervalo));
@@ -188,6 +191,7 @@ namespace Estatistica101.Classes
                     }
                     else
                     {
+                        Passos.AppendLine($"<strong>Freq. Simples de <em>(x{i+1})[{ValoresDistintos[i].Key}]</em> </strong>: {ValoresDistintos[i].Value}<br>");
                         xi.Add(ValoresDistintos[i].Key);
                         fi.Add(ValoresDistintos[i].Value);
 
@@ -207,14 +211,14 @@ namespace Estatistica101.Classes
         private float CalcularMediaXI(float Abertura, float Fim)
         {
             float resultado = (Abertura + Fim) / 2;
-            Passos.AppendLine($"Calcular Média do intervalo: ({Abertura} + {Fim}) / 2 = {resultado} <br>");
+            Passos.AppendLine($"<strong>Média do intervalo</strong>: ({Abertura} + {Fim}) / 2 = {resultado} <br>");
             return resultado;
         }
 
         private float CalcularFrequenciaSimples(float Abertura, float Fim)
         {
             float resultado = Valores.Where(x => x >= Abertura && x <= Fim).Count();
-            Passos.AppendLine($"Calcular Frequencia Simples: Contagem de valores entre {Abertura} e {Fim} = {resultado} <br>");
+            Passos.AppendLine($"<strong>Freq. Simples</strong>: Contagem de valores entre {Abertura} e {Fim} : {resultado} <br>");
             return resultado;
         }
 
@@ -226,14 +230,14 @@ namespace Estatistica101.Classes
             else
                 resultado = fi[pos];
 
-            Passos.AppendLine($"Calcular Frequencia Simples Acumulada: Soma da Frequencia Simples na posição i = {pos + 1} = {resultado} <br>");
+            Passos.AppendLine($"<strong>Freq. Simples Acum. de (x{pos + 1})[{ValoresDistintos[pos].Key}] </strong>: {resultado} <hr>");
             return resultado;
         }
 
         private float CalcularFrequenciaRelativa(int pos)
         {
             float Fr = fi[pos] / NumeroDeElementos * 100;
-            Passos.AppendLine($"Calcular Frequencia Relativa Simples: Porcentagem da Frequencia Simples na posição i = {pos + 1} = {Fr} <br>");
+            Passos.AppendLine($"<strong><em>Freq. Relativa de (x{pos + 1})[{ValoresDistintos[pos].Key}] </em></strong>: {Fr}% <br>");
             return Fr;
         }
 
@@ -245,7 +249,7 @@ namespace Estatistica101.Classes
             else
                 resultado = fr[pos];
 
-            Passos.AppendLine($"Calcular Frequencia Relativa Acumulada: Soma da Frequencia Relativa Simples na posição i = {pos + 1} = {resultado} <br>");
+            Passos.AppendLine($"<strong><em>Freq. Relativa Acumu. de (x{pos + 1})[{ValoresDistintos[pos].Key}] </em></strong>: {resultado} <hr>");
             return resultado;
         }
 

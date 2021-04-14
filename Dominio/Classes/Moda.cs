@@ -34,12 +34,18 @@ namespace Estatistica101.Classes
             Resultado = Valores.GroupBy(i => i).OrderByDescending(grp => grp.Count())
             .Select(grp => grp.Key).First();
 
-            Repeticoes = Valores.GroupBy(i => i).OrderByDescending(grp => grp.Count())
+            var _Repeticoes = Valores.GroupBy(i => i).OrderByDescending(grp => grp.Count())
             .First().Count();
 
-            if (Repeticoes >= 0 && Repeticoes <= 4)
+            Modas = Valores.GroupBy(i => i).Where(x => x.Count() == _Repeticoes).Distinct().OrderByDescending(grp => grp.Count()).Select(x=>x.Key).ToList();
+
+            string RepeticoesCSV = String.Join(",", Modas);
+
+            Repeticoes = _Repeticoes == 1 ? 0 : _Repeticoes;
+
+            if (Repeticoes >= 0)
             {
-                switch (Resultado)
+                switch (Modas.Count)
                 {
                     case 0:
                         Classificacao = ClassificacaoModa.Amodal;
@@ -62,11 +68,10 @@ namespace Estatistica101.Classes
             {
                 Classificacao = ClassificacaoModa.Polimodal;
             }
-            Passos.AppendLine($"Moda: Valor mais frequente <br>");
+            Passos.AppendLine($"<strong>Moda</strong>: Valor mais frequente <br>");
             string ValoresCSV = String.Join(",", Valores);
-            Passos.AppendLine($"Elementos: {ValoresCSV} <br>");
-            Passos.AppendLine($"Moda: " + (Repeticoes == 1 ? "Não existe moda na série": $"{Resultado}. Repetiu {Repeticoes} vezes"));
-            Passos.AppendLine($"Essa série é classificada como: {Enum.GetName(typeof(ClassificacaoModa), Classificacao)}");
+            Passos.AppendLine($"<strong>Moda</strong>: " + (Repeticoes == 1 ? "Não existe moda na série": $"{RepeticoesCSV}. Repetiu {Repeticoes} vezes"));
+            Passos.AppendLine($"<br> Essa série é classificada como: {Enum.GetName(typeof(ClassificacaoModa), Classificacao)} <br>");
             return Resultado;
         }
     }

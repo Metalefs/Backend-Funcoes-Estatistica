@@ -31,11 +31,11 @@ namespace Estatistica101.Classes
         public override float Calcular()
         {
             float Media = Valores.Average();
-            Passos.AppendLine($"O desvio padrão é uma medida que expressa o grau de dispersão de um conjunto de dados:");
+            Passos.AppendLine($"O <strong>Desvio padrão</strong> é uma medida que expressa o grau de dispersão de um conjunto de dados:");
             Passos.AppendLine($"<br><img src='https://dados-agrupados-api.herokuapp.com/Imagens/desvio-padrao-1.png'>");
             Passos.AppendLine($"<br>Obter a média aritimética dos dados (Ma) = {Media}");
             Passos.AppendLine($"<br>Obter o número de termos (N) = {Valores.Count}");
-            Passos.AppendLine($"<hr>(Somátorio de Xi = 1 até a posição N ({Valores.Count}) vezes a média ({Media})) elevado ao quadrado<hr>");
+            Passos.AppendLine($"<hr>(Somátorio de Xi = 1 até a posição N ({Valores.Count}) menos a média ({Media})) elevado ao quadrado<hr>");
             int xi = 1;
             foreach (var Elemento in Valores)
             {

@@ -32,7 +32,7 @@ namespace Estatistica101.Classes
         public override float Calcular()
         {
             Resultado = Valores.Average();
-            Passos.AppendLine($"Média Aritimética: $$ \\sum {{ Xi }} \\over n $$ <br>");
+            Passos.AppendLine($"<strong>Média Aritimética</strong>: $$ \\sum {{ Xi }} \\over n $$ <br>");
             Passos.AppendLine($"Elementos:");
 
             string ValoresCSV = String.Join(",", Valores);

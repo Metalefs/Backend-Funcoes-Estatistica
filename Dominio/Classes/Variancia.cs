@@ -30,7 +30,7 @@ namespace Estatistica101.Classes
         public override float Calcular()
         {
             float Media = Valores.Average();
-            Passos.AppendLine($"Variância: A variância mede quão dispersos estão os dados na amostra. =  $$ \\sum_ {{Xi - Ma²}} \\over n $$ <br>");
+            Passos.AppendLine($"<strong>Variância</strong>: A variância mede quão dispersos estão os dados na amostra. =  $$ \\sum_ {{Xi - Ma²}} \\over n $$ <br>");
             Passos.AppendLine($"Calcule a média (Ma) = {Media}<br>");
             Passos.AppendLine($"Calcule o número de termos (N) = {Valores.Count}<hr>");
             int xi = 1;
