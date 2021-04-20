@@ -14,6 +14,17 @@ namespace Exportacao.HTML
         {
             Properties = Properties ?? String.Empty;
             return !final ? $"<p {Properties}>" : "</p>";
+        }  
+        
+        public static string Em(bool final, string Properties = null)
+        {
+            Properties = Properties ?? String.Empty;
+            return !final ? $"<em {Properties}>" : "</em>";
+        }
+        public static string Strong(bool final, string Properties = null)
+        {
+            Properties = Properties ?? String.Empty;
+            return !final ? $"<strong {Properties}>" : "</strong>";
         }
 
         public static string Div(bool final, string Properties = null)
@@ -26,6 +37,16 @@ namespace Exportacao.HTML
         {
             Properties = Properties ?? String.Empty;
             return $"<img {Properties}>";
+        }
+        public static string Br(string Properties = null)
+        {
+            Properties = Properties ?? String.Empty;
+            return $"</br {Properties}>";
+        }
+        public static string Hr(string Properties = null)
+        {
+            Properties = Properties ?? String.Empty;
+            return $"</hr {Properties}>";
         }
 
         public static string Input(string Properties)

@@ -23,9 +23,12 @@ namespace Dominio.Decorators
         [JsonIgnore]
         public override string NewLine { get; set; }
 
+        private int LineNumber = 0;
+
         public override Task WriteLineAsync(string? value)
         {
-            return base.WriteLineAsync(value + HTMLElements.Br());
+            LineNumber++;
+            return base.WriteLineAsync(ClassToHTML.AninharEmElemento("i", LineNumber.ToString(), "class='counter'") + value + HTMLElements.Br()); ;
         }
         public override string ToString()
         {

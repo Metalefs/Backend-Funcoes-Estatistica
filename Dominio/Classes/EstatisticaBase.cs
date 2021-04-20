@@ -1,4 +1,5 @@
 ﻿using Dominio.Decorators;
+using Exportacao.HTML;
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
@@ -12,10 +13,8 @@ namespace Estatistica101.Classes
         public TextWriter Passos { get; protected set; }
 
         public abstract float Calcular();
-        public Exportacao.HTML.ClassToHTML ClassToHTML;
         public EstatisticaBase()
         {
-            ClassToHTML = new Exportacao.HTML.ClassToHTML();
             Passos = new StringWriterDecorator();
         }
 

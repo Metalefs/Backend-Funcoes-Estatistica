@@ -45,7 +45,7 @@ namespace Estatistica101.Classes
 
             Passos.WriteLineAsync($"$$ {ValoresSoma} $$");
 
-            Passos.WriteLineAsync($"$$ = {Valores.Sum().ToString()}");
+            Passos.WriteLineAsync($"$$ = {Valores.Sum().ToString()} $$");
             Passos.WriteLineAsync($"Divida o resultado ({Valores.Sum()}) pelo numero de termos ({Valores.Count()}) ");
             Passos.WriteLineAsync($"$$ Resultado = \\dfrac{{ {{{Valores.Sum()}}} }} {{{Valores.Count()}}} = {Resultado} $$");
             return Resultado;

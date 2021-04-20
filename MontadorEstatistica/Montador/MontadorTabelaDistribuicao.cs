@@ -1,5 +1,6 @@
 ﻿using Estatistica101;
 using Estatistica101.Classes;
+using Exportacao.HTML;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -46,7 +47,6 @@ namespace Exportacao.Montador
                 new KeyValuePair<string, string>("50","8"),
                 new KeyValuePair<string, string>("100","10"),
             };
-            var ClassToHTML = new Exportacao.HTML.ClassToHTML();
             return ClassToHTML.MontarTabela(CamposTabelaTruman);
         }
 
