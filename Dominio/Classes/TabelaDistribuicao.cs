@@ -257,7 +257,7 @@ namespace Estatistica101.Classes
 
         private float CalcularFrequenciaSimples(float Abertura, float Fim)
         {
-            float resultado = Valores.Where(x => x >= Abertura && x <= Fim).Count();
+            float resultado = Valores.Where(x => x >= Abertura && x < Fim).Count();
             Passos.WriteLineAsync($"{Titulo("Freq. Simples")}: Contagem de valores entre {Abertura} e {Fim} : {resultado}");
             return resultado;
         }
