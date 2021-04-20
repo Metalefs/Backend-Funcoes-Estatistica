@@ -1,4 +1,5 @@
 ﻿using Estatistica101.Enums;
+using Exportacao.HTML;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -68,10 +69,10 @@ namespace Estatistica101.Classes
             {
                 Classificacao = ClassificacaoModa.Polimodal;
             }
-            Passos.AppendLine($"<strong>Moda</strong>: Valor mais frequente <br>");
+            Passos.WriteLineAsync($"{Titulo("Moda")}: Valor mais frequente ");
             string ValoresCSV = String.Join(",", Valores);
-            Passos.AppendLine($"<strong>Moda</strong>: " + (Repeticoes == 1 ? "Não existe moda na série": $"{RepeticoesCSV}. Repetiu {Repeticoes} vezes"));
-            Passos.AppendLine($"<br> Essa série é classificada como: {Enum.GetName(typeof(ClassificacaoModa), Classificacao)} <br>");
+            Passos.WriteLineAsync($"{Titulo("Moda")}: " + (Repeticoes == 1 ? "Não existe moda na série": $"{RepeticoesCSV}. Repetiu {Repeticoes} vezes"));
+            Passos.WriteLineAsync($"Essa série é classificada como: {Enum.GetName(typeof(ClassificacaoModa), Classificacao)} ");
             return Resultado;
         }
     }

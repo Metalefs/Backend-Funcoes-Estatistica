@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using Exportacao.HTML;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace Estatistica101.Classes
@@ -30,21 +31,21 @@ namespace Estatistica101.Classes
         public override float Calcular()
         {
             float Media = Valores.Average();
-            Passos.AppendLine($"<strong>Variância</strong>: A variância mede quão dispersos estão os dados na amostra. =  $$ \\sum_ {{Xi - Ma²}} \\over n $$ <br>");
-            Passos.AppendLine($"Calcule a média (Ma) = {Media}<br>");
-            Passos.AppendLine($"Calcule o número de termos (N) = {Valores.Count}<hr>");
+            Passos.WriteLineAsync($"{Titulo("Variância")}: A variância mede quão dispersos estão os dados na amostra. =  $$ \\sum_ {{Xi - Ma²}} \\over n $$");
+            Passos.WriteLineAsync($"Calcule a média (Ma) = {Media}");
+            Passos.WriteLineAsync($"Calcule o número de termos (N) = {Valores.Count} {HTMLElements.Hr()}");
             int xi = 1;
             foreach (var Elemento in Valores)
             {
-                Passos.AppendLine($"( [elemento na posição (x{xi})] <strong>{Elemento} - </strong> [Ma] <strong>{Media}</strong> ) elevado ao quadrado ");
+                Passos.WriteLineAsync($" $$ ( x{xi} - Ma ) ^2 $$");
 
                 var operacao = (Elemento - Media) * (Elemento - Media);
                 Resultado += operacao;
-                Passos.Append(" $$ (" + Elemento +" - "+ Media.ToString("F2") + $")^ 2 = {operacao} ..." + Resultado+ " + $$  <hr>");
+                Passos.WriteLineAsync(" $$ (" + Elemento +" - "+ Media.ToString("F2") + $")^ 2 = {operacao} ..." + Resultado+ $" + $$ {HTMLElements.Hr()}");
                 xi++;
             }
 
-            Passos.AppendLine($"\n $$ Resultado: \\dfrac{{ {{{Resultado}}} }} {{{Valores.Count()}}} = {{{Resultado /= Valores.Count()}}} $$");
+            Passos.WriteLineAsync($"\n $$ Resultado: \\dfrac{{ {{{Resultado}}} }} {{{Valores.Count()}}} = {{{Resultado /= Valores.Count()}}} $$");
 
             return Resultado;
         }

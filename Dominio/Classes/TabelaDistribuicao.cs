@@ -1,13 +1,15 @@
-﻿using Estatistica101.Interfaces;
+﻿using Dominio.Decorators;
+using Estatistica101.Interfaces;
+using Exportacao.HTML;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
-
+using static Exportacao.HTML.ClassToHTML;
 namespace Estatistica101.Classes
 {
-    public class TabelaDistribuicao : ITabelaDistribuicao
+    public class TabelaDistribuicao : EstatisticaBase, ITabelaDistribuicao
     {
         public List<KeyValuePair<string, int>> NomesColunas = new List<KeyValuePair<string, int>>()
         {
@@ -19,17 +21,14 @@ namespace Estatistica101.Classes
             new KeyValuePair<string, int>("F.Rel.Acum(Fr)", 10)
         };
 
-        public List<float> Valores { get; private set; }
+        public new List<float> Valores { get; private set; }
         public List<KeyValuePair<float, int>> ValoresDistintos { get; set; }
         public float Amplitude { get; private set; }
         public int NumeroDeElementos { get; private set; }
-        public float QuantidadeIntervalos { get; private set; }
+        public double QuantidadeIntervalos { get; private set; }
         public float Intervalo { get; private set; }
         public float ValorMinimo { get; private set; }
         public float ValorMaximo { get; private set; }
-
-        public StringBuilder Passos { get; set; }
-
         public List<string> intervalos { get; private set;}
         public List<float> xi { get; private set; }
         public List<float> fi { get; private set;}
@@ -45,9 +44,8 @@ namespace Estatistica101.Classes
 
         public bool Simples { get; set; }
 
-        public TabelaDistribuicao(List<float> Valores)
+        public TabelaDistribuicao(List<float> Valores) : base()
         {
-            Passos = new StringBuilder();
             intervalos = new List<string>();
             xi = new List<float>();
             fi = new List<float>();
@@ -73,21 +71,22 @@ namespace Estatistica101.Classes
                 Simples = false;
         }
 
-        public void Calcular()
+        public override float Calcular()
         {
-            string ValoresCSV = String.Join(",", Valores.OrderBy(x=>x));
-            Passos.AppendLine($"<strong>Elementos (N): </strong> {ValoresCSV} <br>");
+            Valores = Valores.ToList().OrderBy(x => x).ToList();
+            string ValoresCSV = String.Join(",", Valores);
+            Passos.WriteLineAsync($"{Titulo("Elementos (N): ")} {ValoresCSV}");
 
             NumeroDeElementos = Valores.Count;
             ValorMinimo = CalcularValorMinimo(Valores);
             ValorMaximo = CalcularValorMaximo(Valores);
 
-            Amplitude = CalcularAmplitude(ValorMinimo, ValorMaximo);
+            Amplitude = CalcularAmplitudeA(ValorMinimo, ValorMaximo);
             if (Simples)
                 QuantidadeIntervalos = ValoresDistintos.Count();
             else
-                QuantidadeIntervalos = CalcularQuantidadeIntervalos(NumeroDeElementos);
-            Intervalo = CalcularTamanhoIntervalo(Amplitude, QuantidadeIntervalos);
+                QuantidadeIntervalos = CalcularQuantidadeIntervalosK(NumeroDeElementos);
+            Intervalo = CalcularTamanhoIntervaloH(Amplitude, QuantidadeIntervalos);
 
             CalcularTodosOsIntervalos();
 
@@ -110,6 +109,9 @@ namespace Estatistica101.Classes
             Media = new Media(Valores);
             Media.Calcular();
             //Passos.Append(Media.Passos.ToString());
+
+            Passos.Close();
+            return 0f;
         }
 
         private float CalcularValorMinimo(List<float> Valores)
@@ -124,15 +126,30 @@ namespace Estatistica101.Classes
             return ValorMaximo;
         }
 
-        private float CalcularAmplitude(float ValorMinimo, float ValorMaximo)
+        private float CalcularAmplitudeA(float ValorMinimo, float ValorMaximo)
         {
             Amplitude = ValorMaximo - ValorMinimo;
-            Passos.AppendLine($"<strong>Calcular Amplitude (A)</strong>: [ValorMaximo] {ValorMaximo} - [ValorMinimo] {ValorMinimo} = {Amplitude} <br>");
+            Passos.WriteLineAsync($"{Titulo("Calcular Amplitude (A)")}: $$ A = ValorMaximo - ValorMinimo  $$");
+            Passos.WriteLineAsync($"$$ A = {ValorMaximo} - {ValorMinimo} = {Amplitude} $$");
             return Amplitude;
         }
 
-        private float CalcularQuantidadeIntervalos(int NumeroDeElementos)
+        private double CalcularQuantidadeIntervalosK(int NumeroDeElementos, bool HEraDecimal = false)
         {
+            if (HEraDecimal)
+            {
+
+                Passos.WriteLineAsync($"{Titulo("Se o resultado for quebrado, considerar $$ K =  \\sqrt N  $$ ")}");
+                var K = Math.Sqrt(Valores.Count);
+                QuantidadeIntervalos = K;
+
+                return QuantidadeIntervalos;
+            }
+            Passos.WriteLineAsync($"{Titulo("Calcular Quantidade de Intervalos - Tabela de Truman")}:");
+            Passos.WriteLineAsync(GerarTabelaDeTruman());
+            Passos.WriteLineAsync($"$$ \\sqrt N $$");
+            Passos.WriteLineAsync($"$$ \\sqrt {NumeroDeElementos} = {Math.Sqrt(NumeroDeElementos)} $$");
+
             switch (NumeroDeElementos)
             {
                 case 5:
@@ -154,21 +171,43 @@ namespace Estatistica101.Classes
                     QuantidadeIntervalos = (float)Math.Sqrt(NumeroDeElementos);
                     break;
             }
-            Passos.AppendLine($"<strong>Calcular Quantidade de Intervalos</strong>: Se 5 elementos = 2, \n10 elementos = 4, \n25 elementos = 6, \n50 elementos = 8, \n100 elementos = 10 \n Se não, Raiz quadrada da quantidade de elementos = Raiz {NumeroDeElementos} -- ({QuantidadeIntervalos}) <br>");
             return QuantidadeIntervalos;
         }
 
-        private float CalcularTamanhoIntervalo(float Amplitude, float QuantidadeIntervalos)
+        private string GerarTabelaDeTruman()
         {
-            Intervalo = Amplitude / QuantidadeIntervalos;
-            Passos.AppendLine($"<strong>Calcular Tamanho do Intervalo</strong>: [Amplitude] {Amplitude} / [Elementos distintos] {QuantidadeIntervalos} = {Intervalo} <br>");
+            List<KeyValuePair<string, string>> CamposTabelaTruman = new List<KeyValuePair<string, string>>() {
+                new KeyValuePair<string, string>("N","K"),
+                new KeyValuePair<string, string>("5","2"),
+                new KeyValuePair<string, string>("10","4"),
+                new KeyValuePair<string, string>("25","6"),
+                new KeyValuePair<string, string>("50","8"),
+                new KeyValuePair<string, string>("100","10"),
+            };
+            return ClassToHTML.MontarTabela(CamposTabelaTruman, "class='table '");
+        }
+
+        private float CalcularTamanhoIntervaloH(float Amplitude, double QuantidadeIntervalos)
+        {
+            var Intervalo = (float) (Amplitude / QuantidadeIntervalos);
+            Intervalo = (float) ((Intervalo % 1) > 0 ? Amplitude / RecalcularK() : Intervalo);
+
+
+            Passos.WriteLineAsync($"{Titulo("Calcular Tamanho do Intervalo")}: {HTMLElements.Br()} $$ H = \\dfrac{{ {{A}} }} {{K}} $$");
+
+            Passos.WriteLineAsync($"$$ H =  \\dfrac{{ {{{Amplitude}}} }} {{{QuantidadeIntervalos}}} = {Intervalo} $$");
             return Intervalo;
+        }
+
+        private double RecalcularK()
+        {
+            return CalcularQuantidadeIntervalosK(Valores.Count, HEraDecimal:true);
         }
 
         private void  CalcularTodosOsIntervalos()
         {
             float Abertura = ValorMinimo;
-            Passos.AppendLine($"<strong>Calcular Abertura do Intervalo</strong>: Começa pelo Valor Minimo = [{ValorMinimo}] <hr>");
+            Passos.WriteLineAsync($"{Titulo("Calcular Abertura do Intervalo")}: Começa pelo Valor Minimo = [{ValorMinimo}] {HTMLElements.Hr()}");
             for (int i = 0; i < QuantidadeIntervalos; i++)
             {
                 try
@@ -177,7 +216,8 @@ namespace Estatistica101.Classes
                     {
                         float FimIntervalo = Abertura + Intervalo;
                         intervalos.Add($"{Abertura.ToString("0.00")}|--{FimIntervalo.ToString("0.00")}");
-                        Passos.AppendLine($"<strong>Calcular intervalo</strong>: Abertura ({Abertura}) | Fim = ({FimIntervalo}) (Abertura + Intervalo ({Intervalo})) = {intervalos[i]} <br>");
+                        Passos.WriteLineAsync($"{Titulo("Calcular Intervalo")}: Abertura | Fim = Último Intervalo + H");
+                        Passos.WriteLineAsync($"$$ {Abertura} + {Intervalo} = {FimIntervalo} $$");
 
                         xi.Add(CalcularMediaXI(Abertura, FimIntervalo));
                         fi.Add(CalcularFrequenciaSimples(Abertura, FimIntervalo));
@@ -191,7 +231,7 @@ namespace Estatistica101.Classes
                     }
                     else
                     {
-                        Passos.AppendLine($"<strong>Freq. Simples de <em>[x{i + 1}] {ValoresDistintos[i].Key} </em> </strong>: {ValoresDistintos[i].Value}<br>");
+                        Passos.WriteLineAsync($"{Titulo("Freq. Simples de ")} {ClassToHTML.AninharEmEm($"{ValoresDistintos[i].Key} [x{i + 1}]")}: {ValoresDistintos[i].Value}");
                         xi.Add(ValoresDistintos[i].Key);
                         fi.Add(ValoresDistintos[i].Value);
 
@@ -200,7 +240,7 @@ namespace Estatistica101.Classes
                         Fr.Add(CalcularFrequenciaRelativaAcumulada(i));
                     }
                 }
-                catch (Exception ex)
+                catch (Exception)
                 {
                     continue;
                 }
@@ -211,14 +251,14 @@ namespace Estatistica101.Classes
         private float CalcularMediaXI(float Abertura, float Fim)
         {
             float resultado = (Abertura + Fim) / 2;
-            Passos.AppendLine($"<strong>Média do intervalo</strong>: ({Abertura} + {Fim}) / 2 = {resultado} <br>");
+            Passos.WriteLineAsync($"{Titulo("Média do intervalo")}: ({Abertura} + {Fim}) / 2 = {resultado}");
             return resultado;
         }
 
         private float CalcularFrequenciaSimples(float Abertura, float Fim)
         {
             float resultado = Valores.Where(x => x >= Abertura && x <= Fim).Count();
-            Passos.AppendLine($"<strong>Freq. Simples</strong>: Contagem de valores entre {Abertura} e {Fim} : {resultado} <br>");
+            Passos.WriteLineAsync($"{Titulo("Freq. Simples")}: Contagem de valores entre {Abertura} e {Fim} : {resultado}");
             return resultado;
         }
 
@@ -230,14 +270,15 @@ namespace Estatistica101.Classes
             else
                 resultado = fi[pos];
 
-            Passos.AppendLine($"<strong>Freq. Simples Acum. de <em>[x{pos + 1}]  {ValoresDistintos[pos].Key} </em> </strong>: {resultado} <hr>");
+            Passos.WriteLineAsync($"{Titulo("Freq. Simples Acum. de")} {ClassToHTML.AninharEmEm($"{ValoresDistintos[pos].Key} [x{pos + 1}]")}: {resultado} {HTMLElements.Hr()}");
             return resultado;
         }
 
         private float CalcularFrequenciaRelativa(int pos)
         {
             float Fr = fi[pos] / NumeroDeElementos * 100;
-            Passos.AppendLine($"<strong><em>Freq. Relativa de [x{pos + 1}] {ValoresDistintos[pos].Key} </em></strong>: [Fi de {ValoresDistintos[pos].Value}] {fi[pos]} / [N] {NumeroDeElementos} * 100 = {Fr} <br>");
+            Passos.WriteLineAsync($"{Titulo(ClassToHTML.AninharEmEm($"Freq. Relativa de {ValoresDistintos[pos].Key} [x{pos + 1}]"))}: $$ Fr = {{ \\dfrac{{ {{Fi[{fi[pos]}]}} }} {{N}}  }} * 100 $$");
+            Passos.WriteLineAsync($"{Titulo(ClassToHTML.AninharEmEm($"Freq. Relativa de {ValoresDistintos[pos].Key} [x{pos + 1}]"))}: $$ {{ \\dfrac{{ {{{fi[pos]}}} }} {{{NumeroDeElementos}}}  }} * 100 = {Fr} $$");
             return Fr;
         }
 
@@ -249,7 +290,7 @@ namespace Estatistica101.Classes
             else
                 resultado = fr[pos];
 
-            Passos.AppendLine($"<strong><em>Freq. Relativa Acumu. de {ValoresDistintos[pos].Key} [x{pos + 1}] </em></strong>: {resultado}% <hr>");
+            Passos.WriteLineAsync($"{Titulo(ClassToHTML.AninharEmEm($"Freq. Relativa Acumu. de {ValoresDistintos[pos].Key} [x{pos + 1}] "))}: {resultado}% {HTMLElements.Hr()}");
             return resultado;
         }
 

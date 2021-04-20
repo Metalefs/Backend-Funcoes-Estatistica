@@ -1,9 +1,9 @@
 ﻿using Newtonsoft.Json;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using Exportacao.Montador;
-using Estatistica101.Classes;
 using System.Collections.Generic;
+using Estatistica101.Classes;
+using Exportacao.Montador;
 
 namespace EstatisticaAPI.Controllers
 {
@@ -34,7 +34,7 @@ namespace EstatisticaAPI.Controllers
 
         public static TabelaDistribuicao ObterTabelaDistribuicao(string texto)
         {
-            TabelaDistribuicao Elemento = new TabelaDistribuicao(ObterValores(texto));
+           TabelaDistribuicao Elemento = new TabelaDistribuicao(ObterValores(texto));
             Elemento.Calcular();
             return Elemento;
         }

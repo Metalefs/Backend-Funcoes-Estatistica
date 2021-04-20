@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Exportacao.HTML;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -32,23 +33,21 @@ namespace Estatistica101.Classes
         public override float Calcular()
         {
             Resultado = Valores.Average();
-            Passos.AppendLine($"<strong>Média Aritimética</strong>: $$ \\sum {{ Xi }} \\over n $$ <br>");
-            Passos.AppendLine($"Elementos:");
+            Passos.WriteLineAsync($"{Titulo("Média Aritimética")}: $$ \\sum {{ Xi }} \\over n $$");
+            Passos.WriteLineAsync($"Elementos:");
 
             string ValoresCSV = String.Join(",", Valores);
-            Passos.AppendLine($"{ValoresCSV} <br>");
+            string ValoresSoma = String.Join(" + ", Valores);
+            Passos.WriteLineAsync($"{ValoresCSV}");
 
-            Passos.AppendLine("Some todos os termos: ");
-            for (int i = 0; i< Valores.Count; i++)
-            {
-                Passos.AppendLine(Valores[i].ToString());
-                if(i < Valores.Count -1)
-                    Passos.AppendLine(" +");
-            }
-            Passos.AppendLine(" = "+Valores.Sum().ToString());
-            Passos.AppendLine($"<br>Divida o resultado ({Valores.Sum()}) pelo numero de termos ({Valores.Count()}) ");
-            Passos.AppendLine($"<br>Resultado :");
-            Passos.AppendLine($"$$ \\dfrac{{ {{{Valores.Sum()}}} }} {{{Valores.Count()}}} = {Resultado} $$");
+            Passos.WriteLineAsync("Some todos os termos: ");
+           
+
+            Passos.WriteLineAsync($"$$ {ValoresSoma} $$");
+
+            Passos.WriteLineAsync($"$$ = {Valores.Sum().ToString()}");
+            Passos.WriteLineAsync($"Divida o resultado ({Valores.Sum()}) pelo numero de termos ({Valores.Count()}) ");
+            Passos.WriteLineAsync($"$$ Resultado = \\dfrac{{ {{{Valores.Sum()}}} }} {{{Valores.Count()}}} = {Resultado} $$");
             return Resultado;
         }
     }

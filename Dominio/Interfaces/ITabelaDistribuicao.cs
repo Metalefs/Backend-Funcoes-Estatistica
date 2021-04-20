@@ -7,7 +7,7 @@ namespace Estatistica101.Interfaces
         List<float> Valores { get; }
         int NumeroDeElementos { get; }
         float Amplitude { get; }
-        float QuantidadeIntervalos { get; }
+        double QuantidadeIntervalos { get; }
         float Intervalo { get; }
         List<string> intervalos { get; }
         List<float> xi { get; }
@@ -16,6 +16,6 @@ namespace Estatistica101.Interfaces
         List<float> fr { get; }
         List<float> Fr { get; }
 
-        public void Calcular();
+        public float Calcular();
     }
 }
