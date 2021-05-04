@@ -37,7 +37,7 @@ namespace Estatistica101.Classes
             int xi = 1;
             foreach (var Elemento in Valores)
             {
-                Passos.WriteLineAsync($" $$ ( x{xi} - Ma ) ^2 $$");
+                //Passos.WriteLineAsync($" $$ ( x{xi} - Ma ) ^2 $$");
 
                 var operacao = (Elemento - Media) * (Elemento - Media);
                 Resultado += operacao;

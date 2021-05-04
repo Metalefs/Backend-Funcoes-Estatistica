@@ -40,7 +40,7 @@ namespace Estatistica101.Classes
             int xi = 1;
             foreach (var Elemento in Valores)
             {
-                Passos.WriteLineAsync($"Termo (x{xi}) = {Elemento}");
+                //Passos.WriteLineAsync($"Termo (x{xi}) = {Elemento}");
                 var operacao = (Elemento - Media) * (Elemento - Media);
                 Resultado += operacao;
                 Passos.WriteLineAsync($"$$ {(xi > 1 ? '+' : ' ')}(" + Elemento + " - " + Media.ToString("F2") + $")^ 2 = {operacao} ..." + Resultado + $"  $$  {HTMLElements.Hr()}");

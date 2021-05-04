@@ -4,6 +4,7 @@ using Microsoft.Extensions.Logging;
 using System.Collections.Generic;
 using Estatistica101.Classes;
 using Exportacao.Montador;
+using Dominio.Classes;
 
 namespace EstatisticaAPI.Controllers
 {
@@ -21,7 +22,15 @@ namespace EstatisticaAPI.Controllers
         [HttpGet("TabelaDistribuicao/{id}")]
         public IActionResult TabelaDistribuicao(string id)
         {
-            string retorno = JsonConvert.SerializeObject(ObterTabelaDistribuicao(id), new Newtonsoft.Json.Converters.StringEnumConverter());
+            string retorno;
+            try
+            {
+                retorno = JsonConvert.SerializeObject(ObterTabelaDistribuicao(id), new Newtonsoft.Json.Converters.StringEnumConverter());
+            }
+            catch(System.Exception ex)
+            {
+                retorno = JsonConvert.SerializeObject(new {erro = ex.Message});
+            }
             return new JsonResult(retorno);
         }
         public static string ObterTextoTabelaDistribuicao(string texto)
@@ -32,9 +41,9 @@ namespace EstatisticaAPI.Controllers
             return montador.GerarTexto();
         }
 
-        public static TabelaDistribuicao ObterTabelaDistribuicao(string texto)
+        public static TabelaDesvioPadrao ObterTabelaDistribuicao(string texto)
         {
-           TabelaDistribuicao Elemento = new TabelaDistribuicao(ObterValores(texto));
+            TabelaDesvioPadrao Elemento = new TabelaDesvioPadrao(ObterValores(texto));
             Elemento.Calcular();
             return Elemento;
         }
@@ -78,10 +87,21 @@ namespace EstatisticaAPI.Controllers
         private static List<float> ObterValores(string texto)
         {
             List<float> Valores = new List<float>();
-            foreach (string valor in texto.Split(','))
+            string valorAtual = "";
+            int idx = 0;
+            try
             {
-                if (float.TryParse(valor, out float result))
-                    Valores.Add(float.Parse(valor, System.Globalization.CultureInfo.InvariantCulture));
+                foreach (string valor in texto.Split(','))
+                {
+                    valorAtual = valor;
+                    idx++;
+                    if (float.TryParse(valor, out float result))
+                        Valores.Add(float.Parse(valor, System.Globalization.CultureInfo.InvariantCulture));
+                }
+            }
+            catch(System.Exception ex)
+            {
+                throw new System.Exception($"Ocorreu um erro ao formatar o valor {valorAtual} na posição {idx}");
             }
             return Valores;
         }

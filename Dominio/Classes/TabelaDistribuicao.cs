@@ -75,8 +75,7 @@ namespace Estatistica101.Classes
         {
             Valores = Valores.ToList().OrderBy(x => x).ToList();
             string ValoresCSV = String.Join(",", Valores);
-            Passos.WriteLineAsync($"{Titulo("Elementos (N): ")} {ValoresCSV}");
-            Passos.WriteLineAsync($"{GerarTabelaDeFrequencia()}");
+            Passos.WriteLineAsync($"{Titulo("Ordene os dados (K):")} {GerarTabelaDeFrequencia()}");
 
             NumeroDeElementos = Valores.Count;
             ValorMinimo = CalcularValorMinimo(Valores);
@@ -138,7 +137,7 @@ namespace Estatistica101.Classes
         private float CalcularAmplitudeA(float ValorMinimo, float ValorMaximo)
         {
             Amplitude = ValorMaximo - ValorMinimo;
-            Passos.WriteLineAsync($"{Titulo("Calcular Amplitude (A)")}: $$ A = ValorMaximo - ValorMinimo  $$");
+            Passos.WriteLineAsync($"{Titulo("Calcule a Amplitude (A)")}: $$ A = ValorMaximo - ValorMinimo  $$");
             Passos.WriteLineAsync($"$$ A = {ValorMaximo} - {ValorMinimo} = {Amplitude} $$");
             return Amplitude;
         }
@@ -147,13 +146,15 @@ namespace Estatistica101.Classes
         {
             if (HEraDecimal)
             {
-                var K = Math.Sqrt(Valores.Count);
+                var sqrt = Math.Sqrt(Valores.Count);
+                var K = Math.Floor(sqrt);
+                if(!Simples)
                 QuantidadeIntervalos = K;
 
-                Passos.WriteLineAsync($"$$ K = \\sqrt {NumeroDeElementos} = {Math.Sqrt(NumeroDeElementos)} $$");
+                Passos.WriteLineAsync($"$$ K = \\sqrt {NumeroDeElementos} = {sqrt} ... { K} $$");
                 return QuantidadeIntervalos;
             }
-            Passos.WriteLineAsync($"{Titulo("Calcular Quantidade de Intervalos (h)")}:");
+            Passos.WriteLineAsync($"{Titulo("Calcule a Quantidade de Intervalos (h)")}:");
             Passos.WriteLineAsync($"{Titulo("- Tabela de Truman")}:");
             Passos.WriteLineAsync($"Usado para o caso N descrito:");
             Passos.WriteLineAsync(GerarTabelaDeTruman());
@@ -198,7 +199,7 @@ namespace Estatistica101.Classes
         private float CalcularTamanhoIntervaloH(float Amplitude, double QuantidadeIntervalos)
         {
             var Intervalo = (float) (Amplitude / QuantidadeIntervalos);
-            Passos.WriteLineAsync($"{Titulo("Calcular Tamanho do Intervalo")}: {HTMLElements.Br()} $$ H = \\dfrac{{ {{A}} }} {{K}} $$");
+            Passos.WriteLineAsync($"{Titulo("Calcule o Tamanho do Intervalo (H)")}: {HTMLElements.Br()} $$ H = \\dfrac{{ {{A}} }} {{K}} $$");
             Passos.WriteLineAsync($"$$ H = \\dfrac{{ {{{Amplitude}}} }} {{{QuantidadeIntervalos}}} = {Intervalo} $$");
 
             Intervalo = (float) ((Intervalo % 1) > 0 ? Amplitude / RecalcularK() : Intervalo);
@@ -209,14 +210,14 @@ namespace Estatistica101.Classes
         private double RecalcularK()
         {
 
-            Passos.WriteLineAsync($"{Titulo("Se o intervalo possuir casas decimais, considerar $$ K =  \\sqrt N  $$ ")}");
+            Passos.WriteLineAsync($"{Titulo("Se o intervalo possuir casas decimais, considere $$ K =  \\sqrt N  $$ ")}");
             return CalcularQuantidadeIntervalosK(Valores.Count, HEraDecimal:true);
         }
 
         private void  CalcularTodosOsIntervalos()
         {
             float Abertura = ValorMinimo;
-            Passos.WriteLineAsync($"{Titulo("Calcular Abertura do Intervalo")}: Começa pelo Valor Minimo = [{ValorMinimo}] {HTMLElements.Hr()}");
+            Passos.WriteLineAsync($"{Titulo("Calcular Abertura do Intervalo")}: Começa pelo Valor Minimo = {ValorMinimo} {HTMLElements.Hr()}");
             for (int i = 0; i < QuantidadeIntervalos; i++)
             {
                 try
@@ -225,9 +226,9 @@ namespace Estatistica101.Classes
                     {
                         float FimIntervalo = Abertura + Intervalo;
                         intervalos.Add($"{Abertura.ToString("0.00")}|--{FimIntervalo.ToString("0.00")}");
-                        Passos.WriteLineAsync($"{Titulo("Calcular Intervalo")}: Abertura + Intervalo ");
+                        Passos.WriteLineAsync($"{Titulo("Calcule o Final do Intervalo")}: Abertura + Intervalo ");
                         Passos.WriteLineAsync($"$$ {Abertura} + {Intervalo} = {Abertura + Intervalo}$$");
-                        Passos.WriteLineAsync($"{Titulo("Calcular Intervalo")}: Abertura |-- Fim ");
+                        Passos.WriteLineAsync($"{Titulo("Calcule o Intervalo")}: Abertura |-- Fim ");
                         Passos.WriteLineAsync($"$${Abertura.ToString("0.00")}|--{FimIntervalo.ToString("0.00")} $$");
 
                         xi.Add(CalcularMediaXI(Abertura, FimIntervalo));
