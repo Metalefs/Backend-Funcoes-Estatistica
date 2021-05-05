@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
+using Newtonsoft.Json;
 
 namespace Exportacao.Montador
 {
@@ -18,10 +19,11 @@ namespace Exportacao.Montador
 
         public string GerarTexto()
         {
-            Linhas.Append($"{Tabela.Passos.ToString()}");
+            Linhas.Append($"{Tabela.Passos}");
             Linhas.Append($"{Tabela.Resultado}");
             SalvarResultado(Linhas, "Resultado.txt");
-            return Linhas.ToString();
+            //return Linhas.ToString();
+            return JsonConvert.SerializeObject(Tabela);
         }
 
         private void SalvarResultado(StringBuilder Linhas, string Caminho)

@@ -36,7 +36,7 @@ namespace Estatistica101.Classes
             string ValoresCSV = String.Join(",", Valores);
             Valores = Valores.ToList().OrderBy(x => x).ToList();
 
-            Passos.WriteLineAsync($"Elementos: {ValoresCSV}");
+            Passos.WriteLineAsyncCounter($"Elementos: {ValoresCSV}");
             if (Valores.Count == 1)
             {
                 Resultado = Valores[0];
@@ -47,12 +47,12 @@ namespace Estatistica101.Classes
             }
             else
             {
-                Passos.WriteLineAsync($"Lista de contagem par:");
-                Passos.WriteLineAsync($"Some os dois elementos do centro ({Valores[pos]} e {Valores[pos + 1]}) e divida por 2(dois):");
+                Passos.WriteLineAsyncCounter($"Lista de contagem par:");
+                Passos.WriteLineAsyncCounter($"Some os dois elementos do centro ({Valores[pos]} e {Valores[pos + 1]}) e divida por 2(dois):");
                 Resultado = Math.Abs((Valores[pos] + Valores[pos + 1])/ 2);
                 Passos.WriteLineAsync($"$$ \\dfrac{{ {{ {Valores[pos]} + {Valores[pos + 1]} }}  }} {{2}} = \\dfrac{{ {{ {Valores[pos] + Valores[pos + 1]} }}  }} {{2}} = {Resultado} $$");
             }
-            Passos.WriteLineAsync($"{HTMLElements.Hr()} {Titulo("Mediana")}: Valores no centro da lista : {Resultado}");
+            Passos.WriteLineAsyncCounter($"{HTMLElements.Hr()} {Titulo("Mediana")}: Valores no centro da lista : {Resultado}");
             return Resultado;
         }
     }

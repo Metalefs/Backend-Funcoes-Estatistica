@@ -69,10 +69,10 @@ namespace Estatistica101.Classes
             {
                 Classificacao = ClassificacaoModa.Polimodal;
             }
-            Passos.WriteLineAsync($"{Titulo("Moda")}: Valor mais frequente ");
+            Passos.WriteLineAsyncCounter($"{Titulo("Moda")}: Valor mais frequente ");
             string ValoresCSV = String.Join(",", Valores);
-            Passos.WriteLineAsync($"{Titulo("Moda")}: " + (Repeticoes == 1 ? "Não existe moda na série": $"{RepeticoesCSV}. Repetiu {Repeticoes} vezes"));
-            Passos.WriteLineAsync($"Essa série é classificada como: {Enum.GetName(typeof(ClassificacaoModa), Classificacao)} ");
+            Passos.WriteLineAsyncCounter($"{Titulo("Moda")}: " + (Repeticoes == 1 ? "Não existe moda na série": $"{RepeticoesCSV}. Repetiu {Repeticoes} vezes"));
+            Passos.WriteLineAsyncCounter($"Essa série é classificada como: {Enum.GetName(typeof(ClassificacaoModa), Classificacao)} ");
             return Resultado;
         }
     }

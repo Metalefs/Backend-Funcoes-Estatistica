@@ -76,3 +76,512 @@ Calcular Frequencia Simples: Contagem de valores entre 3,6181362 e 4,8241816 = 1
 Calcular Frequencia Simples Acumulada: Soma da Frequencia Simples na posição i = 4 = 11
 Calcular Frequencia Relativa Simples: Porcentagem da Frequencia Simples na posição i = 4 = 9,090909
 Calcular Frequencia Relativa Acumulada: Soma da Frequencia Relativa Simples na posição i = 4 = 100
+O <strong >Desvio padrão</strong> é uma medida que expressa o grau de dispersão de um conjunto de dados:</br >
+ <img src='https://dados-agrupados-api.herokuapp.com/Imagens/desvio-padrao-1.png'></br >
+Obter a média aritimética dos dados (Ma) = 1</br >
+Obter o número de termos (N) = 1</br >
+(Somátorio de Xi = 1 até a posição N (1) menos a média (1)) elevado ao quadrado</hr ></br >
+$$  (1 - 1,00)^ 2 = 0 ...0  $$  </hr ></br >
+Obter a raíz quadrada da divisão do somatório (0) pelo numero de termos (1) </hr ></br >
+
+ $$ Resultado = \sqrt { \dfrac{ {0} } {1}  } = {0}$$</br >
+0O <strong >Desvio padrão</strong> é uma medida que expressa o grau de dispersão de um conjunto de dados:</br >
+ <img src='https://dados-agrupados-api.herokuapp.com/Imagens/desvio-padrao-1.png'></br >
+Obter a média aritimética dos dados (Ma) = 2</br >
+Obter o número de termos (N) = 3</br >
+(Somátorio de Xi = 1 até a posição N (3) menos a média (2)) elevado ao quadrado</hr ></br >
+$$  (1 - 2,00)^ 2 = 1 ...1  $$  </hr ></br >
+$$ +(2 - 2,00)^ 2 = 0 ...1  $$  </hr ></br >
+$$ +(3 - 2,00)^ 2 = 1 ...2  $$  </hr ></br >
+Obter a raíz quadrada da divisão do somatório (2) pelo numero de termos (3) </hr ></br >
+
+ $$ Resultado = \sqrt { \dfrac{ {2} } {3}  } = {0,8164966}$$</br >
+0,8164966O <strong >Desvio padrão</strong> é uma medida que expressa o grau de dispersão de um conjunto de dados:</br >
+ <img src='https://dados-agrupados-api.herokuapp.com/Imagens/desvio-padrao-1.png'></br >
+Obter a média aritimética dos dados (Ma) = 2</br >
+Obter o número de termos (N) = 3</br >
+(Somátorio de Xi = 1 até a posição N (3) menos a média (2)) elevado ao quadrado</hr ></br >
+$$  (1 - 2,00)^ 2 = 1 ...1  $$  </hr ></br >
+$$ +(2 - 2,00)^ 2 = 0 ...1  $$  </hr ></br >
+$$ +(3 - 2,00)^ 2 = 1 ...2  $$  </hr ></br >
+Obter a raíz quadrada da divisão do somatório (2) pelo numero de termos (3) </hr ></br >
+
+ $$ Resultado = \sqrt { \dfrac{ {2} } {3}  } = {0,8164966}$$</br >
+0,8164966O <strong >Desvio padrão</strong> é uma medida que expressa o grau de dispersão de um conjunto de dados:</br >
+ <img src='https://dados-agrupados-api.herokuapp.com/Imagens/desvio-padrao-1.png'></br >
+Obter a média aritimética dos dados (Ma) = 1</br >
+Obter o número de termos (N) = 1</br >
+(Somátorio de Xi = 1 até a posição N (1) menos a média (1)) elevado ao quadrado</hr ></br >
+$$  (1 - 1,00)^ 2 = 0 ...0  $$  </hr ></br >
+Obter a raíz quadrada da divisão do somatório (0) pelo numero de termos (1) </hr ></br >
+
+ $$ Resultado = \sqrt { \dfrac{ {0} } {1}  } = {0}$$</br >
+0O <strong >Desvio padrão</strong> é uma medida que expressa o grau de dispersão de um conjunto de dados:</br >
+ <img src='https://dados-agrupados-api.herokuapp.com/Imagens/desvio-padrao-1.png'></br >
+Obter a média aritimética dos dados (Ma) = 1</br >
+Obter o número de termos (N) = 1</br >
+(Somátorio de Xi = 1 até a posição N (1) menos a média (1)) elevado ao quadrado</hr ></br >
+$$  (1 - 1,00)^ 2 = 0 ...0  $$  </hr ></br >
+Obter a raíz quadrada da divisão do somatório (0) pelo numero de termos (1) </hr ></br >
+
+ $$ Resultado = \sqrt { \dfrac{ {0} } {1}  } = {0}$$</br >
+0O <strong >Desvio padrão</strong> é uma medida que expressa o grau de dispersão de um conjunto de dados:</br >
+ <img src='https://dados-agrupados-api.herokuapp.com/Imagens/desvio-padrao-1.png'></br >
+Obter a média aritimética dos dados (Ma) = 1,5</br >
+Obter o número de termos (N) = 2</br >
+(Somátorio de Xi = 1 até a posição N (2) menos a média (1,5)) elevado ao quadrado</hr ></br >
+$$  (1 - 1,50)^ 2 = 0,25 ...0,25  $$  </hr ></br >
+$$ +(2 - 1,50)^ 2 = 0,25 ...0,5  $$  </hr ></br >
+Obter a raíz quadrada da divisão do somatório (0,5) pelo numero de termos (2) </hr ></br >
+
+ $$ Resultado = \sqrt { \dfrac{ {0,5} } {2}  } = {0,5}$$</br >
+0,5O <strong >Desvio padrão</strong> é uma medida que expressa o grau de dispersão de um conjunto de dados:</br >
+ <img src='https://dados-agrupados-api.herokuapp.com/Imagens/desvio-padrao-1.png'></br >
+Obter a média aritimética dos dados (Ma) = 1,5</br >
+Obter o número de termos (N) = 2</br >
+(Somátorio de Xi = 1 até a posição N (2) menos a média (1,5)) elevado ao quadrado</hr ></br >
+$$  (1 - 1,50)^ 2 = 0,25 ...0,25  $$  </hr ></br >
+$$ +(2 - 1,50)^ 2 = 0,25 ...0,5  $$  </hr ></br >
+Obter a raíz quadrada da divisão do somatório (0,5) pelo numero de termos (2) </hr ></br >
+
+ $$ Resultado = \sqrt { \dfrac{ {0,5} } {2}  } = {0,5}$$</br >
+0,5O <strong >Desvio padrão</strong> é uma medida que expressa o grau de dispersão de um conjunto de dados:</br >
+ <img src='https://dados-agrupados-api.herokuapp.com/Imagens/desvio-padrao-1.png'></br >
+Obter a média aritimética dos dados (Ma) = 1,5</br >
+Obter o número de termos (N) = 2</br >
+(Somátorio de Xi = 1 até a posição N (2) menos a média (1,5)) elevado ao quadrado</hr ></br >
+$$  (1 - 1,50)^ 2 = 0,25 ...0,25  $$  </hr ></br >
+$$ +(2 - 1,50)^ 2 = 0,25 ...0,5  $$  </hr ></br >
+Obter a raíz quadrada da divisão do somatório (0,5) pelo numero de termos (2) </hr ></br >
+
+ $$ Resultado = \sqrt { \dfrac{ {0,5} } {2}  } = {0,5}$$</br >
+0,5O <strong >Desvio padrão</strong> é uma medida que expressa o grau de dispersão de um conjunto de dados:</br >
+ <img src='https://dados-agrupados-api.herokuapp.com/Imagens/desvio-padrao-1.png'></br >
+Obter a média aritimética dos dados (Ma) = 2</br >
+Obter o número de termos (N) = 3</br >
+(Somátorio de Xi = 1 até a posição N (3) menos a média (2)) elevado ao quadrado</hr ></br >
+$$  (1 - 2,00)^ 2 = 1 ...1  $$  </hr ></br >
+$$ +(2 - 2,00)^ 2 = 0 ...1  $$  </hr ></br >
+$$ +(3 - 2,00)^ 2 = 1 ...2  $$  </hr ></br >
+Obter a raíz quadrada da divisão do somatório (2) pelo numero de termos (3) </hr ></br >
+
+ $$ Resultado = \sqrt { \dfrac{ {2} } {3}  } = {0,8164966}$$</br >
+0,8164966O <strong >Desvio padrão</strong> é uma medida que expressa o grau de dispersão de um conjunto de dados:</br >
+ <img src='https://dados-agrupados-api.herokuapp.com/Imagens/desvio-padrao-1.png'></br >
+Obter a média aritimética dos dados (Ma) = 2</br >
+Obter o número de termos (N) = 3</br >
+(Somátorio de Xi = 1 até a posição N (3) menos a média (2)) elevado ao quadrado</hr ></br >
+$$  (1 - 2,00)^ 2 = 1 ...1  $$  </hr ></br >
+$$ +(2 - 2,00)^ 2 = 0 ...1  $$  </hr ></br >
+$$ +(3 - 2,00)^ 2 = 1 ...2  $$  </hr ></br >
+Obter a raíz quadrada da divisão do somatório (2) pelo numero de termos (3) </hr ></br >
+
+ $$ Resultado = \sqrt { \dfrac{ {2} } {3}  } = {0,8164966}$$</br >
+0,8164966O <strong >Desvio padrão</strong> é uma medida que expressa o grau de dispersão de um conjunto de dados:</br >
+ <img src='https://dados-agrupados-api.herokuapp.com/Imagens/desvio-padrao-1.png'></br >
+Obter a média aritimética dos dados (Ma) = 2</br >
+Obter o número de termos (N) = 3</br >
+(Somátorio de Xi = 1 até a posição N (3) menos a média (2)) elevado ao quadrado</hr ></br >
+$$  (1 - 2,00)^ 2 = 1 ...1  $$  </hr ></br >
+$$ +(2 - 2,00)^ 2 = 0 ...1  $$  </hr ></br >
+$$ +(3 - 2,00)^ 2 = 1 ...2  $$  </hr ></br >
+Obter a raíz quadrada da divisão do somatório (2) pelo numero de termos (3) </hr ></br >
+
+ $$ Resultado = \sqrt { \dfrac{ {2} } {3}  } = {0,8164966}$$</br >
+0,8164966O <strong >Desvio padrão</strong> é uma medida que expressa o grau de dispersão de um conjunto de dados:</br >
+ <img src='https://dados-agrupados-api.herokuapp.com/Imagens/desvio-padrao-1.png'></br >
+Obter a média aritimética dos dados (Ma) = 2</br >
+Obter o número de termos (N) = 3</br >
+(Somátorio de Xi = 1 até a posição N (3) menos a média (2)) elevado ao quadrado</hr ></br >
+$$  (1 - 2,00)^ 2 = 1 ...1  $$  </hr ></br >
+$$ +(2 - 2,00)^ 2 = 0 ...1  $$  </hr ></br >
+$$ +(3 - 2,00)^ 2 = 1 ...2  $$  </hr ></br >
+Obter a raíz quadrada da divisão do somatório (2) pelo numero de termos (3) </hr ></br >
+
+ $$ Resultado = \sqrt { \dfrac{ {2} } {3}  } = {0,8164966}$$</br >
+0,8164966O <strong >Desvio padrão</strong> é uma medida que expressa o grau de dispersão de um conjunto de dados:</br >
+ <img src='https://dados-agrupados-api.herokuapp.com/Imagens/desvio-padrao-1.png'></br >
+Obter a média aritimética dos dados (Ma) = 2</br >
+Obter o número de termos (N) = 3</br >
+(Somátorio de Xi = 1 até a posição N (3) menos a média (2)) elevado ao quadrado</hr ></br >
+$$  (1 - 2,00)^ 2 = 1 ...1  $$  </hr ></br >
+$$ +(2 - 2,00)^ 2 = 0 ...1  $$  </hr ></br >
+$$ +(3 - 2,00)^ 2 = 1 ...2  $$  </hr ></br >
+Obter a raíz quadrada da divisão do somatório (2) pelo numero de termos (3) </hr ></br >
+
+ $$ Resultado = \sqrt { \dfrac{ {2} } {3}  } = {0,8164966}$$</br >
+0,8164966O <strong >Desvio padrão</strong> é uma medida que expressa o grau de dispersão de um conjunto de dados:</br >
+ <img src='https://dados-agrupados-api.herokuapp.com/Imagens/desvio-padrao-1.png'></br >
+Obter a média aritimética dos dados (Ma) = 1</br >
+Obter o número de termos (N) = 1</br >
+(Somátorio de Xi = 1 até a posição N (1) menos a média (1)) elevado ao quadrado</hr ></br >
+$$  (1 - 1,00)^ 2 = 0 ...0  $$  </hr ></br >
+Obter a raíz quadrada da divisão do somatório (0) pelo numero de termos (1) </hr ></br >
+
+ $$ Resultado = \sqrt { \dfrac{ {0} } {1}  } = {0}$$</br >
+0O <strong >Desvio padrão</strong> é uma medida que expressa o grau de dispersão de um conjunto de dados:</br >
+ <img src='https://dados-agrupados-api.herokuapp.com/Imagens/desvio-padrao-1.png'></br >
+Obter a média aritimética dos dados (Ma) = 1,5</br >
+Obter o número de termos (N) = 2</br >
+(Somátorio de Xi = 1 até a posição N (2) menos a média (1,5)) elevado ao quadrado</hr ></br >
+$$  (1 - 1,50)^ 2 = 0,25 ...0,25  $$  </hr ></br >
+$$ +(2 - 1,50)^ 2 = 0,25 ...0,5  $$  </hr ></br >
+Obter a raíz quadrada da divisão do somatório (0,5) pelo numero de termos (2) </hr ></br >
+
+ $$ Resultado = \sqrt { \dfrac{ {0,5} } {2}  } = {0,5}$$</br >
+0,5O <strong >Desvio padrão</strong> é uma medida que expressa o grau de dispersão de um conjunto de dados:</br >
+ <img src='https://dados-agrupados-api.herokuapp.com/Imagens/desvio-padrao-1.png'></br >
+Obter a média aritimética dos dados (Ma) = 1,5</br >
+Obter o número de termos (N) = 2</br >
+(Somátorio de Xi = 1 até a posição N (2) menos a média (1,5)) elevado ao quadrado</hr ></br >
+$$  (1 - 1,50)^ 2 = 0,25 ...0,25  $$  </hr ></br >
+$$ +(2 - 1,50)^ 2 = 0,25 ...0,5  $$  </hr ></br >
+Obter a raíz quadrada da divisão do somatório (0,5) pelo numero de termos (2) </hr ></br >
+
+ $$ Resultado = \sqrt { \dfrac{ {0,5} } {2}  } = {0,5}$$</br >
+0,5O <strong >Desvio padrão</strong> é uma medida que expressa o grau de dispersão de um conjunto de dados:</br >
+ <img src='https://dados-agrupados-api.herokuapp.com/Imagens/desvio-padrao-1.png'></br >
+Obter a média aritimética dos dados (Ma) = 12</br >
+Obter o número de termos (N) = 2</br >
+(Somátorio de Xi = 1 até a posição N (2) menos a média (12)) elevado ao quadrado</hr ></br >
+$$  (1 - 12,00)^ 2 = 121 ...121  $$  </hr ></br >
+$$ +(23 - 12,00)^ 2 = 121 ...242  $$  </hr ></br >
+Obter a raíz quadrada da divisão do somatório (242) pelo numero de termos (2) </hr ></br >
+
+ $$ Resultado = \sqrt { \dfrac{ {242} } {2}  } = {11}$$</br >
+11O <strong >Desvio padrão</strong> é uma medida que expressa o grau de dispersão de um conjunto de dados:</br >
+ <img src='https://dados-agrupados-api.herokuapp.com/Imagens/desvio-padrao-1.png'></br >
+Obter a média aritimética dos dados (Ma) = 1</br >
+Obter o número de termos (N) = 1</br >
+(Somátorio de Xi = 1 até a posição N (1) menos a média (1)) elevado ao quadrado</hr ></br >
+$$  (1 - 1,00)^ 2 = 0 ...0  $$  </hr ></br >
+Obter a raíz quadrada da divisão do somatório (0) pelo numero de termos (1) </hr ></br >
+
+ $$ Resultado = \sqrt { \dfrac{ {0} } {1}  } = {0}$$</br >
+0O <strong >Desvio padrão</strong> é uma medida que expressa o grau de dispersão de um conjunto de dados:</br >
+ <img src='https://dados-agrupados-api.herokuapp.com/Imagens/desvio-padrao-1.png'></br >
+Obter a média aritimética dos dados (Ma) = 1</br >
+Obter o número de termos (N) = 1</br >
+(Somátorio de Xi = 1 até a posição N (1) menos a média (1)) elevado ao quadrado</hr ></br >
+$$  (1 - 1,00)^ 2 = 0 ...0  $$  </hr ></br >
+Obter a raíz quadrada da divisão do somatório (0) pelo numero de termos (1) </hr ></br >
+
+ $$ Resultado = \sqrt { \dfrac{ {0} } {1}  } = {0}$$</br >
+0O <strong >Desvio padrão</strong> é uma medida que expressa o grau de dispersão de um conjunto de dados:</br >
+ <img src='https://dados-agrupados-api.herokuapp.com/Imagens/desvio-padrao-1.png'></br >
+Obter a média aritimética dos dados (Ma) = 1,5</br >
+Obter o número de termos (N) = 2</br >
+(Somátorio de Xi = 1 até a posição N (2) menos a média (1,5)) elevado ao quadrado</hr ></br >
+$$  (1 - 1,50)^ 2 = 0,25 ...0,25  $$  </hr ></br >
+$$ +(2 - 1,50)^ 2 = 0,25 ...0,5  $$  </hr ></br >
+Obter a raíz quadrada da divisão do somatório (0,5) pelo numero de termos (2) </hr ></br >
+
+ $$ Resultado = \sqrt { \dfrac{ {0,5} } {2}  } = {0,5}$$</br >
+0,5O <strong >Desvio padrão</strong> é uma medida que expressa o grau de dispersão de um conjunto de dados:</br >
+ <img src='https://dados-agrupados-api.herokuapp.com/Imagens/desvio-padrao-1.png'></br >
+Obter a média aritimética dos dados (Ma) = 1,5</br >
+Obter o número de termos (N) = 2</br >
+(Somátorio de Xi = 1 até a posição N (2) menos a média (1,5)) elevado ao quadrado</hr ></br >
+$$  (1 - 1,50)^ 2 = 0,25 ...0,25  $$  </hr ></br >
+$$ +(2 - 1,50)^ 2 = 0,25 ...0,5  $$  </hr ></br >
+Obter a raíz quadrada da divisão do somatório (0,5) pelo numero de termos (2) </hr ></br >
+
+ $$ Resultado = \sqrt { \dfrac{ {0,5} } {2}  } = {0,5}$$</br >
+0,5O <strong >Desvio padrão</strong> é uma medida que expressa o grau de dispersão de um conjunto de dados:</br >
+ <img src='https://dados-agrupados-api.herokuapp.com/Imagens/desvio-padrao-1.png'></br >
+Obter a média aritimética dos dados (Ma) = 2</br >
+Obter o número de termos (N) = 3</br >
+(Somátorio de Xi = 1 até a posição N (3) menos a média (2)) elevado ao quadrado</hr ></br >
+$$  (1 - 2,00)^ 2 = 1 ...1  $$  </hr ></br >
+$$ +(2 - 2,00)^ 2 = 0 ...1  $$  </hr ></br >
+$$ +(3 - 2,00)^ 2 = 1 ...2  $$  </hr ></br >
+Obter a raíz quadrada da divisão do somatório (2) pelo numero de termos (3) </hr ></br >
+
+ $$ Resultado = \sqrt { \dfrac{ {2} } {3}  } = {0,8164966}$$</br >
+0,8164966O <strong >Desvio padrão</strong> é uma medida que expressa o grau de dispersão de um conjunto de dados:</br >
+ <img src='https://dados-agrupados-api.herokuapp.com/Imagens/desvio-padrao-1.png'></br >
+Obter a média aritimética dos dados (Ma) = 1</br >
+Obter o número de termos (N) = 1</br >
+(Somátorio de Xi = 1 até a posição N (1) menos a média (1)) elevado ao quadrado</hr ></br >
+$$  (1 - 1,00)^ 2 = 0 ...0  $$  </hr ></br >
+Obter a raíz quadrada da divisão do somatório (0) pelo numero de termos (1) </hr ></br >
+
+ $$ Resultado = \sqrt { \dfrac{ {0} } {1}  } = {0}$$</br >
+0O <strong >Desvio padrão</strong> é uma medida que expressa o grau de dispersão de um conjunto de dados:</br >
+ <img src='https://dados-agrupados-api.herokuapp.com/Imagens/desvio-padrao-1.png'></br >
+Obter a média aritimética dos dados (Ma) = 1,5</br >
+Obter o número de termos (N) = 2</br >
+(Somátorio de Xi = 1 até a posição N (2) menos a média (1,5)) elevado ao quadrado</hr ></br >
+$$  (1 - 1,50)^ 2 = 0,25 ...0,25  $$  </hr ></br >
+$$ +(2 - 1,50)^ 2 = 0,25 ...0,5  $$  </hr ></br >
+Obter a raíz quadrada da divisão do somatório (0,5) pelo numero de termos (2) </hr ></br >
+
+ $$ Resultado = \sqrt { \dfrac{ {0,5} } {2}  } = {0,5}$$</br >
+0,5O <strong >Desvio padrão</strong> é uma medida que expressa o grau de dispersão de um conjunto de dados:</br >
+ <img src='https://dados-agrupados-api.herokuapp.com/Imagens/desvio-padrao-1.png'></br >
+Obter a média aritimética dos dados (Ma) = 1,5</br >
+Obter o número de termos (N) = 2</br >
+(Somátorio de Xi = 1 até a posição N (2) menos a média (1,5)) elevado ao quadrado</hr ></br >
+$$  (1 - 1,50)^ 2 = 0,25 ...0,25  $$  </hr ></br >
+$$ +(2 - 1,50)^ 2 = 0,25 ...0,5  $$  </hr ></br >
+Obter a raíz quadrada da divisão do somatório (0,5) pelo numero de termos (2) </hr ></br >
+
+ $$ Resultado = \sqrt { \dfrac{ {0,5} } {2}  } = {0,5}$$</br >
+0,5O <strong >Desvio padrão</strong> é uma medida que expressa o grau de dispersão de um conjunto de dados:</br >
+ <img src='https://dados-agrupados-api.herokuapp.com/Imagens/desvio-padrao-1.png'></br >
+Obter a média aritimética dos dados (Ma) = 12</br >
+Obter o número de termos (N) = 2</br >
+(Somátorio de Xi = 1 até a posição N (2) menos a média (12)) elevado ao quadrado</hr ></br >
+$$  (1 - 12,00)^ 2 = 121 ...121  $$  </hr ></br >
+$$ +(23 - 12,00)^ 2 = 121 ...242  $$  </hr ></br >
+Obter a raíz quadrada da divisão do somatório (242) pelo numero de termos (2) </hr ></br >
+
+ $$ Resultado = \sqrt { \dfrac{ {242} } {2}  } = {11}$$</br >
+11O <strong >Desvio padrão</strong> é uma medida que expressa o grau de dispersão de um conjunto de dados:</br >
+ <img src='https://dados-agrupados-api.herokuapp.com/Imagens/desvio-padrao-1.png'></br >
+Obter a média aritimética dos dados (Ma) = 1</br >
+Obter o número de termos (N) = 1</br >
+(Somátorio de Xi = 1 até a posição N (1) menos a média (1)) elevado ao quadrado</hr ></br >
+$$  (1 - 1,00)^ 2 = 0 ...0  $$  </hr ></br >
+Obter a raíz quadrada da divisão do somatório (0) pelo numero de termos (1) </hr ></br >
+
+ $$ Resultado = \sqrt { \dfrac{ {0} } {1}  } = {0}$$</br >
+0O <strong >Desvio padrão</strong> é uma medida que expressa o grau de dispersão de um conjunto de dados:</br >
+ <img src='https://dados-agrupados-api.herokuapp.com/Imagens/desvio-padrao-1.png'></br >
+Obter a média aritimética dos dados (Ma) = 1</br >
+Obter o número de termos (N) = 1</br >
+(Somátorio de Xi = 1 até a posição N (1) menos a média (1)) elevado ao quadrado</hr ></br >
+$$  (1 - 1,00)^ 2 = 0 ...0  $$  </hr ></br >
+Obter a raíz quadrada da divisão do somatório (0) pelo numero de termos (1) </hr ></br >
+
+ $$ Resultado = \sqrt { \dfrac{ {0} } {1}  } = {0}$$</br >
+0O <strong >Desvio padrão</strong> é uma medida que expressa o grau de dispersão de um conjunto de dados:</br >
+ <img src='https://dados-agrupados-api.herokuapp.com/Imagens/desvio-padrao-1.png'></br >
+Obter a média aritimética dos dados (Ma) = 1,5</br >
+Obter o número de termos (N) = 2</br >
+(Somátorio de Xi = 1 até a posição N (2) menos a média (1,5)) elevado ao quadrado</hr ></br >
+$$  (1 - 1,50)^ 2 = 0,25 ...0,25  $$  </hr ></br >
+$$ +(2 - 1,50)^ 2 = 0,25 ...0,5  $$  </hr ></br >
+Obter a raíz quadrada da divisão do somatório (0,5) pelo numero de termos (2) </hr ></br >
+
+ $$ Resultado = \sqrt { \dfrac{ {0,5} } {2}  } = {0,5}$$</br >
+0,5O <strong >Desvio padrão</strong> é uma medida que expressa o grau de dispersão de um conjunto de dados:</br >
+ <img src='https://dados-agrupados-api.herokuapp.com/Imagens/desvio-padrao-1.png'></br >
+Obter a média aritimética dos dados (Ma) = 1,5</br >
+Obter o número de termos (N) = 2</br >
+(Somátorio de Xi = 1 até a posição N (2) menos a média (1,5)) elevado ao quadrado</hr ></br >
+$$  (1 - 1,50)^ 2 = 0,25 ...0,25  $$  </hr ></br >
+$$ +(2 - 1,50)^ 2 = 0,25 ...0,5  $$  </hr ></br >
+Obter a raíz quadrada da divisão do somatório (0,5) pelo numero de termos (2) </hr ></br >
+
+ $$ Resultado = \sqrt { \dfrac{ {0,5} } {2}  } = {0,5}$$</br >
+0,5O <strong >Desvio padrão</strong> é uma medida que expressa o grau de dispersão de um conjunto de dados:</br >
+ <img src='https://dados-agrupados-api.herokuapp.com/Imagens/desvio-padrao-1.png'></br >
+Obter a média aritimética dos dados (Ma) = 2</br >
+Obter o número de termos (N) = 3</br >
+(Somátorio de Xi = 1 até a posição N (3) menos a média (2)) elevado ao quadrado</hr ></br >
+$$  (1 - 2,00)^ 2 = 1 ...1  $$  </hr ></br >
+$$ +(2 - 2,00)^ 2 = 0 ...1  $$  </hr ></br >
+$$ +(3 - 2,00)^ 2 = 1 ...2  $$  </hr ></br >
+Obter a raíz quadrada da divisão do somatório (2) pelo numero de termos (3) </hr ></br >
+
+ $$ Resultado = \sqrt { \dfrac{ {2} } {3}  } = {0,8164966}$$</br >
+0,8164966O <strong >Desvio padrão</strong> é uma medida que expressa o grau de dispersão de um conjunto de dados:</br >
+ <img src='https://dados-agrupados-api.herokuapp.com/Imagens/desvio-padrao-1.png'></br >
+Obter a média aritimética dos dados (Ma) = 2</br >
+Obter o número de termos (N) = 3</br >
+(Somátorio de Xi = 1 até a posição N (3) menos a média (2)) elevado ao quadrado</hr ></br >
+$$  (1 - 2,00)^ 2 = 1 ...1  $$  </hr ></br >
+$$ +(2 - 2,00)^ 2 = 0 ...1  $$  </hr ></br >
+$$ +(3 - 2,00)^ 2 = 1 ...2  $$  </hr ></br >
+Obter a raíz quadrada da divisão do somatório (2) pelo numero de termos (3) </hr ></br >
+
+ $$ Resultado = \sqrt { \dfrac{ {2} } {3}  } = {0,8164966}$$</br >
+0,8164966O <strong >Desvio padrão</strong> é uma medida que expressa o grau de dispersão de um conjunto de dados:</br >
+ <img src='https://dados-agrupados-api.herokuapp.com/Imagens/desvio-padrao-1.png'></br >
+Obter a média aritimética dos dados (Ma) = 1</br >
+Obter o número de termos (N) = 1</br >
+(Somátorio de Xi = 1 até a posição N (1) menos a média (1)) elevado ao quadrado</hr ></br >
+$$  (1 - 1,00)^ 2 = 0 ...0  $$  </hr ></br >
+Obter a raíz quadrada da divisão do somatório (0) pelo numero de termos (1) </hr ></br >
+
+ $$ Resultado = \sqrt { \dfrac{ {0} } {1}  } = {0}$$</br >
+0O <strong >Desvio padrão</strong> é uma medida que expressa o grau de dispersão de um conjunto de dados:</br >
+ <img src='https://dados-agrupados-api.herokuapp.com/Imagens/desvio-padrao-1.png'></br >
+Obter a média aritimética dos dados (Ma) = 1,5</br >
+Obter o número de termos (N) = 2</br >
+(Somátorio de Xi = 1 até a posição N (2) menos a média (1,5)) elevado ao quadrado</hr ></br >
+$$  (1 - 1,50)^ 2 = 0,25 ...0,25  $$  </hr ></br >
+$$ +(2 - 1,50)^ 2 = 0,25 ...0,5  $$  </hr ></br >
+Obter a raíz quadrada da divisão do somatório (0,5) pelo numero de termos (2) </hr ></br >
+
+ $$ Resultado = \sqrt { \dfrac{ {0,5} } {2}  } = {0,5}$$</br >
+0,5O <strong >Desvio padrão</strong> é uma medida que expressa o grau de dispersão de um conjunto de dados:</br >
+ <img src='https://dados-agrupados-api.herokuapp.com/Imagens/desvio-padrao-1.png'></br >
+Obter a média aritimética dos dados (Ma) = 1,5</br >
+Obter o número de termos (N) = 2</br >
+(Somátorio de Xi = 1 até a posição N (2) menos a média (1,5)) elevado ao quadrado</hr ></br >
+$$  (1 - 1,50)^ 2 = 0,25 ...0,25  $$  </hr ></br >
+$$ +(2 - 1,50)^ 2 = 0,25 ...0,5  $$  </hr ></br >
+Obter a raíz quadrada da divisão do somatório (0,5) pelo numero de termos (2) </hr ></br >
+
+ $$ Resultado = \sqrt { \dfrac{ {0,5} } {2}  } = {0,5}$$</br >
+0,5O <strong >Desvio padrão</strong> é uma medida que expressa o grau de dispersão de um conjunto de dados:</br >
+ <img src='https://dados-agrupados-api.herokuapp.com/Imagens/desvio-padrao-1.png'></br >
+Obter a média aritimética dos dados (Ma) = 1,5</br >
+Obter o número de termos (N) = 2</br >
+(Somátorio de Xi = 1 até a posição N (2) menos a média (1,5)) elevado ao quadrado</hr ></br >
+$$  (1 - 1,50)^ 2 = 0,25 ...0,25  $$  </hr ></br >
+$$ +(2 - 1,50)^ 2 = 0,25 ...0,5  $$  </hr ></br >
+Obter a raíz quadrada da divisão do somatório (0,5) pelo numero de termos (2) </hr ></br >
+
+ $$ Resultado = \sqrt { \dfrac{ {0,5} } {2}  } = {0,5}$$</br >
+0,5O <strong >Desvio padrão</strong> é uma medida que expressa o grau de dispersão de um conjunto de dados:</br >
+ <img src='https://dados-agrupados-api.herokuapp.com/Imagens/desvio-padrao-1.png'></br >
+Obter a média aritimética dos dados (Ma) = 2</br >
+Obter o número de termos (N) = 3</br >
+(Somátorio de Xi = 1 até a posição N (3) menos a média (2)) elevado ao quadrado</hr ></br >
+$$  (1 - 2,00)^ 2 = 1 ...1  $$  </hr ></br >
+$$ +(2 - 2,00)^ 2 = 0 ...1  $$  </hr ></br >
+$$ +(3 - 2,00)^ 2 = 1 ...2  $$  </hr ></br >
+Obter a raíz quadrada da divisão do somatório (2) pelo numero de termos (3) </hr ></br >
+
+ $$ Resultado = \sqrt { \dfrac{ {2} } {3}  } = {0,8164966}$$</br >
+0,8164966O <strong >Desvio padrão</strong> é uma medida que expressa o grau de dispersão de um conjunto de dados:</br >
+ <img src='https://dados-agrupados-api.herokuapp.com/Imagens/desvio-padrao-1.png'></br >
+Obter a média aritimética dos dados (Ma) = 2</br >
+Obter o número de termos (N) = 3</br >
+(Somátorio de Xi = 1 até a posição N (3) menos a média (2)) elevado ao quadrado</hr ></br >
+$$  (1 - 2,00)^ 2 = 1 ...1  $$  </hr ></br >
+$$ +(2 - 2,00)^ 2 = 0 ...1  $$  </hr ></br >
+$$ +(3 - 2,00)^ 2 = 1 ...2  $$  </hr ></br >
+Obter a raíz quadrada da divisão do somatório (2) pelo numero de termos (3) </hr ></br >
+
+ $$ Resultado = \sqrt { \dfrac{ {2} } {3}  } = {0,8164966}$$</br >
+0,8164966O <strong >Desvio padrão</strong> é uma medida que expressa o grau de dispersão de um conjunto de dados:</br >
+ <img src='https://dados-agrupados-api.herokuapp.com/Imagens/desvio-padrao-1.png'></br >
+Obter a média aritimética dos dados (Ma) = 1</br >
+Obter o número de termos (N) = 1</br >
+(Somátorio de Xi = 1 até a posição N (1) menos a média (1)) elevado ao quadrado</hr ></br >
+$$  (1 - 1,00)^ 2 = 0 ...0  $$  </hr ></br >
+Obter a raíz quadrada da divisão do somatório (0) pelo numero de termos (1) </hr ></br >
+
+ $$ Resultado = \sqrt { \dfrac{ {0} } {1}  } = {0}$$</br >
+0O <strong >Desvio padrão</strong> é uma medida que expressa o grau de dispersão de um conjunto de dados:</br >
+ <img src='https://dados-agrupados-api.herokuapp.com/Imagens/desvio-padrao-1.png'></br >
+Obter a média aritimética dos dados (Ma) = 1,5</br >
+Obter o número de termos (N) = 2</br >
+(Somátorio de Xi = 1 até a posição N (2) menos a média (1,5)) elevado ao quadrado</hr ></br >
+$$  (1 - 1,50)^ 2 = 0,25 ...0,25  $$  </hr ></br >
+$$ +(2 - 1,50)^ 2 = 0,25 ...0,5  $$  </hr ></br >
+Obter a raíz quadrada da divisão do somatório (0,5) pelo numero de termos (2) </hr ></br >
+
+ $$ Resultado = \sqrt { \dfrac{ {0,5} } {2}  } = {0,5}$$</br >
+0,5O <strong >Desvio padrão</strong> é uma medida que expressa o grau de dispersão de um conjunto de dados:</br >
+ <img src='https://dados-agrupados-api.herokuapp.com/Imagens/desvio-padrao-1.png'></br >
+Obter a média aritimética dos dados (Ma) = 12</br >
+Obter o número de termos (N) = 2</br >
+(Somátorio de Xi = 1 até a posição N (2) menos a média (12)) elevado ao quadrado</hr ></br >
+$$  (1 - 12,00)^ 2 = 121 ...121  $$  </hr ></br >
+$$ +(23 - 12,00)^ 2 = 121 ...242  $$  </hr ></br >
+Obter a raíz quadrada da divisão do somatório (242) pelo numero de termos (2) </hr ></br >
+
+ $$ Resultado = \sqrt { \dfrac{ {242} } {2}  } = {11}$$</br >
+11O <strong >Desvio padrão</strong> é uma medida que expressa o grau de dispersão de um conjunto de dados:</br >
+ <img src='https://dados-agrupados-api.herokuapp.com/Imagens/desvio-padrao-1.png'></br >
+Obter a média aritimética dos dados (Ma) = 12</br >
+Obter o número de termos (N) = 2</br >
+(Somátorio de Xi = 1 até a posição N (2) menos a média (12)) elevado ao quadrado</hr ></br >
+$$  (1 - 12,00)^ 2 = 121 ...121  $$  </hr ></br >
+$$ +(23 - 12,00)^ 2 = 121 ...242  $$  </hr ></br >
+Obter a raíz quadrada da divisão do somatório (242) pelo numero de termos (2) </hr ></br >
+
+ $$ Resultado = \sqrt { \dfrac{ {242} } {2}  } = {11}$$</br >
+11O <strong >Desvio padrão</strong> é uma medida que expressa o grau de dispersão de um conjunto de dados:</br >
+ <img src='https://dados-agrupados-api.herokuapp.com/Imagens/desvio-padrao-1.png'></br >
+Obter a média aritimética dos dados (Ma) = 1</br >
+Obter o número de termos (N) = 1</br >
+(Somátorio de Xi = 1 até a posição N (1) menos a média (1)) elevado ao quadrado</hr ></br >
+$$  (1 - 1,00)^ 2 = 0 ...0  $$  </hr ></br >
+Obter a raíz quadrada da divisão do somatório (0) pelo numero de termos (1) </hr ></br >
+
+ $$ Resultado = \sqrt { \dfrac{ {0} } {1}  } = {0}$$</br >
+0O <strong >Desvio padrão</strong> é uma medida que expressa o grau de dispersão de um conjunto de dados:</br >
+ <img src='https://dados-agrupados-api.herokuapp.com/Imagens/desvio-padrao-1.png'></br >
+Obter a média aritimética dos dados (Ma) = 1</br >
+Obter o número de termos (N) = 1</br >
+(Somátorio de Xi = 1 até a posição N (1) menos a média (1)) elevado ao quadrado</hr ></br >
+$$  (1 - 1,00)^ 2 = 0 ...0  $$  </hr ></br >
+Obter a raíz quadrada da divisão do somatório (0) pelo numero de termos (1) </hr ></br >
+
+ $$ Resultado = \sqrt { \dfrac{ {0} } {1}  } = {0}$$</br >
+0O <strong >Desvio padrão</strong> é uma medida que expressa o grau de dispersão de um conjunto de dados:</br >
+ <img src='https://dados-agrupados-api.herokuapp.com/Imagens/desvio-padrao-1.png'></br >
+Obter a média aritimética dos dados (Ma) = 1,5</br >
+Obter o número de termos (N) = 2</br >
+(Somátorio de Xi = 1 até a posição N (2) menos a média (1,5)) elevado ao quadrado</hr ></br >
+$$  (1 - 1,50)^ 2 = 0,25 ...0,25  $$  </hr ></br >
+$$ +(2 - 1,50)^ 2 = 0,25 ...0,5  $$  </hr ></br >
+Obter a raíz quadrada da divisão do somatório (0,5) pelo numero de termos (2) </hr ></br >
+
+ $$ Resultado = \sqrt { \dfrac{ {0,5} } {2}  } = {0,5}$$</br >
+0,5O <strong >Desvio padrão</strong> é uma medida que expressa o grau de dispersão de um conjunto de dados:</br >
+ <img src='https://dados-agrupados-api.herokuapp.com/Imagens/desvio-padrao-1.png'></br >
+Obter a média aritimética dos dados (Ma) = 1,5</br >
+Obter o número de termos (N) = 2</br >
+(Somátorio de Xi = 1 até a posição N (2) menos a média (1,5)) elevado ao quadrado</hr ></br >
+$$  (1 - 1,50)^ 2 = 0,25 ...0,25  $$  </hr ></br >
+$$ +(2 - 1,50)^ 2 = 0,25 ...0,5  $$  </hr ></br >
+Obter a raíz quadrada da divisão do somatório (0,5) pelo numero de termos (2) </hr ></br >
+
+ $$ Resultado = \sqrt { \dfrac{ {0,5} } {2}  } = {0,5}$$</br >
+0,5O <strong >Desvio padrão</strong> é uma medida que expressa o grau de dispersão de um conjunto de dados:</br >
+ <img src='https://dados-agrupados-api.herokuapp.com/Imagens/desvio-padrao-1.png'></br >
+Obter a média aritimética dos dados (Ma) = 2</br >
+Obter o número de termos (N) = 3</br >
+(Somátorio de Xi = 1 até a posição N (3) menos a média (2)) elevado ao quadrado</hr ></br >
+$$  (1 - 2,00)^ 2 = 1 ...1  $$  </hr ></br >
+$$ +(2 - 2,00)^ 2 = 0 ...1  $$  </hr ></br >
+$$ +(3 - 2,00)^ 2 = 1 ...2  $$  </hr ></br >
+Obter a raíz quadrada da divisão do somatório (2) pelo numero de termos (3) </hr ></br >
+
+ $$ Resultado = \sqrt { \dfrac{ {2} } {3}  } = {0,8164966}$$</br >
+0,8164966O <strong >Desvio padrão</strong> é uma medida que expressa o grau de dispersão de um conjunto de dados:</br >
+ <img src='https://dados-agrupados-api.herokuapp.com/Imagens/desvio-padrao-1.png'></br >
+Obter a média aritimética dos dados (Ma) = 1,5</br >
+Obter o número de termos (N) = 2</br >
+(Somátorio de Xi = 1 até a posição N (2) menos a média (1,5)) elevado ao quadrado</hr ></br >
+$$  (1 - 1,50)^ 2 = 0,25 ...0,25  $$  </hr ></br >
+$$ +(2 - 1,50)^ 2 = 0,25 ...0,5  $$  </hr ></br >
+Obter a raíz quadrada da divisão do somatório (0,5) pelo numero de termos (2) </hr ></br >
+
+ $$ Resultado = \sqrt { \dfrac{ {0,5} } {2}  } = {0,5}$$</br >
+0,5O <strong >Desvio padrão</strong> é uma medida que expressa o grau de dispersão de um conjunto de dados:</br >
+ <img src='https://dados-agrupados-api.herokuapp.com/Imagens/desvio-padrao-1.png'></br >
+Obter a média aritimética dos dados (Ma) = 1,5</br >
+Obter o número de termos (N) = 2</br >
+(Somátorio de Xi = 1 até a posição N (2) menos a média (1,5)) elevado ao quadrado</hr ></br >
+$$  (1 - 1,50)^ 2 = 0,25 ...0,25  $$  </hr ></br >
+$$ +(2 - 1,50)^ 2 = 0,25 ...0,5  $$  </hr ></br >
+Obter a raíz quadrada da divisão do somatório (0,5) pelo numero de termos (2) </hr ></br >
+
+ $$ Resultado = \sqrt { \dfrac{ {0,5} } {2}  } = {0,5}$$</br >
+0,5O <strong >Desvio padrão</strong> é uma medida que expressa o grau de dispersão de um conjunto de dados:</br >
+ <img src='https://dados-agrupados-api.herokuapp.com/Imagens/desvio-padrao-1.png'></br >
+Obter a média aritimética dos dados (Ma) = 1</br >
+Obter o número de termos (N) = 1</br >
+(Somátorio de Xi = 1 até a posição N (1) menos a média (1)) elevado ao quadrado</hr ></br >
+$$  (1 - 1,00)^ 2 = 0 ...0  $$  </hr ></br >
+Obter a raíz quadrada da divisão do somatório (0) pelo numero de termos (1) </hr ></br >
+
+ $$ Resultado = \sqrt { \dfrac{ {0} } {1}  } = {0}$$</br >
+0<i class='counter'>1</i>O <strong >Desvio padrão</strong> é uma medida que expressa o grau de dispersão de um conjunto de dados:</br >
+<i class='counter'>2</i> <img src='https://dados-agrupados-api.herokuapp.com/Imagens/desvio-padrao-1.png'></br >
+<i class='counter'>3</i>Obter a média aritimética dos dados (Ma) = 1</br >
+<i class='counter'>4</i>Obter o número de termos (N) = 1</br >
+<i class='counter'>5</i>(Somátorio de Xi = 1 até a posição N (1) menos a média (1)) elevado ao quadrado</hr ></br >
+$$  (1 - 1,00)^ 2 = 0 ...0  $$  </hr ></br >
+<i class='counter'>7</i>Obter a raíz quadrada da divisão do somatório (0) pelo numero de termos (1) </hr ></br >
+
+ $$ Resultado = \sqrt { \dfrac{ {0} } {1}  } = {0}$$</br >
+0

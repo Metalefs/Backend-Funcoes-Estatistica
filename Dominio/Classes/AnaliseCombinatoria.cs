@@ -1,12 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace Dominio.Classes
 {
     public class AnaliseCombinatoria
     {
+        public List<string> ListaAnagramas { get; }
+
+        public AnaliseCombinatoria()
+        {
+            this.ListaAnagramas = new List<string>();
+        }
         public float Fatorial(int valor)
         {
             var resultado = 1;
@@ -34,26 +38,8 @@ namespace Dominio.Classes
 
         public List<string> Anagramas(string palavra)
         {
-            List<string> Anagramas = new List<string>();
-            for(int i = 0; i < palavra.Length; i++)
-            {
-                string letrasRestantes = palavra.Remove(i,1);
-                for (int j = 0; j < letrasRestantes.Length; j++)
-                {
-                    Anagramas.Add(palavra[i] + letrasRestantes[j] + letrasRestantes.Remove(j, 1));
-                }
-            }
-            return Anagramas;
+            return palavra.Permutations().ToList();
         }
-
-        //public float CombinacaoSimples(int valor)
-        //{
-
-        //}
-
-        //public float Arranjo(int valor)
-        //{
-
-        //}
+       
     }
 }

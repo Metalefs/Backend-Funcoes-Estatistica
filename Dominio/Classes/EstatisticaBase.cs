@@ -10,7 +10,7 @@ namespace Estatistica101.Classes
     {
         public IList<float> Valores { get; protected set; }
         public float Resultado { get; protected set; }
-        public TextWriter Passos { get; protected set; }
+        public StringWriterDecorator Passos { get; protected set; }
 
         public abstract float Calcular();
         public EstatisticaBase()

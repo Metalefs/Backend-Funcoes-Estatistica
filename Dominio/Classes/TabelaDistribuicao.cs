@@ -75,7 +75,7 @@ namespace Estatistica101.Classes
         {
             Valores = Valores.ToList().OrderBy(x => x).ToList();
             string ValoresCSV = String.Join(",", Valores);
-            Passos.WriteLineAsync($"{Titulo("Ordene os dados (K):")} {GerarTabelaDeFrequencia()}");
+            Passos.WriteLineAsyncCounter($"{Titulo("Ordene os dados (K):")} {GerarTabelaDeFrequencia()}");
 
             NumeroDeElementos = Valores.Count;
             ValorMinimo = CalcularValorMinimo(Valores);
@@ -137,7 +137,7 @@ namespace Estatistica101.Classes
         private float CalcularAmplitudeA(float ValorMinimo, float ValorMaximo)
         {
             Amplitude = ValorMaximo - ValorMinimo;
-            Passos.WriteLineAsync($"{Titulo("Calcule a Amplitude (A)")}: $$ A = ValorMaximo - ValorMinimo  $$");
+            Passos.WriteLineAsyncCounter($"{Titulo("Calcule a Amplitude (A)")}: $$ A = ValorMaximo - ValorMinimo  $$");
             Passos.WriteLineAsync($"$$ A = {ValorMaximo} - {ValorMinimo} = {Amplitude} $$");
             return Amplitude;
         }
@@ -154,9 +154,9 @@ namespace Estatistica101.Classes
                 Passos.WriteLineAsync($"$$ K = \\sqrt {NumeroDeElementos} = {sqrt} ... { K} $$");
                 return QuantidadeIntervalos;
             }
-            Passos.WriteLineAsync($"{Titulo("Calcule a Quantidade de Intervalos (h)")}:");
-            Passos.WriteLineAsync($"{Titulo("- Tabela de Truman")}:");
-            Passos.WriteLineAsync($"Usado para o caso N descrito:");
+            Passos.WriteLineAsyncCounter($"{Titulo("Calcule a Quantidade de Intervalos (h)")}:");
+            Passos.WriteLineAsyncCounter($"{Titulo("- Tabela de Truman")}:");
+            Passos.WriteLineAsyncCounter($"Usado para o caso N descrito:");
             Passos.WriteLineAsync(GerarTabelaDeTruman());
 
             switch (NumeroDeElementos)
@@ -217,7 +217,7 @@ namespace Estatistica101.Classes
         private void  CalcularTodosOsIntervalos()
         {
             float Abertura = ValorMinimo;
-            Passos.WriteLineAsync($"{Titulo("Calcular Abertura do Intervalo")}: Começa pelo Valor Minimo = {ValorMinimo} {HTMLElements.Hr()}");
+            Passos.WriteLineAsyncCounter($"{Titulo("Calcular Abertura do Intervalo")}: Começa pelo Valor Minimo = {ValorMinimo} {HTMLElements.Hr()}");
             for (int i = 0; i < QuantidadeIntervalos; i++)
             {
                 try
@@ -226,9 +226,9 @@ namespace Estatistica101.Classes
                     {
                         float FimIntervalo = Abertura + Intervalo;
                         intervalos.Add($"{Abertura.ToString("0.00")}|--{FimIntervalo.ToString("0.00")}");
-                        Passos.WriteLineAsync($"{Titulo("Calcule o Final do Intervalo")}: Abertura + Intervalo ");
+                        Passos.WriteLineAsyncCounter($"{Titulo("Calcule o Final do Intervalo")}: Abertura + Intervalo ");
                         Passos.WriteLineAsync($"$$ {Abertura} + {Intervalo} = {Abertura + Intervalo}$$");
-                        Passos.WriteLineAsync($"{Titulo("Calcule o Intervalo")}: Abertura |-- Fim ");
+                        Passos.WriteLineAsyncCounter($"{Titulo("Calcule o Intervalo")}: Abertura |-- Fim ");
                         Passos.WriteLineAsync($"$${Abertura.ToString("0.00")}|--{FimIntervalo.ToString("0.00")} $$");
 
                         xi.Add(CalcularMediaXI(Abertura, FimIntervalo));
@@ -243,7 +243,7 @@ namespace Estatistica101.Classes
                     }
                     else
                     {
-                        Passos.WriteLineAsync($"{Titulo("Freq. Simples de ")} {ClassToHTML.AninharEmEm($"{ValoresDistintos[i].Key} [x{i + 1}]")}: {ValoresDistintos[i].Value}");
+                        Passos.WriteLineAsyncCounter($"{Titulo("Freq. Simples de ")} {ClassToHTML.AninharEmEm($"{ValoresDistintos[i].Key} [x{i + 1}]")}: {ValoresDistintos[i].Value}");
                         xi.Add(ValoresDistintos[i].Key);
                         fi.Add(ValoresDistintos[i].Value);
 
@@ -284,7 +284,7 @@ namespace Estatistica101.Classes
             }
 
 
-            Passos.WriteLineAsync($"{Titulo("Freq. Simples")}: Contagem de valores entre {Abertura} e {Fim} : {resultado}");
+            Passos.WriteLineAsyncCounter($"{Titulo("Freq. Simples")}: Contagem de valores entre {Abertura} e {Fim} : {resultado}");
             Passos.WriteLineAsync($"{GerarTabelaDeFS(resultadosFS)}");
             return resultado;
         }
@@ -302,7 +302,7 @@ namespace Estatistica101.Classes
 
         private float CalcularFrequenciaSimplesAcumulada(int pos)
         {
-            Passos.WriteLineAsync($"{Titulo("Freq. Simples Acum. de")} {ClassToHTML.AninharEmEm($"[x{pos + 1}]")}: {(pos > 0 ? fi.Sum().ToString(): fi[pos].ToString())} ");
+            Passos.WriteLineAsyncCounter($"{Titulo("Freq. Simples Acum. de")} {ClassToHTML.AninharEmEm($"[x{pos + 1}]")}: {(pos > 0 ? fi.Sum().ToString(): fi[pos].ToString())} ");
             float resultado;
             if (pos > 0)
             {
@@ -334,7 +334,7 @@ namespace Estatistica101.Classes
         private float CalcularFrequenciaRelativa(int pos)
         {
             float Fr = fi[pos] / NumeroDeElementos * 100;
-            Passos.WriteLineAsync($"{Titulo(ClassToHTML.AninharEmEm($"Freq. Relativa de [x{pos + 1}]"))}: $$ Fr = {{ \\dfrac{{ {{Fi}} }} {{N}}  }} * 100 $$");
+            Passos.WriteLineAsyncCounter($"{Titulo(ClassToHTML.AninharEmEm($"Freq. Relativa de [x{pos + 1}]"))}: $$ Fr = {{ \\dfrac{{ {{Fi}} }} {{N}}  }} * 100 $$");
             Passos.WriteLineAsync($"$$  Fr = {{ \\dfrac{{ {{{fi[pos]}}} }} {{{NumeroDeElementos}}}  }} * 100 = {Fr} $$");
             return Fr;
         }
@@ -346,7 +346,7 @@ namespace Estatistica101.Classes
                 resultado = fr.Sum();
             else
                 resultado = fr[pos];
-            Passos.WriteLineAsync($"{Titulo(ClassToHTML.AninharEmEm($"Freq. Relativa Acumu. de [x{pos + 1}] "))}: {resultado}% {HTMLElements.Hr()}");
+            Passos.WriteLineAsyncCounter($"{Titulo(ClassToHTML.AninharEmEm($"Freq. Relativa Acumu. de [x{pos + 1}] "))}: {resultado}% {HTMLElements.Hr()}");
             Passos.WriteLineAsync($"{GerarTabelaDeFrAcumulada(pos,resultado)}");
 
             return resultado;

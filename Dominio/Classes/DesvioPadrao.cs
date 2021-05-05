@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using static Exportacao.HTML.ClassToHTML;
+
 namespace Estatistica101.Classes
 {
     public class DesvioPadrao : EstatisticaBase
@@ -32,11 +32,11 @@ namespace Estatistica101.Classes
         public override float Calcular()
         {
             float Media = Valores.Average();
-            Passos.WriteLineAsync($"O {Titulo("Desvio padrão")} é uma medida que expressa o grau de dispersão de um conjunto de dados:");
-            Passos.WriteLineAsync($" {HTMLElements.Img(Properties: "src='https://dados-agrupados-api.herokuapp.com/Imagens/desvio-padrao-1.png'")}");
-            Passos.WriteLineAsync($"Obter a média aritimética dos dados (Ma) = {Media}");
-            Passos.WriteLineAsync($"Obter o número de termos (N) = {Valores.Count}");
-            Passos.WriteLineAsync($"(Somátorio de Xi = 1 até a posição N ({Valores.Count}) menos a média ({Media})) elevado ao quadrado{HTMLElements.Hr()}");
+            Passos.WriteLineAsyncCounter($"O {Titulo("Desvio padrão")} é uma medida que expressa o grau de dispersão de um conjunto de dados:");
+            Passos.WriteLineAsyncCounter($" {HTMLElements.Img(Properties: "src='https://dados-agrupados-api.herokuapp.com/Imagens/desvio-padrao-1.png'")}");
+            Passos.WriteLineAsyncCounter($"Obter a média aritimética dos dados (Ma) = {Media}");
+            Passos.WriteLineAsyncCounter($"Obter o número de termos (N) = {Valores.Count}");
+            Passos.WriteLineAsyncCounter($"(Somátorio de Xi = 1 até a posição N ({Valores.Count}) menos a média ({Media})) elevado ao quadrado{HTMLElements.Hr()}");
             int xi = 1;
             foreach (var Elemento in Valores)
             {
@@ -47,7 +47,7 @@ namespace Estatistica101.Classes
                 xi++;
             }
 
-            Passos.WriteLineAsync($"Obter a raíz quadrada da divisão do somatório ({Resultado}) pelo numero de termos ({Valores.Count}) {HTMLElements.Hr()}");
+            Passos.WriteLineAsyncCounter($"Obter a raíz quadrada da divisão do somatório ({Resultado}) pelo numero de termos ({Valores.Count}) {HTMLElements.Hr()}");
             var operacaoFinal = (float)Math.Sqrt(Resultado / Valores.Count());
             Passos.WriteLineAsync($"\n $$ Resultado = \\sqrt {{ \\dfrac{{ {{{Resultado}}} }} {{{Valores.Count()}}}  }} = {{{operacaoFinal}}}$$");
             Resultado = operacaoFinal;
