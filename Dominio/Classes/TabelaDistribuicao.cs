@@ -1,4 +1,5 @@
-﻿using Dominio.Decorators;
+﻿using Dominio.Classes;
+using Dominio.Decorators;
 using Estatistica101.Interfaces;
 using Exportacao.HTML;
 using System;
@@ -41,6 +42,7 @@ namespace Estatistica101.Classes
         public Media Media { get; private set; }
         public DesvioPadrao DesvioPadrao { get; set; }
         public Variancia Variancia { get; set; }
+        public CoeficienteVariacao CoeficienteVariacao { get; set; }
 
         public bool Simples { get; set; }
 
@@ -52,6 +54,15 @@ namespace Estatistica101.Classes
             Fi = new List<float>();
             fr = new List<float>();
             Fr = new List<float>();
+
+
+            Moda = new Moda(Valores);
+            Mediana = new Mediana(Valores);
+            DesvioPadrao = new DesvioPadrao(Valores);
+            Variancia = new Variancia(Valores);
+            Media = new Media(Valores);
+            CoeficienteVariacao = new CoeficienteVariacao(Valores);
+
             ValoresDistintos = new List<KeyValuePair<float, int>>();
             this.Valores = Valores;
             var ValoresAgrupados = from s in Valores
@@ -90,29 +101,27 @@ namespace Estatistica101.Classes
 
             CalcularTodosOsIntervalos();
 
-            Moda = new Moda(Valores);
             Moda.Calcular();
             //Passos.Append(Moda.Passos.ToString());
 
-            Mediana = new Mediana(Valores);
             Mediana.Calcular();
             //Passos.Append(Mediana.Passos.ToString());
 
-            DesvioPadrao = new DesvioPadrao(Valores);
             DesvioPadrao.Calcular();
             //Passos.Append(DesvioPadrao.Passos.ToString());
 
-            Variancia = new Variancia(Valores);
             Variancia.Calcular();
             //Passos.Append(Variancia.Passos.ToString());
 
-            Media = new Media(Valores);
             Media.Calcular();
             //Passos.Append(Media.Passos.ToString());
+
+            CoeficienteVariacao.Calcular();
 
             Passos.Close();
             return 0f;
         }
+
         private string GerarTabelaDeFrequencia()
         {
             List<KeyValuePair<string, string>> CamposTabelaFrequencia = new List<KeyValuePair<string, string>>();
@@ -122,6 +131,7 @@ namespace Estatistica101.Classes
             });
             return ClassToHTML.MontarTabela(CamposTabelaFrequencia, "class='table '");
         }
+
         private float CalcularValorMinimo(List<float> Valores)
         {
             ValorMinimo = Valores.Min();

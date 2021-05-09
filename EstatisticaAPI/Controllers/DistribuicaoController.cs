@@ -63,7 +63,6 @@ namespace EstatisticaAPI.Controllers
             string retorno;
             try
             {
-
                 Variancia Elemento = new Variancia(ObterValores(data));
                 Elemento.Calcular();
                 MontadorEstatistica<Variancia> montador = new MontadorEstatistica<Variancia>(Elemento);
@@ -81,7 +80,6 @@ namespace EstatisticaAPI.Controllers
             string retorno;
             try
             {
-
                 Media Elemento = new Media(ObterValores(data));
                 Elemento.Calcular();
                 MontadorEstatistica<Media> montador = new MontadorEstatistica<Media>(Elemento);
@@ -99,7 +97,6 @@ namespace EstatisticaAPI.Controllers
             string retorno;
             try
             {
-
                 Moda Elemento = new Moda(ObterValores(data));
                 Elemento.Calcular();
                 MontadorEstatistica<Moda> montador = new MontadorEstatistica<Moda>(Elemento);
@@ -135,7 +132,6 @@ namespace EstatisticaAPI.Controllers
             string retorno;
             try
             {
-
                 CoeficienteVariacao Elemento = new CoeficienteVariacao(ObterValores(data));
                 Elemento.Calcular();
                 MontadorEstatistica<CoeficienteVariacao> montador = new MontadorEstatistica<CoeficienteVariacao>(Elemento);
