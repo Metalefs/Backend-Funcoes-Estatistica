@@ -584,4 +584,459 @@ $$  (1 - 1,00)^ 2 = 0 ...0  $$  </hr ></br >
 <i class='counter'>7</i>Obter a raíz quadrada da divisão do somatório (0) pelo numero de termos (1) </hr ></br >
 
  $$ Resultado = \sqrt { \dfrac{ {0} } {1}  } = {0}$$</br >
-0
+0<i class='counter'>1</i><strong >Variância</strong>: A variância mede quão dispersos estão os dados na amostra. =  $$ \sum_ {Xi - Ma²} \over n $$</br >
+<i class='counter'>2</i>Calcule a média (Ma) = 2</br >
+<i class='counter'>3</i>Calcule o número de termos (N) = 3 </hr ></br >
+ $$ (1 - 2,00)^ 2 = 1 ...1 + $$ </hr ></br >
+ $$ (2 - 2,00)^ 2 = 0 ...1 + $$ </hr ></br >
+ $$ (3 - 2,00)^ 2 = 1 ...2 + $$ </hr ></br >
+
+ $$ Resultado: \dfrac{ {2} } {3} = {0,6666667} $$</br >
+0,6666667<i class='counter'>1</i><strong >Variância</strong>: A variância mede quão dispersos estão os dados na amostra. =  $$ \sum_ {Xi - Ma²} \over n $$</br >
+<i class='counter'>2</i>Calcule a média (Ma) = 2</br >
+<i class='counter'>3</i>Calcule o número de termos (N) = 3 </hr ></br >
+ $$ (1 - 2,00)^ 2 = 1 ...1 + $$ </hr ></br >
+ $$ (2 - 2,00)^ 2 = 0 ...1 + $$ </hr ></br >
+ $$ (3 - 2,00)^ 2 = 1 ...2 + $$ </hr ></br >
+
+ $$ Resultado: \dfrac{ {2} } {3} = {0,6666667} $$</br >
+0,6666667<i class='counter'>1</i>O <strong >Desvio padrão</strong> é uma medida que expressa o grau de dispersão de um conjunto de dados:</br >
+<i class='counter'>2</i> <img src='https://dados-agrupados-api.herokuapp.com/Imagens/desvio-padrao-1.png'></br >
+<i class='counter'>3</i>Obter a média aritimética dos dados (Ma) = 1</br >
+<i class='counter'>4</i>Obter o número de termos (N) = 1</br >
+<i class='counter'>5</i>(Somátorio de Xi = 1 até a posição N (1) menos a média (1)) elevado ao quadrado</hr ></br >
+$$  (1 - 1,00)^ 2 = 0 ...0  $$  </hr ></br >
+<i class='counter'>7</i>Obter a raíz quadrada da divisão do somatório (0) pelo numero de termos (1) </hr ></br >
+
+ $$ Resultado = \sqrt { \dfrac{ {0} } {1}  } = {0}$$</br >
+0<i class='counter'>1</i>O <strong >Desvio padrão</strong> é uma medida que expressa o grau de dispersão de um conjunto de dados:</br >
+<i class='counter'>2</i> <img src='https://dados-agrupados-api.herokuapp.com/Imagens/desvio-padrao-1.png'></br >
+<i class='counter'>3</i>Obter a média aritimética dos dados (Ma) = 1,5</br >
+<i class='counter'>4</i>Obter o número de termos (N) = 2</br >
+<i class='counter'>5</i>(Somátorio de Xi = 1 até a posição N (2) menos a média (1,5)) elevado ao quadrado</hr ></br >
+$$  (1 - 1,50)^ 2 = 0,25 ...0,25  $$  </hr ></br >
+$$ +(2 - 1,50)^ 2 = 0,25 ...0,5  $$  </hr ></br >
+<i class='counter'>8</i>Obter a raíz quadrada da divisão do somatório (0,5) pelo numero de termos (2) </hr ></br >
+
+ $$ Resultado = \sqrt { \dfrac{ {0,5} } {2}  } = {0,5}$$</br >
+0,5<i class='counter'>1</i>O <strong >Desvio padrão</strong> é uma medida que expressa o grau de dispersão de um conjunto de dados:</br >
+<i class='counter'>2</i> <img src='https://dados-agrupados-api.herokuapp.com/Imagens/desvio-padrao-1.png'></br >
+<i class='counter'>3</i>Obter a média aritimética dos dados (Ma) = 1,5</br >
+<i class='counter'>4</i>Obter o número de termos (N) = 2</br >
+<i class='counter'>5</i>(Somátorio de Xi = 1 até a posição N (2) menos a média (1,5)) elevado ao quadrado</hr ></br >
+$$  (1 - 1,50)^ 2 = 0,25 ...0,25  $$  </hr ></br >
+$$ +(2 - 1,50)^ 2 = 0,25 ...0,5  $$  </hr ></br >
+<i class='counter'>8</i>Obter a raíz quadrada da divisão do somatório (0,5) pelo numero de termos (2) </hr ></br >
+
+ $$ Resultado = \sqrt { \dfrac{ {0,5} } {2}  } = {0,5}$$</br >
+0,5<i class='counter'>1</i>O <strong >Desvio padrão</strong> é uma medida que expressa o grau de dispersão de um conjunto de dados:</br >
+<i class='counter'>2</i> <img src='https://dados-agrupados-api.herokuapp.com/Imagens/desvio-padrao-1.png'></br >
+<i class='counter'>3</i>Obter a média aritimética dos dados (Ma) = 12</br >
+<i class='counter'>4</i>Obter o número de termos (N) = 2</br >
+<i class='counter'>5</i>(Somátorio de Xi = 1 até a posição N (2) menos a média (12)) elevado ao quadrado</hr ></br >
+$$  (1 - 12,00)^ 2 = 121 ...121  $$  </hr ></br >
+$$ +(23 - 12,00)^ 2 = 121 ...242  $$  </hr ></br >
+<i class='counter'>8</i>Obter a raíz quadrada da divisão do somatório (242) pelo numero de termos (2) </hr ></br >
+
+ $$ Resultado = \sqrt { \dfrac{ {242} } {2}  } = {11}$$</br >
+11<i class='counter'>1</i><strong >Variância</strong>: A variância mede quão dispersos estão os dados na amostra. =  $$ \sum_ {Xi - Ma²} \over n $$</br >
+<i class='counter'>2</i>Calcule a média (Ma) = 1</br >
+<i class='counter'>3</i>Calcule o número de termos (N) = 1 </hr ></br >
+ $$ (1 - 1,00)^ 2 = 0 ...0 + $$ </hr ></br >
+
+ $$ Resultado: \dfrac{ {0} } {1} = {0} $$</br >
+0<i class='counter'>1</i><strong >Variância</strong>: A variância mede quão dispersos estão os dados na amostra. =  $$ \sum_ {Xi - Ma²} \over n $$</br >
+<i class='counter'>2</i>Calcule a média (Ma) = 1</br >
+<i class='counter'>3</i>Calcule o número de termos (N) = 1 </hr ></br >
+ $$ (1 - 1,00)^ 2 = 0 ...0 + $$ </hr ></br >
+
+ $$ Resultado: \dfrac{ {0} } {1} = {0} $$</br >
+0<i class='counter'>1</i><strong >Variância</strong>: A variância mede quão dispersos estão os dados na amostra. =  $$ \sum_ {Xi - Ma²} \over n $$</br >
+<i class='counter'>2</i>Calcule a média (Ma) = 1,5</br >
+<i class='counter'>3</i>Calcule o número de termos (N) = 2 </hr ></br >
+ $$ (1 - 1,50)^ 2 = 0,25 ...0,25 + $$ </hr ></br >
+ $$ (2 - 1,50)^ 2 = 0,25 ...0,5 + $$ </hr ></br >
+
+ $$ Resultado: \dfrac{ {0,5} } {2} = {0,25} $$</br >
+0,25<i class='counter'>1</i><strong >Variância</strong>: A variância mede quão dispersos estão os dados na amostra. =  $$ \sum_ {Xi - Ma²} \over n $$</br >
+<i class='counter'>2</i>Calcule a média (Ma) = 1,5</br >
+<i class='counter'>3</i>Calcule o número de termos (N) = 2 </hr ></br >
+ $$ (1 - 1,50)^ 2 = 0,25 ...0,25 + $$ </hr ></br >
+ $$ (2 - 1,50)^ 2 = 0,25 ...0,5 + $$ </hr ></br >
+
+ $$ Resultado: \dfrac{ {0,5} } {2} = {0,25} $$</br >
+0,25<i class='counter'>1</i><strong >Variância</strong>: A variância mede quão dispersos estão os dados na amostra. =  $$ \sum_ {Xi - Ma²} \over n $$</br >
+<i class='counter'>2</i>Calcule a média (Ma) = 2</br >
+<i class='counter'>3</i>Calcule o número de termos (N) = 3 </hr ></br >
+ $$ (1 - 2,00)^ 2 = 1 ...1 + $$ </hr ></br >
+ $$ (2 - 2,00)^ 2 = 0 ...1 + $$ </hr ></br >
+ $$ (3 - 2,00)^ 2 = 1 ...2 + $$ </hr ></br >
+
+ $$ Resultado: \dfrac{ {2} } {3} = {0,6666667} $$</br >
+0,6666667<i class='counter'>1</i><strong >Variância</strong>: A variância mede quão dispersos estão os dados na amostra. =  $$ \sum_ {Xi - Ma²} \over n $$</br >
+<i class='counter'>2</i>Calcule a média (Ma) = 1</br >
+<i class='counter'>3</i>Calcule o número de termos (N) = 1 </hr ></br >
+ $$ (1 - 1,00)^ 2 = 0 ...0 + $$ </hr ></br >
+
+ $$ Resultado: \dfrac{ {0} } {1} = {0} $$</br >
+0<i class='counter'>1</i><strong >Variância</strong>: A variância mede quão dispersos estão os dados na amostra. =  $$ \sum_ {Xi - Ma²} \over n $$</br >
+<i class='counter'>2</i>Calcule a média (Ma) = 1</br >
+<i class='counter'>3</i>Calcule o número de termos (N) = 1 </hr ></br >
+ $$ (1 - 1,00)^ 2 = 0 ...0 + $$ </hr ></br >
+
+ $$ Resultado: \dfrac{ {0} } {1} = {0} $$</br >
+0<i class='counter'>1</i><strong >Variância</strong>: A variância mede quão dispersos estão os dados na amostra. =  $$ \sum_ {Xi - Ma²} \over n $$</br >
+<i class='counter'>2</i>Calcule a média (Ma) = 1,5</br >
+<i class='counter'>3</i>Calcule o número de termos (N) = 2 </hr ></br >
+ $$ (1 - 1,50)^ 2 = 0,25 ...0,25 + $$ </hr ></br >
+ $$ (2 - 1,50)^ 2 = 0,25 ...0,5 + $$ </hr ></br >
+
+ $$ Resultado: \dfrac{ {0,5} } {2} = {0,25} $$</br >
+0,25<i class='counter'>1</i><strong >Variância</strong>: A variância mede quão dispersos estão os dados na amostra. =  $$ \sum_ {Xi - Ma²} \over n $$</br >
+<i class='counter'>2</i>Calcule a média (Ma) = 1,5</br >
+<i class='counter'>3</i>Calcule o número de termos (N) = 2 </hr ></br >
+ $$ (1 - 1,50)^ 2 = 0,25 ...0,25 + $$ </hr ></br >
+ $$ (2 - 1,50)^ 2 = 0,25 ...0,5 + $$ </hr ></br >
+
+ $$ Resultado: \dfrac{ {0,5} } {2} = {0,25} $$</br >
+0,25<i class='counter'>1</i><strong >Variância</strong>: A variância mede quão dispersos estão os dados na amostra. =  $$ \sum_ {Xi - Ma²} \over n $$</br >
+<i class='counter'>2</i>Calcule a média (Ma) = 2</br >
+<i class='counter'>3</i>Calcule o número de termos (N) = 3 </hr ></br >
+ $$ (1 - 2,00)^ 2 = 1 ...1 + $$ </hr ></br >
+ $$ (2 - 2,00)^ 2 = 0 ...1 + $$ </hr ></br >
+ $$ (3 - 2,00)^ 2 = 1 ...2 + $$ </hr ></br >
+
+ $$ Resultado: \dfrac{ {2} } {3} = {0,6666667} $$</br >
+0,6666667<i class='counter'>1</i><strong >Variância</strong>: A variância mede quão dispersos estão os dados na amostra. =  $$ \sum_ {Xi - Ma²} \over n $$</br >
+<i class='counter'>2</i>Calcule a média (Ma) = 2</br >
+<i class='counter'>3</i>Calcule o número de termos (N) = 3 </hr ></br >
+ $$ (1 - 2,00)^ 2 = 1 ...1 + $$ </hr ></br >
+ $$ (2 - 2,00)^ 2 = 0 ...1 + $$ </hr ></br >
+ $$ (3 - 2,00)^ 2 = 1 ...2 + $$ </hr ></br >
+
+ $$ Resultado: \dfrac{ {2} } {3} = {0,6666667} $$</br >
+0,6666667<i class='counter'>1</i><strong >Variância</strong>: A variância mede quão dispersos estão os dados na amostra. =  $$ \sum_ {Xi - Ma²} \over n $$</br >
+<i class='counter'>2</i>Calcule a média (Ma) = 2</br >
+<i class='counter'>3</i>Calcule o número de termos (N) = 3 </hr ></br >
+ $$ (1 - 2,00)^ 2 = 1 ...1 + $$ </hr ></br >
+ $$ (2 - 2,00)^ 2 = 0 ...1 + $$ </hr ></br >
+ $$ (3 - 2,00)^ 2 = 1 ...2 + $$ </hr ></br >
+
+ $$ Resultado: \dfrac{ {2} } {3} = {0,6666667} $$</br >
+0,6666667<i class='counter'>1</i>O <strong >Desvio padrão</strong> é uma medida que expressa o grau de dispersão de um conjunto de dados:</br >
+<i class='counter'>2</i> <img src='https://dados-agrupados-api.herokuapp.com/Imagens/desvio-padrao-1.png'></br >
+<i class='counter'>3</i>Obter a média aritimética dos dados (Ma) = 1</br >
+<i class='counter'>4</i>Obter o número de termos (N) = 1</br >
+<i class='counter'>5</i>(Somátorio de Xi = 1 até a posição N (1) menos a média (1)) elevado ao quadrado</hr ></br >
+$$  (1 - 1,00)^ 2 = 0 ...0  $$  </hr ></br >
+<i class='counter'>7</i>Obter a raíz quadrada da divisão do somatório (0) pelo numero de termos (1) </hr ></br >
+
+ $$ Resultado = \sqrt { \dfrac{ {0} } {1}  } = {0}$$</br >
+0<i class='counter'>1</i>O <strong >Desvio padrão</strong> é uma medida que expressa o grau de dispersão de um conjunto de dados:</br >
+<i class='counter'>2</i> <img src='https://dados-agrupados-api.herokuapp.com/Imagens/desvio-padrao-1.png'></br >
+<i class='counter'>3</i>Obter a média aritimética dos dados (Ma) = 1,5</br >
+<i class='counter'>4</i>Obter o número de termos (N) = 2</br >
+<i class='counter'>5</i>(Somátorio de Xi = 1 até a posição N (2) menos a média (1,5)) elevado ao quadrado</hr ></br >
+$$  (1 - 1,50)^ 2 = 0,25 ...0,25  $$  </hr ></br >
+$$ +(2 - 1,50)^ 2 = 0,25 ...0,5  $$  </hr ></br >
+<i class='counter'>8</i>Obter a raíz quadrada da divisão do somatório (0,5) pelo numero de termos (2) </hr ></br >
+
+ $$ Resultado = \sqrt { \dfrac{ {0,5} } {2}  } = {0,5}$$</br >
+0,5<i class='counter'>1</i>O <strong >Desvio padrão</strong> é uma medida que expressa o grau de dispersão de um conjunto de dados:</br >
+<i class='counter'>2</i> <img src='https://dados-agrupados-api.herokuapp.com/Imagens/desvio-padrao-1.png'></br >
+<i class='counter'>3</i>Obter a média aritimética dos dados (Ma) = 1,5</br >
+<i class='counter'>4</i>Obter o número de termos (N) = 2</br >
+<i class='counter'>5</i>(Somátorio de Xi = 1 até a posição N (2) menos a média (1,5)) elevado ao quadrado</hr ></br >
+$$  (1 - 1,50)^ 2 = 0,25 ...0,25  $$  </hr ></br >
+$$ +(2 - 1,50)^ 2 = 0,25 ...0,5  $$  </hr ></br >
+<i class='counter'>8</i>Obter a raíz quadrada da divisão do somatório (0,5) pelo numero de termos (2) </hr ></br >
+
+ $$ Resultado = \sqrt { \dfrac{ {0,5} } {2}  } = {0,5}$$</br >
+0,5<i class='counter'>1</i>O <strong >Desvio padrão</strong> é uma medida que expressa o grau de dispersão de um conjunto de dados:</br >
+<i class='counter'>2</i> <img src='https://dados-agrupados-api.herokuapp.com/Imagens/desvio-padrao-1.png'></br >
+<i class='counter'>3</i>Obter a média aritimética dos dados (Ma) = 1,5</br >
+<i class='counter'>4</i>Obter o número de termos (N) = 2</br >
+<i class='counter'>5</i>(Somátorio de Xi = 1 até a posição N (2) menos a média (1,5)) elevado ao quadrado</hr ></br >
+$$  (1 - 1,50)^ 2 = 0,25 ...0,25  $$  </hr ></br >
+$$ +(2 - 1,50)^ 2 = 0,25 ...0,5  $$  </hr ></br >
+<i class='counter'>8</i>Obter a raíz quadrada da divisão do somatório (0,5) pelo numero de termos (2) </hr ></br >
+
+ $$ Resultado = \sqrt { \dfrac{ {0,5} } {2}  } = {0,5}$$</br >
+0,5<i class='counter'>1</i>O <strong >Desvio padrão</strong> é uma medida que expressa o grau de dispersão de um conjunto de dados:</br >
+<i class='counter'>2</i> <img src='https://dados-agrupados-api.herokuapp.com/Imagens/desvio-padrao-1.png'></br >
+<i class='counter'>3</i>Obter a média aritimética dos dados (Ma) = 2</br >
+<i class='counter'>4</i>Obter o número de termos (N) = 3</br >
+<i class='counter'>5</i>(Somátorio de Xi = 1 até a posição N (3) menos a média (2)) elevado ao quadrado</hr ></br >
+$$  (1 - 2,00)^ 2 = 1 ...1  $$  </hr ></br >
+$$ +(2 - 2,00)^ 2 = 0 ...1  $$  </hr ></br >
+$$ +(3 - 2,00)^ 2 = 1 ...2  $$  </hr ></br >
+<i class='counter'>9</i>Obter a raíz quadrada da divisão do somatório (2) pelo numero de termos (3) </hr ></br >
+
+ $$ Resultado = \sqrt { \dfrac{ {2} } {3}  } = {0,8164966}$$</br >
+0,8164966<i class='counter'>1</i><strong >Média Aritimética</strong>: $$ \sum { Xi } \over n $$</br >
+<i class='counter'>2</i>Elementos:</br >
+<i class='counter'>3</i>1</br >
+<i class='counter'>4</i>Some todos os termos: </br >
+$$ 1 $$</br >
+$$ = 1 $$</br >
+<i class='counter'>7</i>Divida o resultado (1) pelo numero de termos (1) </br >
+$$ Resultado = \dfrac{ {1} } {1} = 1 $$</br >
+1<i class='counter'>1</i><strong >Média Aritimética</strong>: $$ \sum { Xi } \over n $$</br >
+<i class='counter'>2</i>Elementos:</br >
+<i class='counter'>3</i>1,2</br >
+<i class='counter'>4</i>Some todos os termos: </br >
+$$ 1 + 2 $$</br >
+$$ = 3 $$</br >
+<i class='counter'>7</i>Divida o resultado (3) pelo numero de termos (2) </br >
+$$ Resultado = \dfrac{ {3} } {2} = 1,5 $$</br >
+1,5<i class='counter'>1</i><strong >Média Aritimética</strong>: $$ \sum { Xi } \over n $$</br >
+<i class='counter'>2</i>Elementos:</br >
+<i class='counter'>3</i>1,2,2</br >
+<i class='counter'>4</i>Some todos os termos: </br >
+$$ 1 + 2 + 2 $$</br >
+$$ = 5 $$</br >
+<i class='counter'>7</i>Divida o resultado (5) pelo numero de termos (3) </br >
+$$ Resultado = \dfrac{ {5} } {3} = 1,6666666 $$</br >
+1,6666666<i class='counter'>1</i><strong >Média Aritimética</strong>: $$ \sum { Xi } \over n $$</br >
+<i class='counter'>2</i>Elementos:</br >
+<i class='counter'>3</i>1,2,2</br >
+<i class='counter'>4</i>Some todos os termos: </br >
+$$ 1 + 2 + 2 $$</br >
+$$ = 5 $$</br >
+<i class='counter'>7</i>Divida o resultado (5) pelo numero de termos (3) </br >
+$$ Resultado = \dfrac{ {5} } {3} = 1,6666666 $$</br >
+1,6666666<i class='counter'>1</i>Elementos: 1</br >
+<i class='counter'>2</i></hr > <strong >Mediana</strong>: Valores no centro da lista : 1</br >
+1<i class='counter'>1</i>Elementos: 1</br >
+<i class='counter'>2</i></hr > <strong >Mediana</strong>: Valores no centro da lista : 1</br >
+1<i class='counter'>1</i>Elementos: 1,5</br >
+<i class='counter'>2</i>Lista de contagem par:</br >
+<i class='counter'>3</i>Some os dois elementos do centro (1 e 5) e divida por 2(dois):</br >
+$$ \dfrac{ { 1 + 5 }  } {2} = \dfrac{ { 6 }  } {2} = 3 $$</br >
+<i class='counter'>5</i></hr > <strong >Mediana</strong>: Valores no centro da lista : 3</br >
+3<i class='counter'>1</i>Elementos: 1,5</br >
+<i class='counter'>2</i>Lista de contagem par:</br >
+<i class='counter'>3</i>Some os dois elementos do centro (1 e 5) e divida por 2(dois):</br >
+$$ \dfrac{ { 1 + 5 }  } {2} = \dfrac{ { 6 }  } {2} = 3 $$</br >
+<i class='counter'>5</i></hr > <strong >Mediana</strong>: Valores no centro da lista : 3</br >
+3<i class='counter'>1</i>Elementos: 1,5,6</br >
+<i class='counter'>2</i></hr > <strong >Mediana</strong>: Valores no centro da lista : 5</br >
+5<i class='counter'>1</i><strong >Moda</strong>: Valor mais frequente </br >
+<i class='counter'>2</i><strong >Moda</strong>: 1. Repetiu 0 vezes</br >
+<i class='counter'>3</i>Essa série é classificada como: Unimodal </br >
+1<i class='counter'>1</i><strong >Moda</strong>: Valor mais frequente </br >
+<i class='counter'>2</i><strong >Moda</strong>: 11. Repetiu 0 vezes</br >
+<i class='counter'>3</i>Essa série é classificada como: Unimodal </br >
+11<i class='counter'>1</i><strong >Moda</strong>: Valor mais frequente </br >
+<i class='counter'>2</i><strong >Moda</strong>: 11. Repetiu 0 vezes</br >
+<i class='counter'>3</i>Essa série é classificada como: Unimodal </br >
+11<i class='counter'>1</i><strong >Moda</strong>: Valor mais frequente </br >
+<i class='counter'>2</i><strong >Moda</strong>: 11,2. Repetiu 0 vezes</br >
+<i class='counter'>3</i>Essa série é classificada como: Bimodal </br >
+11<i class='counter'>1</i><strong >Moda</strong>: Valor mais frequente </br >
+<i class='counter'>2</i><strong >Moda</strong>: 11,2. Repetiu 0 vezes</br >
+<i class='counter'>3</i>Essa série é classificada como: Bimodal </br >
+11<i class='counter'>1</i><strong >Moda</strong>: Valor mais frequente </br >
+<i class='counter'>2</i><strong >Moda</strong>: 11,2,3. Repetiu 0 vezes</br >
+<i class='counter'>3</i>Essa série é classificada como: Trimodal </br >
+11<i class='counter'>1</i><strong >Moda</strong>: Valor mais frequente </br >
+<i class='counter'>2</i><strong >Moda</strong>: 11,2,3. Repetiu 0 vezes</br >
+<i class='counter'>3</i>Essa série é classificada como: Trimodal </br >
+11<i class='counter'>1</i><strong >Moda</strong>: Valor mais frequente </br >
+<i class='counter'>2</i><strong >Moda</strong>: 11,2,3,5. Repetiu 0 vezes</br >
+<i class='counter'>3</i>Essa série é classificada como: Polimodal </br >
+11<i class='counter'>1</i>O <strong >Desvio padrão</strong> é uma medida que expressa o grau de dispersão de um conjunto de dados:</br >
+<i class='counter'>2</i> <img src='https://dados-agrupados-api.herokuapp.com/Imagens/desvio-padrao-1.png'></br >
+<i class='counter'>3</i>Obter a média aritimética dos dados (Ma) = 12</br >
+<i class='counter'>4</i>Obter o número de termos (N) = 2</br >
+<i class='counter'>5</i>(Somátorio de Xi = 1 até a posição N (2) menos a média (12)) elevado ao quadrado</hr ></br >
+$$  (1 - 12,00)^ 2 = 121 ...121  $$  </hr ></br >
+$$ +(23 - 12,00)^ 2 = 121 ...242  $$  </hr ></br >
+<i class='counter'>8</i>Obter a raíz quadrada da divisão do somatório (242) pelo numero de termos (2) </hr ></br >
+
+ $$ Resultado = \sqrt { \dfrac{ {242} } {2}  } = {11}$$</br >
+11<i class='counter'>1</i>O <strong >Desvio padrão</strong> é uma medida que expressa o grau de dispersão de um conjunto de dados:</br >
+<i class='counter'>2</i> <img src='https://dados-agrupados-api.herokuapp.com/Imagens/desvio-padrao-1.png'></br >
+<i class='counter'>3</i>Obter a média aritimética dos dados (Ma) = 1,5</br >
+<i class='counter'>4</i>Obter o número de termos (N) = 2</br >
+<i class='counter'>5</i>(Somátorio de Xi = 1 até a posição N (2) menos a média (1,5)) elevado ao quadrado</hr ></br >
+$$  (1 - 1,50)^ 2 = 0,25 ...0,25  $$  </hr ></br >
+$$ +(2 - 1,50)^ 2 = 0,25 ...0,5  $$  </hr ></br >
+<i class='counter'>8</i>Obter a raíz quadrada da divisão do somatório (0,5) pelo numero de termos (2) </hr ></br >
+
+ $$ Resultado = \sqrt { \dfrac{ {0,5} } {2}  } = {0,5}$$</br >
+0,5<i class='counter'>1</i><strong >Moda</strong>: Valor mais frequente </br >
+<i class='counter'>2</i><strong >Moda</strong>: 1,12,23. Repetiu 0 vezes</br >
+<i class='counter'>3</i>Essa série é classificada como: Trimodal </br >
+1<i class='counter'>1</i><strong >Moda</strong>: Valor mais frequente </br >
+<i class='counter'>2</i><strong >Moda</strong>: 1,12,21111. Repetiu 0 vezes</br >
+<i class='counter'>3</i>Essa série é classificada como: Trimodal </br >
+1<i class='counter'>1</i><strong >Moda</strong>: Valor mais frequente </br >
+<i class='counter'>2</i><strong >Moda</strong>: 1,12,21111. Repetiu 0 vezes</br >
+<i class='counter'>3</i>Essa série é classificada como: Trimodal </br >
+1<i class='counter'>1</i><strong >Moda</strong>: Valor mais frequente </br >
+<i class='counter'>2</i><strong >Moda</strong>: 1,12,2555. Repetiu 0 vezes</br >
+<i class='counter'>3</i>Essa série é classificada como: Trimodal </br >
+1<i class='counter'>1</i>O <strong >Desvio padrão</strong> é uma medida que expressa o grau de dispersão de um conjunto de dados:</br >
+<i class='counter'>2</i> <img src='https://dados-agrupados-api.herokuapp.com/Imagens/desvio-padrao-1.png'></br >
+<i class='counter'>3</i>Obter a média aritimética dos dados (Ma) = 856</br >
+<i class='counter'>4</i>Obter o número de termos (N) = 3</br >
+<i class='counter'>5</i>(Somátorio de Xi = 1 até a posição N (3) menos a média (856)) elevado ao quadrado</hr ></br >
+$$  (1 - 856,00)^ 2 = 731025 ...731025  $$  </hr ></br >
+$$ +(12 - 856,00)^ 2 = 712336 ...1443361  $$  </hr ></br >
+$$ +(2555 - 856,00)^ 2 = 2886601 ...4329962  $$  </hr ></br >
+<i class='counter'>9</i>Obter a raíz quadrada da divisão do somatório (4329962) pelo numero de termos (3) </hr ></br >
+
+ $$ Resultado = \sqrt { \dfrac{ {4329962} } {3}  } = {1201,3828}$$</br >
+1201,3828<i class='counter'>1</i><strong >Moda</strong>: Valor mais frequente </br >
+<i class='counter'>2</i><strong >Moda</strong>: 1,12,2555. Repetiu 0 vezes</br >
+<i class='counter'>3</i>Essa série é classificada como: Trimodal </br >
+1<i class='counter'>1</i><strong >Moda</strong>: Valor mais frequente </br >
+<i class='counter'>2</i><strong >Moda</strong>: 1,12,2555. Repetiu 0 vezes</br >
+<i class='counter'>3</i>Essa série é classificada como: Trimodal </br >
+1<i class='counter'>1</i><strong >Variância</strong>: A variância mede quão dispersos estão os dados na amostra. =  $$ \sum_ {Xi - Ma²} \over n $$</br >
+<i class='counter'>2</i>Calcule a média (Ma) = 856</br >
+<i class='counter'>3</i>Calcule o número de termos (N) = 3 </hr ></br >
+ $$ (1 - 856,00)^ 2 = 731025 ...731025 + $$ </hr ></br >
+ $$ (12 - 856,00)^ 2 = 712336 ...1443361 + $$ </hr ></br >
+ $$ (2555 - 856,00)^ 2 = 2886601 ...4329962 + $$ </hr ></br >
+
+ $$ Resultado: \dfrac{ {4329962} } {3} = {1443320,6} $$</br >
+1443320,6<i class='counter'>1</i><strong >Moda</strong>: Valor mais frequente </br >
+<i class='counter'>2</i><strong >Moda</strong>: 1,12,2555. Repetiu 0 vezes</br >
+<i class='counter'>3</i>Essa série é classificada como: Trimodal </br >
+1<i class='counter'>1</i>O <strong >Desvio padrão</strong> é uma medida que expressa o grau de dispersão de um conjunto de dados:</br >
+<i class='counter'>2</i> <img src='https://dados-agrupados-api.herokuapp.com/Imagens/desvio-padrao-1.png'></br >
+<i class='counter'>3</i>Obter a média aritimética dos dados (Ma) = 856</br >
+<i class='counter'>4</i>Obter o número de termos (N) = 3</br >
+<i class='counter'>5</i>(Somátorio de Xi = 1 até a posição N (3) menos a média (856)) elevado ao quadrado</hr ></br >
+$$  (1 - 856,00)^ 2 = 731025 ...731025  $$  </hr ></br >
+$$ +(12 - 856,00)^ 2 = 712336 ...1443361  $$  </hr ></br >
+$$ +(2555 - 856,00)^ 2 = 2886601 ...4329962  $$  </hr ></br >
+<i class='counter'>9</i>Obter a raíz quadrada da divisão do somatório (4329962) pelo numero de termos (3) </hr ></br >
+
+ $$ Resultado = \sqrt { \dfrac{ {4329962} } {3}  } = {1201,3828}$$</br >
+1201,3828<i class='counter'>1</i><strong >Média Aritimética</strong>: $$ \sum { Xi } \over n $$</br >
+<i class='counter'>2</i>Elementos:</br >
+<i class='counter'>3</i>1,12,2555</br >
+<i class='counter'>4</i>Some todos os termos: </br >
+$$ 1 + 12 + 2555 $$</br >
+$$ = 2568 $$</br >
+<i class='counter'>7</i>Divida o resultado (2568) pelo numero de termos (3) </br >
+$$ Resultado = \dfrac{ {2568} } {3} = 856 $$</br >
+856<i class='counter'>1</i>O <strong >Desvio padrão</strong> é uma medida que expressa o grau de dispersão de um conjunto de dados:</br >
+<i class='counter'>2</i> <img src='https://dados-agrupados-api.herokuapp.com/Imagens/desvio-padrao-1.png'></br >
+<i class='counter'>3</i>Obter a média aritimética dos dados (Ma) = 856</br >
+<i class='counter'>4</i>Obter o número de termos (N) = 3</br >
+<i class='counter'>5</i>(Somátorio de Xi = 1 até a posição N (3) menos a média (856)) elevado ao quadrado</hr ></br >
+$$  (1 - 856,00)^ 2 = 731025 ...731025  $$  </hr ></br >
+$$ +(12 - 856,00)^ 2 = 712336 ...1443361  $$  </hr ></br >
+$$ +(2555 - 856,00)^ 2 = 2886601 ...4329962  $$  </hr ></br >
+<i class='counter'>6</i>Obter a raíz quadrada da divisão do somatório (4329962) pelo numero de termos (3) </hr ></br >
+
+ $$ Resultado = \sqrt { \dfrac{ {4329962} } {3}  } = {1201,3828}$$</br >
+1201,3828<i class='counter'>1</i>Elementos: 1</br >
+<i class='counter'>2</i></hr > <strong >Mediana</strong>: Valores no centro da lista : 1</br >
+1<i class='counter'>1</i>Elementos: 1</br >
+<i class='counter'>2</i></hr > <strong >Mediana</strong>: Valores no centro da lista : 1</br >
+1<i class='counter'>1</i>Elementos: 1,2</br >
+<i class='counter'>2</i>Lista de contagem par:</br >
+<i class='counter'>3</i>Some os dois elementos do centro (1 e 2) e divida por 2(dois):</br >
+$$ \dfrac{ { 1 + 2 }  } {2} = \dfrac{ { 3 }  } {2} = 1,5 $$</br >
+<i class='counter'>4</i></hr > <strong >Mediana</strong>: Valores no centro da lista : 1,5</br >
+1,5<i class='counter'>1</i>Elementos: 1,2</br >
+<i class='counter'>2</i>Lista de contagem par:</br >
+<i class='counter'>3</i>Some os dois elementos do centro (1 e 2) e divida por 2(dois):</br >
+$$ \dfrac{ { 1 + 2 }  } {2} = \dfrac{ { 3 }  } {2} = 1,5 $$</br >
+<i class='counter'>4</i></hr > <strong >Mediana</strong>: Valores no centro da lista : 1,5</br >
+1,5<i class='counter'>1</i>Elementos: 1,2,3</br >
+<i class='counter'>2</i></hr > <strong >Mediana</strong>: Valores no centro da lista : 2</br >
+2<i class='counter'>1</i>Elementos: 1,2,33</br >
+<i class='counter'>2</i></hr > <strong >Mediana</strong>: Valores no centro da lista : 2</br >
+2<i class='counter'>1</i>Elementos: 1,2,33</br >
+<i class='counter'>2</i></hr > <strong >Mediana</strong>: Valores no centro da lista : 2</br >
+2<i class='counter'>1</i>Elementos: 1,12,2555</br >
+<i class='counter'>2</i></hr > <strong >Mediana</strong>: Valores no centro da lista : 12</br >
+12<i class='counter'>1</i>O <strong >Desvio padrão</strong> é uma medida que expressa o grau de dispersão de um conjunto de dados:</br >
+<i class='counter'>2</i> <img src='https://dados-agrupados-api.herokuapp.com/Imagens/desvio-padrao-1.png'></br >
+<i class='counter'>3</i>Obter a média aritimética dos dados (Ma) = 1</br >
+<i class='counter'>4</i>Obter o número de termos (N) = 1</br >
+<i class='counter'>5</i>(Somátorio de Xi = 1 até a posição N (1) menos a média (1)) elevado ao quadrado</hr ></br >
+$$  (1 - 1,00)^ 2 = 0 ...0  $$  </hr ></br >
+<i class='counter'>6</i>Obter a raíz quadrada da divisão do somatório (0) pelo numero de termos (1) </hr ></br >
+
+ $$ Resultado = \sqrt { \dfrac{ {0} } {1}  } = {0}$$</br >
+0<i class='counter'>1</i>O <strong >Desvio padrão</strong> é uma medida que expressa o grau de dispersão de um conjunto de dados:</br >
+<i class='counter'>2</i> <img src='https://dados-agrupados-api.herokuapp.com/Imagens/desvio-padrao-1.png'></br >
+<i class='counter'>3</i>Obter a média aritimética dos dados (Ma) = 2</br >
+<i class='counter'>4</i>Obter o número de termos (N) = 3</br >
+<i class='counter'>5</i>(Somátorio de Xi = 1 até a posição N (3) menos a média (2)) elevado ao quadrado</hr ></br >
+$$  (1 - 2,00)^ 2 = 1 ...1  $$  </hr ></br >
+$$ +(2 - 2,00)^ 2 = 0 ...1  $$  </hr ></br >
+$$ +(3 - 2,00)^ 2 = 1 ...2  $$  </hr ></br >
+<i class='counter'>6</i>Obter a raíz quadrada da divisão do somatório (2) pelo numero de termos (3) </hr ></br >
+
+ $$ Resultado = \sqrt { \dfrac{ {2} } {3}  } = {0,8164966}$$</br >
+0,8164966<i class='counter'>1</i>O <strong >Desvio padrão</strong> é uma medida que expressa o grau de dispersão de um conjunto de dados:</br >
+<i class='counter'>2</i> <img src='https://dados-agrupados-api.herokuapp.com/Imagens/desvio-padrao-1.png'></br >
+<i class='counter'>3</i>Obter a média aritimética dos dados (Ma) = 1,5</br >
+<i class='counter'>4</i>Obter o número de termos (N) = 2</br >
+<i class='counter'>5</i>(Somátorio de Xi = 1 até a posição N (2) menos a média (1,5)) elevado ao quadrado</hr ></br >
+$$  (1 - 1,50)^ 2 = 0,25 ...0,25  $$  </hr ></br >
+$$ +(2 - 1,50)^ 2 = 0,25 ...0,5  $$  </hr ></br >
+<i class='counter'>6</i>Obter a raíz quadrada da divisão do somatório (0,5) pelo numero de termos (2) </hr ></br >
+
+ $$ Resultado = \sqrt { \dfrac{ {0,5} } {2}  } = {0,5}$$</br >
+0,5<i class='counter'>1</i>O <strong >Desvio padrão</strong> é uma medida que expressa o grau de dispersão de um conjunto de dados:</br >
+<i class='counter'>2</i> <img src='https://dados-agrupados-api.herokuapp.com/Imagens/desvio-padrao-1.png'></br >
+<i class='counter'>3</i>Obter a média aritimética dos dados (Ma) = 2</br >
+<i class='counter'>4</i>Obter o número de termos (N) = 3</br >
+<i class='counter'>5</i>(Somátorio de Xi = 1 até a posição N (3) menos a média (2)) elevado ao quadrado</hr ></br >
+$$  (1 - 2,00)^ 2 = 1 ...1  $$  </hr ></br >
+$$ +(2 - 2,00)^ 2 = 0 ...1  $$  </hr ></br >
+$$ +(3 - 2,00)^ 2 = 1 ...2  $$  </hr ></br >
+<i class='counter'>6</i>Obter a raíz quadrada da divisão do somatório (2) pelo numero de termos (3) </hr ></br >
+
+ $$ Resultado = \sqrt { \dfrac{ {2} } {3}  } = {0,8164966}$$</br >
+0,8164966<i class='counter'>1</i>O <strong >Desvio padrão</strong> é uma medida que expressa o grau de dispersão de um conjunto de dados:</br >
+<i class='counter'>2</i> <img src='https://dados-agrupados-api.herokuapp.com/Imagens/desvio-padrao-1.png'></br >
+<i class='counter'>3</i>Obter a média aritimética dos dados (Ma) = 2</br >
+<i class='counter'>4</i>Obter o número de termos (N) = 3</br >
+<i class='counter'>5</i>(Somátorio de Xi = 1 até a posição N (3) menos a média (2)) elevado ao quadrado</hr ></br >
+$$  (1 - 2,00)^ 2 = 1 ...1  $$  </hr ></br >
+$$ +(2 - 2,00)^ 2 = 0 ...1  $$  </hr ></br >
+$$ +(3 - 2,00)^ 2 = 1 ...2  $$  </hr ></br >
+<i class='counter'>6</i>Obter a raíz quadrada da divisão do somatório (2) pelo numero de termos (3) </hr ></br >
+
+ $$ Resultado = \sqrt { \dfrac{ {2} } {3}  } = {0,8164966}$$</br >
+0,8164966<i class='counter'>1</i>O <strong >Desvio padrão</strong> é uma medida que expressa o grau de dispersão de um conjunto de dados:</br >
+<i class='counter'>2</i> <img src='https://dados-agrupados-api.herokuapp.com/Imagens/desvio-padrao-1.png'></br >
+<i class='counter'>3</i>Obter a média aritimética dos dados (Ma) = 2</br >
+<i class='counter'>4</i>Obter o número de termos (N) = 3</br >
+<i class='counter'>5</i>(Somátorio de Xi = 1 até a posição N (3) menos a média (2)) elevado ao quadrado</hr ></br >
+$$  (1 - 2,00)^ 2 = 1 ...1  $$  </hr ></br >
+$$ +(2 - 2,00)^ 2 = 0 ...1  $$  </hr ></br >
+$$ +(3 - 2,00)^ 2 = 1 ...2  $$  </hr ></br >
+<i class='counter'>6</i>Obter a raíz quadrada da divisão do somatório (2) pelo numero de termos (3) </hr ></br >
+
+ $$ Resultado = \sqrt { \dfrac{ {2} } {3}  } = {0,8164966}$$</br >
+0,8164966<i class='counter'>1</i>O <strong >Desvio padrão</strong> é uma medida que expressa o grau de dispersão de um conjunto de dados:</br >
+<i class='counter'>2</i> <img src='https://dados-agrupados-api.herokuapp.com/Imagens/desvio-padrao-1.png'></br >
+<i class='counter'>3</i>Obter a média aritimética dos dados (Ma) = 856</br >
+<i class='counter'>4</i>Obter o número de termos (N) = 3</br >
+<i class='counter'>5</i>(Somátorio de Xi = 1 até a posição N (3) menos a média (856)) elevado ao quadrado</hr ></br >
+$$  (1 - 856,00)^ 2 = 731025 ...731025  $$  </hr ></br >
+$$ +(12 - 856,00)^ 2 = 712336 ...1443361  $$  </hr ></br >
+$$ +(2555 - 856,00)^ 2 = 2886601 ...4329962  $$  </hr ></br >
+<i class='counter'>6</i>Obter a raíz quadrada da divisão do somatório (4329962) pelo numero de termos (3) </hr ></br >
+
+ $$ Resultado = \sqrt { \dfrac{ {4329962} } {3}  } = {1201,3828}$$</br >
+1201,3828<i class='counter'>1</i><strong >Média Aritimética</strong>: $$ \sum { Xi } \over n $$</br >
+<i class='counter'>2</i>Elementos:</br >
+<i class='counter'>3</i>1,12,2555</br >
+<i class='counter'>4</i>Some todos os termos: </br >
+$$ 1 + 12 + 2555 $$</br >
+$$ = 2568 $$</br >
+<i class='counter'>5</i>Divida o resultado (2568) pelo numero de termos (3) </br >
+$$ Resultado = \dfrac{ {2568} } {3} = 856 $$</br >
+856

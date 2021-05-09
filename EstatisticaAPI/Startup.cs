@@ -8,6 +8,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json.Serialization;
+using System.Globalization;
+
 namespace EstatisticaAPI
 {
     public class Startup
@@ -53,7 +55,10 @@ namespace EstatisticaAPI
             {
                 app.UseHsts();
             }
-
+            var cultureInfo = new CultureInfo("pt-BR");
+            cultureInfo.NumberFormat.CurrencySymbol = "R$";
+            CultureInfo.DefaultThreadCurrentCulture = cultureInfo;
+            CultureInfo.DefaultThreadCurrentUICulture = cultureInfo;
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCors(builder => builder

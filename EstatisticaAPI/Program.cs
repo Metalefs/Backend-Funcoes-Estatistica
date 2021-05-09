@@ -22,7 +22,8 @@ namespace EstatisticaAPI
             {
                 var port = Environment.GetEnvironmentVariable("PORT");
 
-                webBuilder.UseStartup<Startup>();
+                webBuilder.UseStartup<Startup>()
+                .UseUrls("http://*:" + port);
             });
     }
 }

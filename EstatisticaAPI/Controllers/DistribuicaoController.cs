@@ -129,6 +129,24 @@ namespace EstatisticaAPI.Controllers
             }
             return new JsonResult(retorno);
         }
+        [HttpGet("ObterCoeficienteVariacao/{data}")]
+        public IActionResult ObterCoeficienteVariacao(string data)
+        {
+            string retorno;
+            try
+            {
+
+                CoeficienteVariacao Elemento = new CoeficienteVariacao(ObterValores(data));
+                Elemento.Calcular();
+                MontadorEstatistica<CoeficienteVariacao> montador = new MontadorEstatistica<CoeficienteVariacao>(Elemento);
+                retorno = montador.GerarTexto();
+            }
+            catch (System.Exception ex)
+            {
+                retorno = JsonConvert.SerializeObject(new { erro = ex.Message });
+            }
+            return new JsonResult(retorno);
+        }
 
         private static List<float> ObterValores(string texto)
         {

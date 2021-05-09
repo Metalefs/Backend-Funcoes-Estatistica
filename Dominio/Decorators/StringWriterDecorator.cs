@@ -27,7 +27,6 @@ namespace Dominio.Decorators
 
         public override Task WriteLineAsync(string? value)
         {
-            LineNumber++;
             return base.WriteLineAsync(value + HTMLElements.Br()); ;
         }
         public Task WriteLineAsyncCounter(string? value)

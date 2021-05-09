@@ -302,7 +302,7 @@ namespace Estatistica101.Classes
 
         private float CalcularFrequenciaSimplesAcumulada(int pos)
         {
-            Passos.WriteLineAsyncCounter($"{Titulo("Freq. Simples Acum. de")} {ClassToHTML.AninharEmEm($"[x{pos + 1}]")}: {(pos > 0 ? fi.Sum().ToString(): fi[pos].ToString())} ");
+            Passos.WriteLineAsyncCounter($"{Titulo("Freq. Simples Acum. de")} {ClassToHTML.AninharEmEm($"{ValoresDistintos[pos].Key}")} {ClassToHTML.AninharEmEm($"[x{pos + 1}]")}: {(pos > 0 ? fi.Sum().ToString(): fi[pos].ToString())} ");
             float resultado;
             if (pos > 0)
             {
@@ -334,7 +334,9 @@ namespace Estatistica101.Classes
         private float CalcularFrequenciaRelativa(int pos)
         {
             float Fr = fi[pos] / NumeroDeElementos * 100;
-            Passos.WriteLineAsyncCounter($"{Titulo(ClassToHTML.AninharEmEm($"Freq. Relativa de [x{pos + 1}]"))}: $$ Fr = {{ \\dfrac{{ {{Fi}} }} {{N}}  }} * 100 $$");
+            Passos.WriteLineAsyncCounter($"{Titulo(ClassToHTML.AninharEmEm($"Freq. Relativa de {ClassToHTML.AninharEmEm($"{ValoresDistintos[pos].Key}")} [x{pos + 1}]"))}: ");
+            if(pos == 0) Passos.WriteLine($" $$ Fr = {{ \\dfrac{{ {{Fi}} }} {{N}}  }} * 100 $$");
+            else Passos.WriteLine($" $$ Fi = {fi[pos]} $$ $$ N = {NumeroDeElementos}  $$");
             Passos.WriteLineAsync($"$$  Fr = {{ \\dfrac{{ {{{fi[pos]}}} }} {{{NumeroDeElementos}}}  }} * 100 = {Fr} $$");
             return Fr;
         }
@@ -346,7 +348,7 @@ namespace Estatistica101.Classes
                 resultado = fr.Sum();
             else
                 resultado = fr[pos];
-            Passos.WriteLineAsyncCounter($"{Titulo(ClassToHTML.AninharEmEm($"Freq. Relativa Acumu. de [x{pos + 1}] "))}: {resultado}% {HTMLElements.Hr()}");
+            Passos.WriteLineAsyncCounter($"{Titulo(ClassToHTML.AninharEmEm($"Freq. Relativa Acumu. de {ClassToHTML.AninharEmEm($"{ValoresDistintos[pos].Key}")} [x{pos + 1}] "))}: {resultado}% {HTMLElements.Hr()}");
             Passos.WriteLineAsync($"{GerarTabelaDeFrAcumulada(pos,resultado)}");
 
             return resultado;
